@@ -6,37 +6,76 @@
     <meta name="description" content="personal sandbox website" />
     <title>akositerrence</title>
     <style>
+      * {
+        font-family: calibri;
+        text-decoration: none;
+      }
       .myphoto {
         width: 200px;
         border-radius: 30px;
-        float: left;
         margin-right: 10px;
+        float: left;
         object-fit: cover;
       }
-
       .username {
         font-weight: bold;
+      }
+      .navbar {
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+      li a {
+        color: black;
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 30px;
       }
     </style>
   </head>
   <body>
-    <h1>@akosi_terrence</h1>
-    <img class="myphoto" src="images/test.jpg" alt="photorrence" />
-    <p class="username">figure 1: terrence andre san gabriel</p>
-    <p>mechanical engineering student at north dakota state univeristy</p>
-  </body>
-
-  <body>
-    <a href="https://www.instagram.com/akosi_terrence/" target="_blank"
-      >instagram</a
-    >
-    <a href="https://soundcloud.com/akosi_terrence" target="_blank"
-      >soundcloud</a
-    >
-    <a href="https://github.com/coderrence/" target="_blank">github</a>
-    <a href="https://www.linkedin.com/in/tsangabriel/" target="_blank"
-      >linkedin</a
-    >
-    <a href="mailto:terrence.sangabriel@ndsu.edu" target="_blank">email</a>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="header">
+          <h1>@akosi_terrence</h1>
+          <a href="#"></a>
+        </div>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">projects</a></li>
+          <li><a href="#">resources</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+      <img class="myphoto" src="images/test.jpg" alt="photorrence" />
+      <p class="username">figure 1: terrence andre san gabriel</p>
+      <p>mechanical engineering student at north dakota state univeristy</p>
+    </div>
+    <div>
+      <a href="https://www.instagram.com/akosi_terrence/" target="_blank"
+        >instagram</a
+      >
+      <a href="https://soundcloud.com/akosi_terrence" target="_blank"
+        >soundcloud</a
+      >
+      <a href="https://github.com/coderrence/" target="_blank">github</a>
+      <a href="https://www.linkedin.com/in/tsangabriel/" target="_blank"
+        >linkedin</a
+      >
+      <a href="mailto:terrence.sangabriel@ndsu.edu" target="_blank">email</a>
+    </div>
   </body>
 </html>
