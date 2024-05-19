@@ -11,13 +11,18 @@
         text-decoration: none;
       }
       .myphoto {
-        width: 200px;
+        width: 250px;
         border-radius: 30px;
         margin-right: 10px;
+        margin-left: 25px;
         float: left;
         object-fit: cover;
       }
-      .username {
+      .description {
+        margin-left: 300px;
+      }
+      .header {
+        font-size: 25px;
         font-weight: bold;
       }
       .navbar {
@@ -29,10 +34,6 @@
         align-items: center;
         justify-content: space-between;
       }
-      .header {
-        font-size: 25px;
-        font-weight: bold;
-      }
       li {
         list-style: none;
         display: inline-block;
@@ -43,8 +44,15 @@
         font-weight: bold;
         margin-right: 30px;
       }
+      .linkbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        bottom: 0px;
+      }
     </style>
   </head>
+  <!-- top navigation bar -->
   <body>
     <nav class="navbar">
       <div class="navdiv">
@@ -59,12 +67,19 @@
         </ul>
       </div>
     </nav>
+    <!-- center contents -->
     <div>
       <img class="myphoto" src="images/test.jpg" alt="photorrence" />
-      <p class="username">figure 1: terrence andre san gabriel</p>
-      <p>mechanical engineering student at north dakota state univeristy</p>
+      <div class="description">
+        <p>figure 1: terrence andre san gabriel</p>
+        <p>
+          terrence andre san gabriel is a mechanical engineering student at
+          north dakota state univeristy
+        </p>
+      </div>
     </div>
-    <div>
+    <!-- bottom bar -->
+    <div class="linkbar">
       <a href="https://www.instagram.com/akosi_terrence/" target="_blank"
         >instagram</a
       >
