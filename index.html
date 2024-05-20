@@ -4,74 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="personal sandbox website" />
+    <link rel="stylesheet" href="main.css" />
     <title>akositerrence</title>
-    <style>
-      * {
-        font-family: calibri;
-        text-decoration: none;
-      }
-      .myphoto {
-        width: 250px;
-        border-radius: 30px;
-        margin-right: 10px;
-        margin-left: 25px;
-        float: left;
-        object-fit: cover;
-      }
-      .description {
-        margin-left: 300px;
-      }
-      .header {
-        font-size: 25px;
-        font-weight: bold;
-      }
-      .navbar {
-        padding-right: 15px;
-        padding-left: 15px;
-      }
-      .navdiv {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      li {
-        list-style: none;
-        display: inline-block;
-      }
-      li a {
-        color: black;
-        font-size: 18px;
-        font-weight: bold;
-        margin-right: 30px;
-      }
-    </style>
   </head>
-  <!-- #top navigation bar -->
   <body>
-    <nav class="navbar">
-      <div class="navdiv">
-        <div class="header">
-          <h1>@akosi_terrence</h1>
-          <a href="#"></a>
-        </div>
-        <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">portfolio</a></li>
-          <li><a href="pages/resources.html">resources</a></li>
-        </ul>
-      </div>
-    </nav>
-    <!-- #center contents -->
-    <div>
-      <img class="myphoto" src="images/test.jpg" alt="photorrence" />
-      <div class="description">
-        <h2>abstract</h2>
-        <p>
-          terrence andre san gabriel is a sophmore, engineering mechanically at
-          north dakota state university.
-        </p>
-        <p>figure 1: terrence</p>
-      </div>
+    <!-- top navigation bar -->
+    <div class="navbar" id="topnav"></div>
+    <div class="navdiv">
+      <a href="#"><h1 class="header">@akosi_terrence</h1></a>
+      <a href=""></a>
+      <li><a href="#" class="active">home</a></li>
+      <li><a href="#">portfolio</a></li>
+      <li><a href="#">journal</a></li>
+      <li><a href="pages/resources.html">resources</a></li>
+      <li><a href="#">donate</a></li>
     </div>
+    <!-- introductory contents -->
+    <img class="myphoto" src="images/profile.webp" alt="photo of terrence" />
+    <p>
+      terrence andre san gabriel is a sophomore mechanical engineering student
+      at north dakota state university.
+    </p>
+    <!-- placeholder -->
   </body>
 </html>

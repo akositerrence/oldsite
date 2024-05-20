@@ -1,0 +1,42 @@
+/* navigation bar */
+
+:root {
+    --textcolor: black;
+}
+
+* {
+    font-family: calibri;
+    text-decoration: none;
+}
+
+.header {
+    font-weight: bold;
+    color : var(--textcolor);
+}
+
+.navbar {
+    overflow: hidden;
+}
+
+.navbar a {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a.active {
+    background-color: gray;
+    color: white;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+li a {
+    color: var(--textcolor);
+    font-size: 18px;
+    font-weight: bold;
+}
