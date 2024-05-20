@@ -1,14 +1,12 @@
-/* navigation bar */
-
 :root {
     --textcolor: black;
 }
-
 * {
     font-family: calibri;
     text-decoration: none;
 }
 
+/* navigation bar */
 .header {
     font-weight: bold;
     color : var(--textcolor);
@@ -40,3 +38,5 @@ li a {
     font-size: 18px;
     font-weight: bold;
 }
+
+/* placeholder */
