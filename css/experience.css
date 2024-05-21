@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.icon-container {
+    background-color: transparent;
+    max-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.five-guys {
+    position: relative;
+    max-width: 100%;
+    width: 18vw;
+    border-radius: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.target {
+    position: relative;
+    max-width: 100%;
+    width: 18vw;
+    border-radius: 5vw;
+    background-color: white;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.ndsu {
+    position: relative;
+    max-width: 100%;
+    width: 18vw;
+    border-radius: 5vw;
+    background-color: transparent;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.aigen {
+    position: relative;
+    max-width: 100%;
+    width: 18vw;
+    border-radius: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.marvin-composites {
+    position: relative;
+    max-width: 100%;
+    width: 18vw;
+    border-radius: 5vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
