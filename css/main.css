@@ -2,6 +2,7 @@
     --nav-background-color: white;
     --nav-text-color: black;
     --home-background-color: rgb(17, 17, 17);
+    --home-header-color: white;
     --home-text-color: rgb(190, 190, 200);
     overflow-x: hidden;
 }
@@ -74,6 +75,7 @@
     margin-left: auto;
     margin-right: auto;
     font-size: 7vw;
+    color: var(--home-header-color);
 }
 
 .home-subheader {
@@ -113,7 +115,7 @@
     position: relative;
     z-index: 3;
     background-color: transparent;
-    color: var(--home-text-color);
+    color: var(--home-header-color);
     font-size: 6vw;
     max-width: 100%;
     padding: 2vw 0 3vw;
@@ -124,6 +126,10 @@
 .about,
 .experience {
     background-color: transparent;
+}
+
+.experience {
+    padding-bottom: 5vw;
 }
 
 .morse {
@@ -195,6 +201,39 @@
     width: 80vw;
     height: 23vw;
     padding-bottom: 10vw;
+}
+
+/* SOCIAL MEDIA BAR */
+.social-media-bar {
+    position: relative;
+    background-color: transparent;
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-buttons,
+.social-media-buttons ul,
+.social-media-buttons li,
+.social-media-buttons a,
+.social-media-buttons i {
+    position: relative;
+    list-style-type: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+    color: var(--home-header-color);
+    padding: 1vw 0.75vw 0vw;
+}
+
+.version-statement {
+    font-size: 2.5vw;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
 }
 
 /* TEMP HOME SCREEN DISPLACEMENT */
