@@ -1,8 +1,8 @@
 :root {
     --nav-background-color: white;
     --nav-text-color: black;
-    --home-background-color: rgb(20, 20, 20);
-    --home-text-color: rgb(210, 210, 210);
+    --home-background-color: rgb(17, 17, 17);
+    --home-text-color: rgb(205, 205, 205);
 }
 
 * {
@@ -42,9 +42,9 @@
 .off-screen-buttons i {
     list-style-type: none;
     background-color: var(--nav-background-color);
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: bold;
-    line-height: 15vw;
+    line-height: 17vw;
     color: var(--nav-text-color);
 }
 
@@ -57,7 +57,7 @@
 }
 
 .home-screen-container,
-.home-screen-container h1 {
+.home-header {
     background-color: var(--home-background-color);
     text-decoration: none;
     color: var(--home-text-color);
@@ -80,8 +80,9 @@
     max-width: 100%;
     width: 80vw;
     display: block;
-    margin: 15vw auto 7vw;
+    margin: 15vw auto 0vw;
     border-radius: 20vw;
+    background-color: var(--home-background-color);
 }
 
 /* HOME CONTENT */
@@ -92,19 +93,7 @@
     color: var(--home-text-color);
     font-size: 6vw;
     max-width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.morse {
-    position: relative;
-    z-index: 3;
-    background-color: var(--home-background-color);
-    max-width: 100%;
-    font-size: 3vw;
-    font-weight: lighter;
-    display: block;
-    margin: 1.5vw auto 2vw;
+    padding: 4vw 0 3vw;
     display: flex;
     justify-content: center;
 }
@@ -114,14 +103,31 @@
     background-color: var(--home-background-color);
 }
 
+.morse {
+    position: relative;
+    z-index: 3;
+    background-color: var(--home-background-color);
+    max-width: 100%;
+    font-size: 3.5vw;
+    font-weight: lighter;
+    display: block;
+    padding: 4vw auto 2vw;
+    display: flex;
+    justify-content: center;
+}
+
 .content-text {
     position: relative;
     z-index: 3;
     background-color: var(--home-background-color);
     max-width: 100%;
     font-size: 3.3vw;
-    margin: 0vw 7vw 7vw;
-    display: block;
+    padding: 3vw 7vw 1vw;
     text-align: justify;
     line-height: 1.25em;
+}
+
+/* TEMP HOME SCREEN DISPLACEMENT */
+.home-screen-container {
+    left: 0vw;
 }
