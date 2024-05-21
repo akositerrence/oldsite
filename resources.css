@@ -1,0 +1,25 @@
+/* GENERAL */
+:root {
+    --maincolor: rgb(200, 200, 200);
+    --textcolor: rgb(150, 150, 150);
+}
+
+* {
+    font-family: baskerville;
+    text-decoration: none;
+    color : var(--maincolor);
+    background-color: rgb(20, 20, 20); 
+}
+
+.header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-size: 6vw;
+    line-height: 1em;
+}
+
+.resourceoptions {
+    max-width: 100%;
+}

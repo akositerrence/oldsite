@@ -1,15 +1,36 @@
+/* GENERAL */
 :root {
-    --textcolor: black;
-}
-* {
-    font-family: calibri;
-    text-decoration: none;
+    --maincolor: rgb(200, 200, 200);
+    --textcolor: rgb(150, 150, 150);
 }
 
-/* navigation bar */
+* {
+    font-family: baskerville;
+    text-decoration: none;
+    color : var(--maincolor);
+    background-color: rgb(15, 15, 15); 
+}
+
+.morse {
+    max-width: 100%;
+    font-size: 3vw;
+    display: block;
+    margin-top: -2vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+/* TOP NAVIGATION BAR */
 .header {
+    text-align: center;
     font-weight: bold;
-    color : var(--textcolor);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 7vw;
 }
 
 .navbar {
@@ -30,7 +51,7 @@
 
 li {
     list-style: none;
-    display: inline-block;
+    display: none;
 }
 
 li a {
@@ -39,4 +60,87 @@ li a {
     font-weight: bold;
 }
 
-/* placeholder */
+.wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* ABSTRACT */
+.img-abstract {
+    max-width: 100%;
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 7vw;
+    border-radius: 20vw;
+}
+
+.abstract h2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-size: 5.5vw;
+    line-height: 0.3em;
+}
+
+.abstract p {
+    max-width: 100%;
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: bold;
+    font-size: 3.3vw;
+    text-align: justify;
+    line-height: 1.25em;
+    color : var(--textcolor);
+}
+
+/* EXPERIENCE */
+.experience h2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-size: 5.5vw;
+    line-height: 0.3em;
+}
+
+.experience p {
+    max-width: 100%;
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: bold;
+    font-size: 3.3vw;
+    text-align: justify;
+    line-height: 1.25em;
+    color : var(--textcolor);
+}
+
+/* PROJECTS */
+.projects h2 {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-size: 5.5vw;
+    line-height: 0.3em;
+}
+
+
+.projects p {
+    max-width: 100%;
+    width: 80vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: bold;
+    font-size: 3.3vw;
+    text-align: justify;
+    line-height: 1.25em;
+    color : var(--textcolor);
+}
