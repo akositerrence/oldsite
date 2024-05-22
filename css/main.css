@@ -2,8 +2,9 @@
     --nav-background-color: white;
     --nav-text-color: black;
     --home-background-color: rgb(10, 10, 10);
-    --home-header-color: white;
+    --home-header-color: rgb(230, 230, 230);
     --home-text-color: rgb(190, 190, 200);
+    --menu-icon-color: rgb(210, 210, 210);
     overflow-x: hidden;
 }
 
@@ -12,7 +13,7 @@
     padding: 0;
     font-family: bakersville;
     text-decoration: none;
-    background-color: greenyellow;
+    background-color: darkblue;
 }
 
 /* NAVIGATION PAGE */
@@ -32,7 +33,7 @@
 .off-screen-buttons {
     position: relative;
     z-index: 1;
-    padding-left: 5vw;
+    padding-left: 65vw;
     display: flex;
     align-items: center;
 }
@@ -45,8 +46,9 @@
     list-style-type: none;
     background-color: var(--nav-background-color);
     font-size: 6vw;
-    font-weight: bold;
+    font-weight: lighter;
     line-height: 17vw;
+    text-align: right;
     color: var(--nav-text-color);
 }
 
@@ -67,49 +69,62 @@
 }
 
 .home-header {
+    z-index: 4;
     position: relative;
-    font-size: 8vw;
+    font-size: 5vw;
     font-weight: bold;
     text-align: center;
     display: block;
     padding-top: 7vw;
+    padding-bottom: 2vw;
     margin-left: auto;
     margin-right: auto;
-    font-size: 7vw;
     color: var(--home-header-color);
 }
 
-.home-subheader {
-    position: relative;
-    font-size: 8vw;
-    font-weight: lighter;
-    text-align: center;
-    display: block;
-    padding-top: 2vw;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3vw;
-    background-color: transparent;
-    text-decoration: none;
-}
-
 .img-home {
-    position: relative;
-    z-index: 3;
+    position: absolute;
+    z-index: 1;
     max-width: 100%;
-    width: 80vw;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    border-radius: 20vw;
     background-color: transparent;
 }
 
 .image-container {
+    background: transparent;
+    height: 100vw;
+}
+
+.menu-icon-container {
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
+    transform: translateY(-6.9vw);
+    height: 0.1vw;
     display: flex;
     justify-content: center;
-    padding-top: 6vw;
-    padding-bottom: 2vw;
-    background-color: transparent;
+}
+
+.menu-icon-left,
+.menu-icon-left a,
+.menu-icon-left i {
+    background: transparent;
+    color: var(--menu-icon-color);
+    font-size: 8vw;
+    display: flex;
+    margin-left: 19vw;
+}
+
+.menu-icon-right,
+.menu-icon-right a,
+.menu-icon-right i {
+    background: transparent;
+    color: var(--menu-icon-color);
+    font-size: 8vw;
+    display: flex;
+    margin-right: 19vw;
 }
 
 /* HOME CONTENT */
@@ -118,9 +133,9 @@
     z-index: 3;
     background-color: transparent;
     color: var(--home-header-color);
-    font-size: 6vw;
+    font-size: 5vw;
     max-width: 100%;
-    padding: 2vw 0 3vw;
+    padding: 0vw 0 3vw;
     display: flex;
     justify-content: center;
 }
@@ -128,6 +143,7 @@
 .about,
 .experience {
     background-color: transparent;
+    padding-top: 5vw;
 }
 
 .experience {
@@ -147,14 +163,19 @@
     justify-content: center;
 }
 
+#my-name {
+    background-color: transparent;
+    font-weight: bold;
+}
+
 .content-text {
     position: relative;
     z-index: 3;
     max-width: 100%;
-    font-size: 3.3vw;
+    font-size: 3.5vw;
     padding: 3vw 7vw 2vw;
     text-align: justify;
-    line-height: 1.25em;
+    line-height: 1.75em;
 }
 
 .globe-container {
@@ -165,7 +186,7 @@
     height: 67vw;
     display: flex;
     justify-content: center;
-    padding-bottom: 3vw;
+    padding-bottom: 4vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -231,7 +252,7 @@
 }
 
 .version-statement {
-    font-size: 2.5vw;
+    font-size: 2.75vw;
     font-weight: lighter;
     text-align: center;
     padding-top: 6vw;
@@ -240,5 +261,5 @@
 
 /* TEMP HOME SCREEN DISPLACEMENT */
 .home-screen-container {
-    left: 0vw;
+    right: 0vw;
 }
