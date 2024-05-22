@@ -1,7 +1,7 @@
 :root {
     --nav-background-color: white;
     --nav-text-color: black;
-    --home-background-color: rgb(17, 17, 17);
+    --home-background-color: rgb(10, 10, 10);
     --home-header-color: white;
     --home-text-color: rgb(190, 190, 200);
     overflow-x: hidden;
@@ -69,6 +69,7 @@
 .home-header {
     position: relative;
     font-size: 8vw;
+    font-weight: bold;
     text-align: center;
     display: block;
     padding-top: 7vw;
@@ -81,6 +82,7 @@
 .home-subheader {
     position: relative;
     font-size: 8vw;
+    font-weight: lighter;
     text-align: center;
     display: block;
     padding-top: 2vw;

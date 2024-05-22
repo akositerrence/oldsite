@@ -2,13 +2,15 @@
 :root {
     --maincolor: rgb(200, 200, 200);
     --textcolor: rgb(150, 150, 150);
+    overflow-x: hidden;
 }
 
 * {
-    font-family: baskerville;
+    margin: 0;
+    padding: 0;
+    font-family: bakersville;
     text-decoration: none;
-    color: var(--maincolor);
-    background-color: rgb(10, 10, 10);
+    background-color: greenyellow;
 }
 
 .header {
