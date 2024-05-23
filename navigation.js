@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function openNavPage() {
         if (page) {
             page.style.right = "50vw";
+            page.style.overflow
         } else {
             console.error('element not found')
         }
