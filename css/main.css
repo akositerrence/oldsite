@@ -68,6 +68,10 @@
     color: var(--home-text-color);
 }
 
+.head-bar {
+    background-color: var(--home-background-color);
+}
+
 .home-header {
     z-index: 4;
     position: relative;
@@ -76,7 +80,7 @@
     text-align: center;
     display: block;
     padding-top: 7vw;
-    padding-bottom: 2vw;
+    padding-bottom: 0vw;
     margin-left: auto;
     margin-right: auto;
     color: var(--home-header-color);
@@ -102,29 +106,27 @@
     z-index: 4;
     background-color: transparent;
     transform: translateY(-6.9vw);
-    height: 0.1vw;
+    height: 7vw;
     display: flex;
     justify-content: center;
 }
 
-.menu-icon-left,
-.menu-icon-left a,
-.menu-icon-left i {
+.menu-icon-b,
+.menu-icon-b a,
+.menu-icon-b i {
     background: transparent;
     color: var(--menu-icon-color);
     font-size: 8vw;
     display: flex;
-    margin-left: 19vw;
 }
 
-.menu-icon-right,
-.menu-icon-right a,
-.menu-icon-right i {
+.menu-icon-a,
+.menu-icon-a a,
+.menu-icon-a i {
     background: transparent;
     color: var(--menu-icon-color);
     font-size: 8vw;
     display: flex;
-    margin-right: 19vw;
 }
 
 /* HOME CONTENT */
