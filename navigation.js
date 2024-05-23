@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
         console.error("home button not found");
     }
-
 });
 
 window.addEventListener('scroll', function () {
