@@ -108,7 +108,7 @@
     transform: translateY(-6.9vw);
     height: 7vw;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .menu-icon-b,
@@ -117,7 +117,7 @@
     background: transparent;
     color: var(--menu-icon-color);
     font-size: 8vw;
-    display: flex;
+    display: block;
 }
 
 .menu-icon-a,
@@ -126,7 +126,7 @@
     background: transparent;
     color: var(--menu-icon-color);
     font-size: 8vw;
-    display: flex;
+    display: block;
 }
 
 /* HOME CONTENT */
