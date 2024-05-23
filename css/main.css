@@ -72,6 +72,10 @@
 
 .head-bar {
     background-color: var(--home-background-color);
+    top: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 5;
 }
 
 .home-header {
@@ -90,7 +94,7 @@
 
 .img-home {
     position: absolute;
-    z-index: 1;
+    z-index: -1;
     max-width: 100%;
     width: 100vw;
     display: flex;
@@ -101,6 +105,7 @@
 .image-container {
     background: transparent;
     height: 100vw;
+    padding-top: 21vw
 }
 
 .menu-icon-container {
@@ -146,7 +151,7 @@
 
 .about,
 .experience {
-    background-color: transparent;
+    background-color: var(--home-background-color);
     padding-top: 5vw;
 }
 
