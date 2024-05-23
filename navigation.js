@@ -37,6 +37,5 @@ window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
     const parallaxOffset = scrollPosition * 0.65;
 
-    // Apply the parallax effect to the image
     document.querySelector('.img-home').style.transform = `translateY(${parallaxOffset}px)`;
 });
