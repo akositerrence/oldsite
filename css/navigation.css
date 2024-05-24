@@ -29,7 +29,7 @@
 .off-screen-buttons {
     position: relative;
     z-index: 1;
-    padding-left: 68vw;
+    padding-left: 65vw;
     display: flex;
     align-items: center;
 }
@@ -41,7 +41,7 @@
 .off-screen-buttons i {
     list-style-type: none;
     background-color: var(--nav-background-color);
-    font-size: 5vw;
+    font-size: 5.5vw;
     font-weight: lighter;
     line-height: 17vw;
     text-align: right;
