@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     z-index: 5;
+    top: 0;
 }
 
 .home-screen-container {
@@ -157,9 +158,10 @@
     width: 100vw;
     height: 20vw;
     overflow-y: hidden;
-    position: fixed;
+    position: relative;
     z-index: 10;
     background: transparent;
+    top: 0;
 }
 
 .home-top iframe {
@@ -172,7 +174,7 @@
     z-index: -1;
     max-width: 100%;
     width: 100vw;
-    margin-top: 20vw;
+    margin-top: 0vw;
     display: flex;
     justify-content: center;
     background-color: transparent;

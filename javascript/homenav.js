@@ -54,22 +54,21 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener("scroll", function () {
         const scrollPosition = window.scrollY;
         const parallaxOffset = scrollPosition * 0.2;
-
+        const headerOffset = -scrollPosition * 0.05;
         const imgHome = document.querySelector(".img-home");
         const headBar = document.querySelector(".home-top");
         const headEmbed = document.querySelector("#head-embed");
+        const fadeEnd = 350;
 
         var topFadeBar = headEmbed.contentDocument || headEmbed.contentWindow.document;
         var fadedName = topFadeBar.querySelector("h1");
         var fadedBack = topFadeBar.querySelector(".head-bar");
 
-        const fadeEnd = 350;
-        if (imgHome) {
-            imgHome.style.webkitTransform = `translateY(${parallaxOffset}px)`;
-            imgHome.style.transform = `translateY(${parallaxOffset}px)`;
-            fadedName.style.opacity = Math.max(0, ((fadeEnd - scrollPosition) / fadeEnd));
-        } else {
-            console.error("home image not found");
-        }
+        imgHome.style.webkitTransform = `translateY(${parallaxOffset}px)`;
+        imgHome.style.transform = `translateY(${parallaxOffset}px)`;
+
+        fadedName.style.opacity = Math.max(0, ((fadeEnd - scrollPosition) / fadeEnd));
+        headBar.style.transform = `translateY(${scrollPosition}px)`;
+        fadedName.style.transform = `translateY(${headerOffset}px)`;
     });
 });
