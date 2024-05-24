@@ -7,7 +7,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: bakersville;
+    font-family: optima;
     text-decoration: none;
     background-color: darkblue;
 }
@@ -23,13 +23,38 @@
     transform: translateY(-50%);
     display: flex;
     align-items: center;
+    padding-left: 0vw;
+    padding-right: 10vw;
     background-color: var(--nav-background-color);
+}
+
+.scrollbar {
+    background-color: transparent;
+    transform: translate(58vw, -46vw);
+    color: rgb(120, 120, 120);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5vw;
+}
+
+.nav-morse-container {
+    background-color: transparent;
+    width: 66.5vw;
+    transform: translateX(9vw);
+    text-align: center;
+}
+
+.nav-morse {
+    background-color: transparent;
+    transform: rotate(-90deg);
+    font-size: 3vw;
+    color: rgb(80, 80, 80);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
 }
 
 .off-screen-buttons {
     position: relative;
     z-index: 1;
-    padding-left: 65vw;
     display: flex;
     align-items: center;
 }
@@ -40,10 +65,10 @@
 .off-screen-buttons a,
 .off-screen-buttons i {
     list-style-type: none;
-    background-color: var(--nav-background-color);
-    font-size: 5.5vw;
+    background-color: transparent;
+    font-size: 4.5vw;
     font-weight: lighter;
     line-height: 17vw;
-    text-align: right;
+    text-align: left;
     color: var(--nav-text-color);
 }
