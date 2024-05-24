@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
-    const parallaxOffset = scrollPosition * 0.2;
+    const parallaxOffset = scrollPosition * 0.3;
 
     document.querySelector('.img-home').style.webkitTransform = `translateY(${parallaxOffset}px)`;
     document.querySelector('.img-home').style.transform = `translateY(${parallaxOffset}px)`;
