@@ -11,7 +11,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: bakersville;
+    font-family: optima;
     text-decoration: none;
     background-color: darkblue;
 }
@@ -20,7 +20,7 @@
 .head-bar {
     background-color: var(--home-background-color);
     width: 100%;
-    height: auto;
+    height: 100%;
     position: fixed;
     border: none;
     margin: 0;
@@ -102,6 +102,58 @@
     left: 2.5vw;
 }
 
+/* TAIL BAR */
+.tail-wrapper {
+    background-color: var(--home-background-color);
+}
+
+.home-bottom {
+    position: relative;
+    width: 100vw;
+    height: 28vw;
+    overflow-y: hidden;
+    z-index: 10;
+}
+
+.home-bottom iframe {
+    width: 100%;
+}
+
+.social-media-bar {
+    position: relative;
+    background-color: var(--home-background-color);
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-buttons,
+.social-media-buttons ul,
+.social-media-buttons li,
+.social-media-buttons a,
+.social-media-buttons i {
+    position: relative;
+    list-style-type: none;
+    background-color: var(--home-background-color);
+    ;
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+    color: var(--home-header-color);
+    padding: 1vw 0.75vw 0vw;
+}
+
+.version-statement {
+    font-size: 2.75vw;
+    font-weight: lighter;
+    text-align: center;
+    padding-top: 6vw;
+    padding-bottom: 6vw;
+    background-color: var(--home-background-color);
+    color: var(--home-text-color);
+}
+
 /* HOME */
 .home-top {
     position: relative;
@@ -166,6 +218,7 @@
     padding: 2vw auto 2vw;
     display: flex;
     justify-content: center;
+    color: var(--home-text-color);
 }
 
 #my-name {
@@ -230,39 +283,6 @@
     width: 80vw;
     height: 23vw;
     padding-bottom: 10vw;
-}
-
-/* SOCIAL MEDIA BAR */
-.social-media-bar {
-    position: relative;
-    background-color: transparent;
-    max-width: 100%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-}
-
-.social-media-buttons,
-.social-media-buttons ul,
-.social-media-buttons li,
-.social-media-buttons a,
-.social-media-buttons i {
-    position: relative;
-    list-style-type: none;
-    background-color: transparent;
-    display: flex;
-    justify-content: center;
-    font-size: 6vw;
-    color: var(--home-header-color);
-    padding: 1vw 0.75vw 0vw;
-}
-
-.version-statement {
-    font-size: 2.75vw;
-    font-weight: lighter;
-    text-align: center;
-    padding-top: 6vw;
-    padding-bottom: 6vw;
 }
 
 /* TEMP HOME SCREEN DISPLACEMENT */
