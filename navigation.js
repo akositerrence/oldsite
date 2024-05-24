@@ -23,14 +23,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let menuIcon = document.querySelector(".menu-icon-b");
     if (menuIcon) {
-        menuIcon.addEventListener("click", openNavPage);
+        menuIcon.addEventListener("click", function (event) {
+            sendMessageToMain("openNavPage");
+        });
     } else {
         console.error("menu icon not found");
     }
 
     let homeButton = document.querySelector("#home-button");
     if (homeButton) {
-        homeButton.addEventListener("click", function () {
+        homeButton.addEventListener("click", function (event) {
             sendMessageToMain("closeNavPage");
         });
     } else {
@@ -48,7 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
 window.addEventListener('scroll', function () {
     const scrollPosition = window.scrollY;
-    const parallaxOffset = scrollPosition * 0.65;
+    const parallaxOffset = scrollPosition * 0.2;
 
+    document.querySelector('.img-home').style.webkitTransform = `translateY(${parallaxOffset}px)`;
     document.querySelector('.img-home').style.transform = `translateY(${parallaxOffset}px)`;
 });

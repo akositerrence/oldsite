@@ -16,7 +16,18 @@
     background-color: darkblue;
 }
 
-/* HOME HEADERS */
+/* GENERAL */
+.head-bar {
+    background-color: var(--home-background-color);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    border: none;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+
 .home-screen-container {
     position: relative;
     z-index: 2;
@@ -32,14 +43,6 @@
     background-color: var(--home-background-color);
     text-decoration: none;
     color: var(--home-text-color);
-}
-
-.head-bar {
-    background-color: var(--home-background-color);
-    top: 0;
-    width: 100%;
-    position: fixed;
-    z-index: 5;
 }
 
 .home-header {
@@ -69,22 +72,6 @@
     background-color: var(--nav-background-color);
 }
 
-.img-home {
-    position: absolute;
-    z-index: -1;
-    max-width: 100%;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
-}
-
-.image-container {
-    background: transparent;
-    height: 100vw;
-    padding-top: 21vw
-}
-
 .menu-icon-container {
     position: relative;
     z-index: 4;
@@ -101,7 +88,7 @@
     font-size: 8vw;
     display: block;
     position: absolute;
-    right: 2vw;
+    right: 2.5vw;
 }
 
 .menu-icon-a,
@@ -112,10 +99,39 @@
     font-size: 8vw;
     display: block;
     position: absolute;
-    left: 2vw;
+    left: 2.5vw;
 }
 
-/* HOME CONTENT */
+/* HOME */
+.home-top {
+    position: relative;
+    width: 100vw;
+    height: 20vw;
+    overflow-y: hidden;
+    position: fixed;
+    z-index: 10;
+}
+
+.home-top iframe {
+    width: 100%;
+}
+
+.img-home {
+    position: absolute;
+    z-index: -1;
+    max-width: 100%;
+    width: 100vw;
+    margin-top: 20vw;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.image-container {
+    background: transparent;
+    height: 100vw;
+}
+
 .content-header {
     position: relative;
     z-index: 3;
@@ -162,7 +178,7 @@
     z-index: 3;
     max-width: 100%;
     font-size: 3.5vw;
-    padding: 3vw 7vw 2vw;
+    padding: 3vw 8.5vw 2vw;
     text-align: justify;
     font-weight: lighter;
     line-height: 1.75em;
