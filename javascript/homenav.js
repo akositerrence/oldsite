@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let page = document.getElementsByClassName("home-screen-container")[0];
         if (page) {
             page.style.right = "40vw";
-            page.style.borderRadius = "10vw";
+            page.style.borderRadius = "15vw";
             page.style.transform = "scale(0.95)";
         } else {
             console.error("element not found");
