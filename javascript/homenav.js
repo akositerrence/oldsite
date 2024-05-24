@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function () {
     function openNavPage() {
         let page = document.getElementsByClassName("home-screen-container")[0];
         if (page) {
-            page.style.right = "50vw";
+            page.style.right = "40vw";
+            page.style.borderRadius = "10vw";
+            page.style.transform = "scale(0.95)";
         } else {
             console.error("element not found");
         }
@@ -12,6 +14,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let page = document.getElementsByClassName("home-screen-container")[0];
         if (page) {
             page.style.right = "0vw";
+            page.style.borderRadius = "0vw";
+            page.style.transform = "scale(1)";
         } else {
             console.error("element not found");
         }
@@ -45,13 +49,27 @@ document.addEventListener('DOMContentLoaded', function () {
         } else if (event.data === "closeNavPage") {
             closeNavPage();
         }
-    })
-});
+    });
 
-window.addEventListener('scroll', function () {
-    const scrollPosition = window.scrollY;
-    const parallaxOffset = scrollPosition * 0.3;
+    window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const parallaxOffset = scrollPosition * 0.2;
 
-    document.querySelector('.img-home').style.webkitTransform = `translateY(${parallaxOffset}px)`;
-    document.querySelector('.img-home').style.transform = `translateY(${parallaxOffset}px)`;
+        const imgHome = document.querySelector(".img-home");
+        const headBar = document.querySelector(".home-top");
+        const headEmbed = document.querySelector("#head-embed");
+
+        var topFadeBar = headEmbed.contentDocument || headEmbed.contentWindow.document;
+        var fadedName = topFadeBar.querySelector("h1");
+        var fadedBack = topFadeBar.querySelector(".head-bar");
+
+        const fadeEnd = 350;
+        if (imgHome) {
+            imgHome.style.webkitTransform = `translateY(${parallaxOffset}px)`;
+            imgHome.style.transform = `translateY(${parallaxOffset}px)`;
+            fadedName.style.opacity = Math.max(0, ((fadeEnd - scrollPosition) / fadeEnd));
+        } else {
+            console.error("home image not found");
+        }
+    });
 });
