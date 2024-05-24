@@ -26,21 +26,27 @@
     padding-left: 0vw;
     padding-right: 10vw;
     background-color: var(--nav-background-color);
+    transition: all 1s ease;
 }
 
 .scrollbar {
     background-color: transparent;
-    transform: translate(58vw, -46vw);
     color: rgb(120, 120, 120);
     font-family: 'Courier New', Courier, monospace;
     font-size: 5vw;
+    padding-left: 60vw;
+    padding-bottom: 93vw;
+    justify-content: left;
+    transition: all 0.15s ease;
 }
 
 .nav-morse-container {
+    position: relative;
+    padding-left: 0vw;
     background-color: transparent;
-    width: 66.5vw;
-    transform: translateX(9vw);
+    width: 7.5vw;
     text-align: center;
+    transition: all 0.35s ease;
 }
 
 .nav-morse {
@@ -50,6 +56,7 @@
     color: rgb(80, 80, 80);
     font-family: 'Courier New', Courier, monospace;
     width: 100vw;
+    padding-bottom: 95vw;
 }
 
 .off-screen-buttons {
@@ -57,6 +64,7 @@
     z-index: 1;
     display: flex;
     align-items: center;
+    transition: all 0.25s ease;
 }
 
 .off-screen-buttons,
