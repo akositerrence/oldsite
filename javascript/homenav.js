@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const scrollPosition = window.scrollY;
         const parallaxOffset = scrollPosition * 0.2;
         const headerOffset = -scrollPosition * 0.05;
-        const scrollOffset = scrollPosition * 0.2;
+        const scrollOffset = scrollPosition * 0.3;
         const buttonOffset = scrollPosition * 0.01;
         const morseOffset = -scrollPosition * 0.05;
         const imgHome = document.querySelector(".img-home");

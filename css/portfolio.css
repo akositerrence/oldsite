@@ -19,7 +19,23 @@
     padding-top: 5vw;
 }
 
+.music {
+    background-color: var(--home-background-color);
+    padding-top: 5vw;
+}
+
 .project-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 2.5vw;
+    max-width: 100%;
+    width: 100vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    justify-content: center;
+}
+
+.music-grid {
     display: inline-grid;
     grid-template-columns: auto auto;
     gap: 2.5vw;
@@ -44,5 +60,6 @@
 .project-img {
     padding-top: 1.5vw;
     width: 42vw;
+    border-top-left-radius: 10vw;
     display: flex;
 }
