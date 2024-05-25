@@ -8,7 +8,7 @@
     align-items: center;
 }
 
-.portfolio-img-text {
+.header-img-text {
     font-size: 15vw;
     text-justify: center;
     color: white;
@@ -54,7 +54,7 @@
     max-width: 100%;
     width: 45vw;
     height: 51vw;
-    background-color: blue;
+    background-color: transparent;
 }
 
 .project-img {
