@@ -1,12 +1,4 @@
-.img-portfolio {
-    position: absolute;
-    z-index: -1;
-    max-width: 100%;
-    width: 100vw;
-    margin-top: 0vw;
-    display: flex;
-    justify-content: center;
-    background-color: transparent;
+.img-home {
     filter: brightness(50%);
 }
 
@@ -41,15 +33,16 @@
 .grid-item {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     font-size: 5vw;
     max-width: 100%;
     width: 45vw;
-    height: 45vw;
-    background-color: transparent;
+    height: 51vw;
+    background-color: blue;
 }
 
 .project-img {
+    padding-top: 1.5vw;
     width: 42vw;
     display: flex;
 }
