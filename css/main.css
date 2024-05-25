@@ -163,7 +163,8 @@
     z-index: 10;
     background: transparent;
     top: 0;
-    transition: all 0.15s ease;
+    transition: transform 0.15s ease;
+    transition: opacity 1s ease;
 }
 
 .home-top iframe {

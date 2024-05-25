@@ -1,10 +1,12 @@
 document.addEventListener('DOMContentLoaded', function () {
     function openNavPage() {
         let page = document.getElementsByClassName("home-screen-container")[0];
+        let fadeOutBar = document.querySelector(".home-top");
         if (page) {
             page.style.right = "40vw";
             page.style.borderRadius = "15vw";
             page.style.transform = "scale(0.95)";
+            fadeOutBar.style.opacity = 0;
         } else {
             console.error("element not found");
         }
@@ -12,10 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function closeNavPage() {
         let page = document.getElementsByClassName("home-screen-container")[0];
+        let fadeOutBar = document.querySelector(".home-top");
         if (page) {
             page.style.right = "0vw";
             page.style.borderRadius = "0vw";
             page.style.transform = "scale(1)";
+            fadeOutBar.style.opacity = 1;
         } else {
             console.error("element not found");
         }
@@ -75,7 +79,6 @@ document.addEventListener('DOMContentLoaded', function () {
         navMorse.style.transform = `translateY(${morseOffset}px)`;
         navButtons.style.transform = `translateY(${buttonOffset}px)`;
         imgHome.style.transform = `translateY(${parallaxOffset}px)`;
-
         fadedName.style.opacity = Math.max(0, ((fadeEnd - scrollPosition) / fadeEnd));
         headBar.style.transform = `translateY(${scrollPosition}px)`;
         fadedName.style.transform = `translateY(${headerOffset}px)`;

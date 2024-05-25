@@ -1,6 +1,6 @@
 :root {
     --nav-background-color: white;
-    --nav-text-color: black;
+    --nav-text-color: rgb(75, 75, 75);
     overflow-x: hidden;
 }
 
