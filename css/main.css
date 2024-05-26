@@ -159,9 +159,8 @@
     width: 100vw;
     height: 20vw;
     overflow-y: hidden;
-    position: relative;
+    position: sticky;
     z-index: 10;
-    background: transparent;
     top: 0;
     transition: transform 0.15s ease;
     transition: opacity 1s ease;

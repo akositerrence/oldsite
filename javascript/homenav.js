@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
         navButtons.style.transform = `translateY(${buttonOffset}px)`;
         imgHome.style.transform = `translateY(${parallaxOffset}px)`;
         fadedName.style.opacity = Math.max(0, ((fadeEnd - scrollPosition) / fadeEnd));
-        headBar.style.transform = `translateY(${scrollPosition}px)`;
+        //headBar.style.transform = `translateY(${scrollPosition}px)`;
         fadedName.style.transform = `translateY(${headerOffset}px)`;
     });
 });
