@@ -11,7 +11,7 @@
 .header-img-text {
     font-size: 15vw;
     text-justify: center;
-    color: white;
+    color: rgb(220, 220, 220);
 }
 
 .skills {
@@ -37,8 +37,8 @@
 
 .skills-grid {
     display: inline-grid;
-    grid-template-columns: auto auto auto auto auto;
-    gap: 2.8vw;
+    grid-template-columns: auto auto auto;
+    gap: 2.5vw;
     max-width: 100%;
     width: 100vw;
     padding-top: 5vw;
@@ -60,17 +60,19 @@
 .skill-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    font-size: 2.75vw;
+    font-size: 2.55vw;
     max-width: 100%;
-    width: 16.5vw;
-    height: 16.5vw;
+    width: 26vw;
+    height: 18vw;
     background-color: rgb(20, 20, 25);
     border-radius: 2vw;
     text-align: center;
     padding-bottom: 2vw;
-    color: rgb(150, 150, 150);
+    color: rgb(180, 180, 190);
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
 
 .project-img {
@@ -87,4 +89,5 @@
     opacity: 80%;
     padding-top: 3vw;
     padding-bottom: 2.5vw;
+    filter: brightness(500%)
 }
