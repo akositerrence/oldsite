@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function setCurrentPage() {
         const path = window.location.pathname;
         const page = path.split("/").pop();
-
         switch (page) {
             case 'index.html':
                 current = home;

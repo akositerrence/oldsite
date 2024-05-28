@@ -7,7 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const buttonOffset = scrollPosition * 0.01;
         const morseOffset = -scrollPosition * 0.05;
         const imgHome = document.querySelector(".img-home");
-        const headBar = document.querySelector(".home-top");
         const headEmbed = document.querySelector("#head-embed");
         const navmenu = document.querySelector(".nav-page");
         const fadeEnd = 350;
