@@ -9,13 +9,15 @@ let current;
 window.onload = function () {
     setTimeout(function () {
         let slideIn = document.getElementsByClassName("home-screen-container")[0];
-        slideIn.style.transition = "all 2s ease";
-        slideIn.style.right = "0vw";
-        slideIn.style.borderRadius = "0vw";
-        setTimeout(function () {
-            slideIn.style.transition = "all 1s ease";
-        }, 1000);
-    }, 500);
+        if (slideIn) {
+            slideIn.style.transition = "all 3s ease";
+            slideIn.style.right = "0vw";
+            slideIn.style.borderRadius = "0vw";
+            setTimeout(function () {
+                slideIn.style.transition = "all 1s ease";
+            }, 1000);
+        }
+    }, 200);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -73,8 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
         menuIcon.addEventListener("click", function (event) {
             sendMessageToMain("openNavPage");
         });
-    } else {
-        console.error("menu icon not found");
     }
 
     function closeNavPage() {
@@ -87,8 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
             page.style.transform = "scale(1)";
             fadeOutBar.style.opacity = 1;
             navBack.style.opacity = 0;
-        } else {
-            console.error("element not found");
         }
     }
 
