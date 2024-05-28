@@ -17,7 +17,7 @@ window.onload = function () {
                 slideIn.style.transition = "all 1s ease";
             }, 1000);
         }
-    }, 200);
+    }, 500);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
