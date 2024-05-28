@@ -2,3 +2,4 @@ change proficencies icon to black and white
 make music into its own section
 add volunteering to involvement section
 make embeds unclickable
+setup involvement page
