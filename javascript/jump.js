@@ -6,6 +6,18 @@ const resources = 5;
 const contact = 6;
 let current;
 
+window.onload = function () {
+    setTimeout(function () {
+        let slideIn = document.getElementsByClassName("home-screen-container")[0];
+        slideIn.style.transition = "all 2s ease";
+        slideIn.style.right = "0vw";
+        slideIn.style.borderRadius = "0vw";
+        setTimeout(function () {
+            slideIn.style.transition = "all 1s ease";
+        }, 1000);
+    }, 500);
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     function setCurrentPage() {
         const path = window.location.pathname;
@@ -40,11 +52,13 @@ document.addEventListener('DOMContentLoaded', function () {
     function openNavPage() {
         let page = document.getElementsByClassName("home-screen-container")[0];
         let fadeOutBar = document.querySelector(".home-top");
+        let navBack = document.getElementsByClassName("nav-page")[0];
         if (page) {
             page.style.right = "40vw";
             page.style.borderRadius = "15vw";
             page.style.transform = "scale(0.95)";
             fadeOutBar.style.opacity = 0;
+            navBack.style.opacity = 1;
         } else {
             console.error("element not found");
         }
@@ -66,16 +80,29 @@ document.addEventListener('DOMContentLoaded', function () {
     function closeNavPage() {
         let page = document.getElementsByClassName("home-screen-container")[0];
         let fadeOutBar = document.querySelector(".home-top");
+        let navBack = document.getElementsByClassName("nav-page")[0];
         if (page) {
             page.style.right = "0vw";
             page.style.borderRadius = "0vw";
             page.style.transform = "scale(1)";
             fadeOutBar.style.opacity = 1;
+            navBack.style.opacity = 0;
         } else {
             console.error("element not found");
         }
     }
 
+    function delayedExit(destination) {
+        let page = document.getElementsByClassName("home-screen-container")[0];
+        let navBack = document.getElementsByClassName("nav-page")[0];
+        page.style.right = "100vw";
+        page.style.borderRadius = "15vw";
+        navBack.style.opacity = 0;
+
+        setTimeout(function () {
+            window.location.href = destination;
+        }, 1000);
+    }
     window.addEventListener("message", function (event) {
         if (event.data === "openNavPage") {
             openNavPage();
@@ -98,56 +125,56 @@ document.addEventListener('DOMContentLoaded', function () {
             case home:
                 returnButton = navAccess.querySelector("#home-button");
                 current = home;
-                portfolioButton.addEventListener("click", function event() { window.location.href = "/pages/portfolio.html"; });
-                involvementButton.addEventListener("click", function event() { window.location.href = "/pages/involvement.html"; });
-                educationButton.addEventListener("click", function event() { window.location.href = "/pages/education.html"; });
-                resourcesButton.addEventListener("click", function event() { window.location.href = "/pages/resources.html"; });
-                contactButton.addEventListener("click", function event() { window.location.href = "/pages/contact.html"; });
+                portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html"); });
+                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
+                educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
+                resourcesButton.addEventListener("click", function event() { delayedExit("/pages/resources.html") });
+                contactButton.addEventListener("click", function event() { delayedExit("/pages/contact.html") });
                 break;
             case portfolio:
                 returnButton = navAccess.querySelector("#home-portfolio");
                 current = portfolio;
-                homeButton.addEventListener("click", function event() { window.location.href = "/index.html"; });
-                involvementButton.addEventListener("click", function event() { window.location.href = "/pages/involvement.html"; });
-                educationButton.addEventListener("click", function event() { window.location.href = "/pages/education.html"; });
-                resourcesButton.addEventListener("click", function event() { window.location.href = "/pages/resources.html"; });
-                contactButton.addEventListener("click", function event() { window.location.href = "/pages/contact.html"; });
+                homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
+                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
+                educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
+                resourcesButton.addEventListener("click", function event() { delayedExit("/pages/resources.html") });
+                contactButton.addEventListener("click", function event() { delayedExit("/pages/contact.html") });
                 break;
             case involvement:
                 returnButton = navAccess.querySelector("#home-involvement");
                 current = involvement;
-                homeButton.addEventListener("click", function event() { window.location.href = "/index.html"; });
-                portfolioButton.addEventListener("click", function event() { window.location.href = "/pages/portfolio.html"; });
-                educationButton.addEventListener("click", function event() { window.location.href = "/pages/education.html"; });
-                resourcesButton.addEventListener("click", function event() { window.location.href = "/pages/resources.html"; });
-                contactButton.addEventListener("click", function event() { window.location.href = "/pages/contact.html"; });
+                homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
+                portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
+                educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
+                resourcesButton.addEventListener("click", function event() { delayedExit("/pages/resources.html") });
+                contactButton.addEventListener("click", function event() { delayedExit("/pages/contact.html") });
                 break;
             case education:
                 returnButton = navAccess.querySelector("#home-education");
                 current = education;
-                homeButton.addEventListener("click", function event() { window.location.href = "/index.html"; });
-                portfolioButton.addEventListener("click", function event() { window.location.href = "/pages/portfolio.html"; });
-                involvementButton.addEventListener("click", function event() { window.location.href = "/pages/involvement.html"; });
-                resourcesButton.addEventListener("click", function event() { window.location.href = "/pages/resources.html"; });
-                contactButton.addEventListener("click", function event() { window.location.href = "/pages/contact.html"; });
+                homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
+                portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
+                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
+                resourcesButton.addEventListener("click", function event() { delayedExit("/pages/resources.html") });
+                contactButton.addEventListener("click", function event() { delayedExit("/pages/contact.html") });
                 break;
             case resources:
                 returnButton = navAccess.querySelector("#home-resources");
                 current = resources;
-                homeButton.addEventListener("click", function event() { window.location.href = "/index.html"; });
-                portfolioButton.addEventListener("click", function event() { window.location.href = "/pages/portfolio.html"; });
-                involvementButton.addEventListener("click", function event() { window.location.href = "/pages/involvement.html"; });
-                educationButton.addEventListener("click", function event() { window.location.href = "/pages/education.html"; });
-                contactButton.addEventListener("click", function event() { window.location.href = "/pages/contact.html"; });
+                homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
+                portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
+                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
+                educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
+                contactButton.addEventListener("click", function event() { delayedExit("/pages/contact.html") });
                 break;
             case contact:
                 returnButton = navAccess.querySelector("#home-contact");
                 current = contact;
-                homeButton.addEventListener("click", function event() { window.location.href = "/index.html"; });
-                portfolioButton.addEventListener("click", function event() { window.location.href = "/pages/portfolio.html"; });
-                involvementButton.addEventListener("click", function event() { window.location.href = "/pages/involvement.html"; });
-                educationButton.addEventListener("click", function event() { window.location.href = "/pages/education.html"; });
-                resourcesButton.addEventListener("click", function event() { window.location.href = "/pages/resources.html"; });
+                homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
+                portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
+                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
+                educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
+                resourcesButton.addEventListener("click", function event() { delayedExit("/pages/resources.html") });
                 break;
             default:
                 returnButton = null;

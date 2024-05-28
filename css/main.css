@@ -36,8 +36,9 @@
     min-height: 100vh;
     height: 100%;
     right: 0;
-    border-radius: 0vw;
+    border-radius: 40vw;
     transition: all 1s ease;
+    overflow: hidden;
 }
 
 .home-screen-container,
@@ -73,6 +74,8 @@
     display: flex;
     align-items: center;
     background-color: var(--nav-background-color);
+    opacity: 0;
+    transition: all 1s ease;
 }
 
 .menu-icon-container {
@@ -295,5 +298,5 @@
 
 /* TEMP HOME SCREEN DISPLACEMENT */
 .home-screen-container {
-    right: 0vw;
+    right: 100vw;
 }
