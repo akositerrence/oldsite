@@ -4,6 +4,16 @@
     width: 100vw;
     display: flex;
     align-items: center;
-    border-radius: 25vw;
+    border-radius: 15vw;
     background-color: transparent;
+}
+
+.main-container {
+    position: relative;
+    max-width: 100%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    border-radius: 15vw;
+    background-color: blue;
 }

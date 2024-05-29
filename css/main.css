@@ -1,7 +1,7 @@
 :root {
     --nav-background-color: white;
     --nav-text-color: black;
-    --home-background-color: rgb(20, 20, 21);
+    --home-background-color: rgb(19, 18, 18);
     --home-header-color: rgb(230, 230, 230);
     --home-text-color: rgb(180, 180, 190);
     --menu-icon-color: rgb(210, 210, 210);
@@ -60,6 +60,8 @@
     margin-right: auto;
     color: white;
     background: transparent;
+    text-shadow: 0.5vw 0.5vw 0.75vw black;
+    user-select: none;
 }
 
 .nav-page {
@@ -94,6 +96,7 @@
     display: block;
     position: absolute;
     right: 2.5vw;
+    text-shadow: 0.5vw 0.5vw 0.75vw black;
 }
 
 .menu-icon-a,
@@ -105,6 +108,7 @@
     display: block;
     position: absolute;
     left: 2.5vw;
+    text-shadow: 0.5vw 0.5vw 0.75vw black;
 }
 
 /* TAIL BAR */
@@ -157,7 +161,6 @@
 
 /* HOME */
 .home-top {
-    position: relative;
     width: 100vw;
     height: 25vw;
     overflow-y: hidden;
@@ -167,6 +170,7 @@
     transition: transform 2s ease;
     transition: opacity 1s ease;
     will-change: transform;
+    user-select: none;
 }
 
 .home-top iframe {
@@ -183,6 +187,9 @@
     display: flex;
     justify-content: center;
     background-color: transparent;
+    filter: grayscale(0.1) blur(0.25px) contrast(0.9) saturate(1.1) sepia(0.1) brightness(0.9);
+    border-top-right-radius: 10vw;
+    border-top-left-radius: 10vw;
 }
 
 .image-container {
@@ -205,12 +212,17 @@
     padding: 3vw 0 3vw;
     display: flex;
     justify-content: center;
+    text-shadow: 0.5vw 0.5vw 1vw black;
+}
+
+.top-topic {
+    border-radius: 10vw;
 }
 
 .top-topic,
 .experience {
     background-color: var(--home-background-color);
-    padding-top: 5vw;
+    padding-top: 0vw;
 }
 
 .experience {
@@ -229,6 +241,7 @@
     display: flex;
     justify-content: center;
     color: var(--home-text-color);
+    user-select: none;
 }
 
 #my-name {
@@ -272,6 +285,7 @@
     max-width: 100%;
     font-size: 3.3vw;
     text-align: center;
+    user-select: none;
 }
 
 .experience-scroller-container {

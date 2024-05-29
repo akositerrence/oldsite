@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
         let fadeOutBar = document.querySelector(".home-top");
         let navBack = document.getElementsByClassName("nav-page")[0];
         if (page) {
-            page.style.right = "40vw";
-            page.style.borderRadius = "15vw";
+            page.style.right = "41.5vw";
+            page.style.borderRadius = "10vw";
             page.style.transform = "scale(0.95)";
             fadeOutBar.style.opacity = 0;
             navBack.style.opacity = 1;
