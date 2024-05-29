@@ -1,0 +1,49 @@
+.img-home {
+    filter: brightness(50%);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img-text {
+    font-size: 12vw;
+    text-justify: center;
+    color: rgb(220, 220, 220);
+}
+
+.schools {
+    background-color: var(--home-background-color);
+    padding-top: 5vw;
+}
+
+.project-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 2.5vw;
+    max-width: 100%;
+    width: 100vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    justify-content: center;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 5vw;
+    max-width: 100%;
+    width: 45.5vw;
+    height: 51vw;
+    background-color: transparent;
+}
+
+.project-img {
+    padding-top: 1.5vw;
+    width: 45vw;
+    border-radius: 4vw;
+    display: flex;
+}

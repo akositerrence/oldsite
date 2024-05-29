@@ -1,0 +1,33 @@
+.header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-size: 6vw;
+    line-height: 1em;
+}
+
+.resourceoptions {
+    max-width: 100%;
+}
+
+.img-home {
+    filter: brightness(50%);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img-text {
+    font-size: 12vw;
+    text-justify: center;
+    color: rgb(220, 220, 220);
+}
+
+.interests-menu {
+    background-color: var(--home-background-color);
+    padding-top: 5vw;
+}
