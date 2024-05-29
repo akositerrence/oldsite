@@ -188,6 +188,7 @@
 .image-container {
     background: transparent;
     height: 100vw;
+    padding-bottom: 3vw;
 }
 
 .content-header {

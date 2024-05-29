@@ -3,4 +3,5 @@ make music into its own section
 add volunteering to involvement section
 make embeds unclickable
 make morse text inclickable
-setup involvement page
+:) setup involvement page 
+figure out pictures for projects

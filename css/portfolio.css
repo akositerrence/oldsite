@@ -9,7 +9,7 @@
 }
 
 .header-img-text {
-    font-size: 15vw;
+    font-size: 12vw;
     text-justify: center;
     color: rgb(220, 220, 220);
 }
@@ -65,7 +65,7 @@
     font-size: 2.55vw;
     max-width: 100%;
     width: 26vw;
-    height: 18vw;
+    height: 17vw;
     background-color: rgb(20, 20, 25);
     border-radius: 2vw;
     text-align: center;
@@ -77,17 +77,19 @@
 
 .project-img {
     padding-top: 1.5vw;
-    width: 45vw;
+    width: 35vw;
     border-radius: 4vw;
+    opacity: 75%;
     display: flex;
+    filter: invert();
 }
 
 .porticon {
     width: 8vw;
     height: auto;
     background: transparent;
-    opacity: 80%;
-    padding-top: 3vw;
+    opacity: 68%;
+    padding-top: 2.25vw;
     padding-bottom: 2.5vw;
-    filter: brightness(500%)
+    filter: invert();
 }
