@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const imgHome = document.querySelector(".img-home");
         const headEmbed = document.querySelector("#head-embed");
         const navmenu = document.querySelector(".nav-page");
+        const headTopic = document.querySelector(".top-topic");
         const fadeEnd = 350;
 
         var topFadeBar = headEmbed.contentDocument || headEmbed.contentWindow.document;
@@ -18,6 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
         var navMorse = navPage.querySelector(".nav-morse-container");
         var navButtons = navPage.querySelector(".off-screen-buttons");
 
+        headTopic.style.borderRadius = `${parallaxOffset * 0.2}vw`;
         navScroll.style.transform = `translateY(${scrollOffset}px)`;
         navMorse.style.transform = `translateY(${morseOffset}px)`;
         navButtons.style.transform = `translateY(${buttonOffset}px)`;

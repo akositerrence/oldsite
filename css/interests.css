@@ -26,8 +26,3 @@
     text-justify: center;
     color: rgb(220, 220, 220);
 }
-
-.interests-menu {
-    background-color: var(--home-background-color);
-    padding-top: 5vw;
-}

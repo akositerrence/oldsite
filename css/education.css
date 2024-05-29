@@ -14,11 +14,6 @@
     color: rgb(220, 220, 220);
 }
 
-.schools {
-    background-color: var(--home-background-color);
-    padding-top: 5vw;
-}
-
 .project-grid {
     display: inline-grid;
     grid-template-columns: auto auto;
