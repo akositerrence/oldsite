@@ -22,25 +22,32 @@ document.addEventListener("DOMContentLoaded", function () {
             let map = mapAccess.querySelector(".dot-img")
             leftButton = mapAccess.querySelector("#left");
             rightButton = mapAccess.querySelector("#right");
+            philippineText = mapAccess.querySelector(".philippines");
 
             function all() {
                 map.style.transform = "scale(1)"
+                philippineText.style.opacity = "0%";
+                philippineText.style.transform = "translateX(5vw)";
             }
 
             function sanMiguel() {
-                map.style.transform = "scale(1.5) translateY(-3.5vw) translateX(-27vw)"
+                map.style.transform = "scale(6) translateY(-2.7vw) translateX(-32vw)"
+                philippineText.style.opacity = "70%";
+                philippineText.style.transform = "translateX(-5vw)";
             }
 
             function singapore() {
-                map.style.transform = "scale(1.75) translateY(-6vw) translateX(-24vw)"
+                map.style.transform = "scale(6.5) translateY(-5vw) translateX(-24vw)"
+                philippineText.style.opacity = "0%";
+                philippineText.style.transform = "translateX(5vw)";
             }
 
             function bismarck() {
-                map.style.transform = "scale(2) translateY(7vw) translateX(32vw)"
+                map.style.transform = "scale(4) translateY(7vw) translateX(32vw)"
             }
 
             function fargo() {
-                map.style.transform = "scale(2.25) translateY(7vw) translateX(27vw)"
+                map.style.transform = "scale(4.25) translateY(7vw) translateX(27vw)"
             }
 
             function positionSwitch(position) {

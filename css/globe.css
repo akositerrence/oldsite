@@ -1,13 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: optima;
+    font-weight: lighter;
 }
 
 .main-container {
     position: relative;
     max-width: 100%;
     width: 100vw;
-    height: 55vw;
+    height: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,15 +26,15 @@
     display: flex;
     align-items: center;
     background-color: transparent;
-    padding-top: 1vw;
+    padding-top: 14vw;
     padding-left: 1.5vw;
     padding-right: 1.5vw;
-    opacity: 100%;
-    filter: brightness(150%) contrast(200%) invert();
-    opacity: 70%;
+    filter: brightness(150%) contrast(200%);
     left: 0;
+    clip-path: inset(0 0 20% 0);
     transition: all 4s ease;
     z-index: 1;
+    filter: brightness(80%);
 }
 
 #right,
@@ -40,8 +42,8 @@
     position: absolute;
     font-size: 5vw;
     color: white;
-    transform: scaleY(2.25) scaleX(0.55) translateY(0.2vw);
-    opacity: 55%;
+    transform: scaleY(2.25) scaleX(0.75);
+    opacity: 75%;
     z-index: 5;
     text-shadow: 0.3vw 0.3vw 0.1vw black;
 }
@@ -52,4 +54,33 @@
 
 #left {
     left: 0.5vw;
+}
+
+.map-text {
+    color: white;
+    font-size: 3vw;
+    text-shadow: .1vw .1vw .1vw black;
+}
+
+.philippines {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 9vw;
+    bottom: 9vw;
+    z-index: 2;
+    opacity: 0%;
+    transition: all 4s ease;
+}
+
+#san-miguel {
+    position: absolute;
+    width: 25.5vw;
+    top: 8vw;
+}
+
+#sun {
+    padding-bottom: 22.5vw;
+    width: 10vw;
 }
