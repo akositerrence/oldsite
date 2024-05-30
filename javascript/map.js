@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (mapFrame) {
         mapFrame.addEventListener("load", function () {
             let mapAccess = mapFrame.contentDocument || mapFrame.contentWindow.document;
-            let map = mapAccess.querySelector(".dot-img")
+            let map = mapAccess.querySelector(".wrapper")
             leftButton = mapAccess.querySelector("#left");
             rightButton = mapAccess.querySelector("#right");
             philippineText = mapAccess.querySelector(".philippines");
@@ -27,19 +27,17 @@ document.addEventListener("DOMContentLoaded", function () {
             function all() {
                 map.style.transform = "scale(1)"
                 philippineText.style.opacity = "0%";
-                philippineText.style.transform = "translateX(5vw)";
             }
 
             function sanMiguel() {
-                map.style.transform = "scale(6) translateY(-2.7vw) translateX(-32vw)"
-                philippineText.style.opacity = "70%";
-                philippineText.style.transform = "translateX(-5vw)";
+                map.style.transform = "scale(6) translateY(-2vw) translateX(-32vw)"
+                philippineText.style.opacity = "80%";
             }
 
             function singapore() {
                 map.style.transform = "scale(6.5) translateY(-5vw) translateX(-24vw)"
                 philippineText.style.opacity = "0%";
-                philippineText.style.transform = "translateX(5vw)";
+                philippineText.style.transform = "translateX(3vw)";
             }
 
             function bismarck() {
