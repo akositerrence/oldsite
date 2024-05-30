@@ -1,19 +1,45 @@
-.globe-img {
-    position: relative;
-    max-width: 100%;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    border-radius: 15vw;
-    background-color: transparent;
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .main-container {
     position: relative;
     max-width: 100%;
     width: 100vw;
+    height: 55vw;
     display: flex;
     align-items: center;
+    justify-content: center;
     border-radius: 15vw;
-    background-color: blue;
+    background: rgb(18, 17, 17);
+    overflow: hidden;
+}
+
+.dot-img {
+    position: relative;
+    max-width: 100%;
+    width: 88vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    opacity: 100%;
+    filter: brightness(175%) contrast(150%);
+    opacity: 80%;
+    left: 0;
+    transition: all 2s ease;
+    z-index: 1;
+}
+
+#right,
+#left {
+    font-size: 5vw;
+    color: white;
+    transform: scaleY(2.25) scaleX(0.55) translateY(1.95vw);
+    opacity: 70%;
+    z-index: 5;
+    text-shadow: 0.3vw 0.3vw 0.1vw black;
 }

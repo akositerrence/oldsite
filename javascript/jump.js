@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let menuIcon = document.querySelector(".menu-icon-b");
     if (menuIcon) {
-        menuIcon.addEventListener("click", function (event) {
+        menuIcon.addEventListener("click", function () {
             sendMessageToMain("openNavPage");
         });
     }
