@@ -276,14 +276,16 @@
     background: transparent;
     max-width: 100%;
     width: 90vw;
-    height: 100vw;
+    height: auto;
 }
 
 .figure-text {
     max-width: 100%;
     font-size: 3.3vw;
+    font-weight: normal;
     text-align: center;
     user-select: none;
+    color: var(--home-text-color);
 }
 
 .experience-scroller-container {

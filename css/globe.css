@@ -12,25 +12,24 @@
     align-items: center;
     justify-content: center;
     border-radius: 15vw;
-    background: rgb(18, 17, 17);
+    background: transparent;
     overflow: hidden;
 }
 
 .dot-img {
     position: relative;
     max-width: 100%;
-    width: 100vw;
+    width: 90vw;
     height: auto;
     display: flex;
     align-items: center;
     background-color: transparent;
-    padding-top: 15vw;
+    padding-top: 1vw;
     padding-left: 1.5vw;
     padding-right: 1.5vw;
     opacity: 100%;
-    filter: brightness(71.75%) contrast(200%) invert();
-    clip-path: inset(0 0 10vw 0);
-    opacity: 80%;
+    filter: brightness(150%) contrast(200%) invert();
+    opacity: 70%;
     left: 0;
     transition: all 4s ease;
     z-index: 1;
@@ -42,7 +41,7 @@
     font-size: 5vw;
     color: white;
     transform: scaleY(2.25) scaleX(0.55) translateY(0.2vw);
-    opacity: 60%;
+    opacity: 55%;
     z-index: 5;
     text-shadow: 0.3vw 0.3vw 0.1vw black;
 }
