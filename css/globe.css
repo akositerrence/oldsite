@@ -19,27 +19,38 @@
 .dot-img {
     position: relative;
     max-width: 100%;
-    width: 88vw;
+    width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
     background-color: transparent;
+    padding-top: 15vw;
     padding-left: 1.5vw;
     padding-right: 1.5vw;
     opacity: 100%;
-    filter: brightness(175%) contrast(150%);
+    filter: brightness(71.75%) contrast(200%) invert();
+    clip-path: inset(0 0 10vw 0);
     opacity: 80%;
     left: 0;
-    transition: all 2s ease;
+    transition: all 4s ease;
     z-index: 1;
 }
 
 #right,
 #left {
+    position: absolute;
     font-size: 5vw;
     color: white;
-    transform: scaleY(2.25) scaleX(0.55) translateY(1.95vw);
-    opacity: 70%;
+    transform: scaleY(2.25) scaleX(0.55) translateY(0.2vw);
+    opacity: 60%;
     z-index: 5;
     text-shadow: 0.3vw 0.3vw 0.1vw black;
+}
+
+#right {
+    right: 0.5vw;
+}
+
+#left {
+    left: 0.5vw;
 }

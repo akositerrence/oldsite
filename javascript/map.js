@@ -28,19 +28,19 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             function sanMiguel() {
-                map.style.transform = "scale(2) translateY(-3vw) translateX(-30vw)"
+                map.style.transform = "scale(3) translateY(-3.5vw) translateX(-31vw)"
             }
 
             function singapore() {
-                map.style.transform = "scale(2.25) translateY(-3vw) translateX(-30vw)"
+                map.style.transform = "scale(3.25) translateY(-6vw) translateX(-26vw)"
             }
 
             function bismarck() {
-                map.style.transform = "scale(2.5) translateY(-3vw) translateX(-30vw)"
+                map.style.transform = "scale(3.5) translateY(7vw) translateX(32vw)"
             }
 
             function fargo() {
-                map.style.transform = "scale(2.75) translateY(-3vw) translateX(-30vw)"
+                map.style.transform = "scale(3.75) translateY(7vw) translateX(30vw)"
             }
 
             function positionSwitch(position) {
