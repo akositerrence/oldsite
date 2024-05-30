@@ -36,7 +36,7 @@
     filter: brightness(150%) contrast(200%);
     left: 0;
     clip-path: inset(0 0 20% 0);
-    opacity: 85%;
+    opacity: 90%;
     z-index: 1;
 }
 
@@ -45,10 +45,10 @@
     position: absolute;
     font-size: 5vw;
     color: white;
-    transform: scaleY(2.25) scaleX(0.75);
+    transform: scaleY(4) scaleX(1) translateY(0.5vw);
     opacity: 75%;
     z-index: 5;
-    text-shadow: 0.3vw 0.3vw 0.1vw black;
+    text-shadow: 0.05vw 0.05vw 1vw black;
 }
 
 #right {
@@ -87,4 +87,78 @@
 #sun {
     padding-bottom: 22.5vw;
     width: 10vw;
+}
+
+.singapore {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(20%);
+    right: 11.2%;
+    bottom: 25%;
+    z-index: 2;
+    opacity: 0%;
+    transition: all 5.5s ease;
+}
+
+#merlion {
+    position: absolute;
+    width: 18vw;
+    top: 8vw;
+}
+
+#moon {
+    padding-bottom: 19.5vw;
+    width: 12vw;
+}
+
+.bismarck {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(20%);
+    left: -11%;
+    bottom: 26%;
+    z-index: 2;
+    opacity: 0%;
+    transition: all 5.5s ease;
+}
+
+#capitol {
+    position: absolute;
+    width: 24vw;
+    top: 22vw;
+}
+
+#eagle1 {
+    padding-bottom: 27.5vw;
+    width: 21vw;
+    clip-path: inset(1vw 1vw 1vw 1vw);
+}
+
+.fargo {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: scale(20%);
+    left: 15.5%;
+    bottom: 25%;
+    z-index: 2;
+    opacity: 0%;
+    transition: all 5.5s ease;
+}
+
+#bison {
+    position: absolute;
+    width: 25vw;
+    top: 20.5vw;
+}
+
+#eagle2 {
+    padding-bottom: 21.5vw;
+    width: 21vw;
+    clip-path: inset(1vw 1vw 1vw 1vw);
 }
