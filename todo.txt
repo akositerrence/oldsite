@@ -5,6 +5,7 @@ make embeds unclickable
 make morse text inclickable
 figure out pictures for projects
 
+word variation after "some" instead of "stuff" 
 
 drafts: 
 i was born and raised in the province of bulacan in the philippines

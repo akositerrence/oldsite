@@ -68,3 +68,13 @@
     margin-left: 1.5vw;
     margin-right: 1.5vw;
 }
+
+#experience-bar {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    font-weight: lighter;
+    bottom: 2vw;
+    left: -10vw;
+    transition: left 2s ease;
+}
