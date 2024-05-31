@@ -254,12 +254,14 @@
     text-align: justify;
     font-weight: lighter;
     line-height: 1.75em;
+    transition: all 3s ease;
 }
 
 .globe-container {
     background: transparent;
     justify-content: center;
     max-width: 100%;
+    padding-top: 4vw;
     width: 90vw;
     height: 50vw;
     display: flex;

@@ -16,26 +16,29 @@ function back() {
 
 document.addEventListener("DOMContentLoaded", function () {
     let mapFrame = document.querySelector("iframe.globe-embed");
+    let generalText = document.querySelector("#specific-globe-description")
     if (mapFrame) {
         mapFrame.addEventListener("load", function () {
             let mapAccess = mapFrame.contentDocument || mapFrame.contentWindow.document;
             let map = mapAccess.querySelector(".wrapper")
-            leftButton = mapAccess.querySelector("#left");
-            rightButton = mapAccess.querySelector("#right");
-            philippineText = mapAccess.querySelector(".philippines");
-            singaporeText = mapAccess.querySelector(".singapore");
-            bismarckText = mapAccess.querySelector(".bismarck");
-            fargoText = mapAccess.querySelector(".fargo");
+            let leftButton = mapAccess.querySelector("#left");
+            let rightButton = mapAccess.querySelector("#right");
+            let philippineText = mapAccess.querySelector(".philippines");
+            let singaporeText = mapAccess.querySelector(".singapore");
+            let bismarckText = mapAccess.querySelector(".bismarck");
+            let fargoText = mapAccess.querySelector(".fargo");
 
             function all() {
                 map.style.transform = "scale(1)"
                 philippineText.style.opacity = "0%";
+                generalText.textContent = "placeholder - world map";
             }
 
             function sanMiguel() {
                 map.style.transform = "scale(6) translateY(-2vw) translateX(-32vw)"
                 philippineText.style.opacity = "90%";
                 singaporeText.style.opacity = "0%";
+                generalText.textContent = "placeholder - san miguel";
             }
 
             function singapore() {
@@ -43,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 philippineText.style.opacity = "0%";
                 singaporeText.style.opacity = "90%";
                 bismarckText.style.opacity = "0%";
+                generalText.textContent = "placeholder - singapore";
             }
 
             function bismarck() {
@@ -50,12 +54,14 @@ document.addEventListener("DOMContentLoaded", function () {
                 singaporeText.style.opacity = "0%";
                 bismarckText.style.opacity = "90%";
                 fargoText.style.opacity = "0%";
+                generalText.textContent = "placeholder - bismarck";
             }
 
             function fargo() {
                 map.style.transform = "scale(4.25) translateY(3vw) translateX(20vw)"
                 bismarckText.style.opacity = "0%";
                 fargoText.style.opacity = "90%";
+                generalText.textContent = "placeholder - fargo";
             }
 
             function positionSwitch(position) {

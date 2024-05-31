@@ -4,3 +4,10 @@ add volunteering to involvement section
 make embeds unclickable
 make morse text inclickable
 figure out pictures for projects
+
+
+drafts: 
+i was born and raised in the province of bulacan in the philippines
+          for thirteen years before immigrating to the united states. i lived in
+          bismarck, north dakota for seven years before moving to fargo, north
+          dakota for college.
