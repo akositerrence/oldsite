@@ -188,8 +188,6 @@
     justify-content: center;
     background-color: transparent;
     filter: grayscale(0.1) contrast(0.9) saturate(1.1) sepia(0.1) brightness(0.95);
-    border-top-right-radius: 10vw;
-    border-top-left-radius: 10vw;
 }
 
 .image-container {

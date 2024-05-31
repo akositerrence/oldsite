@@ -1,0 +1,57 @@
+.header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    font-style: bold;
+    font-size: 6vw;
+    line-height: 1em;
+}
+
+.recordsoptions {
+    max-width: 100%;
+}
+
+.img-home {
+    filter: grayscale(0.1) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.4);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img-text {
+    font-size: 12vw;
+    text-justify: center;
+    color: rgb(220, 220, 220);
+    text-shadow: 0vw 0vw 1vw black;
+}
+
+.purpose {
+    text-align: justify;
+    font-size: 3.5vw;
+    padding: 3vw 8.5vw 3vw;
+    color: rgb(180, 180, 190);
+}
+
+.records-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 1vw;
+    max-width: 100%;
+    width: 100vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    justify-content: center;
+}
+
+.records-button {
+    background-color: rgb(18, 16, 16);
+    color: rgb(180, 180, 190);
+    font-size: 3.5vw;
+    font-weight: lighter;
+    padding: 3vw;
+    border-radius: 2vw;
+    text-align: center;
+}

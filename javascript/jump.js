@@ -2,7 +2,7 @@ const home = 1;
 const portfolio = 2;
 const involvement = 3;
 const education = 4;
-const interests = 5;
+const records = 5;
 let current;
 
 window.onload = function () {
@@ -36,8 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
             case 'education.html':
                 current = education;
                 break;
-            case 'interests.html':
-                current = interests;
+            case 'records.html':
+                current = records;
                 break;
             case 'contact.html':
                 current = contact;
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
         portfolioButton = navAccess.querySelector("#home-portfolio");
         involvementButton = navAccess.querySelector("#home-involvement");
         educationButton = navAccess.querySelector("#home-education");
-        interestsButton = navAccess.querySelector("#home-interests");
+        recordsButton = navAccess.querySelector("#home-records");
         contactButton = navAccess.querySelector("#home-contact");
 
         switch (current) {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html"); });
                 involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
                 educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
-                interestsButton.addEventListener("click", function event() { delayedExit("/pages/interests.html") });
+                recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
                 break;
             case portfolio:
                 returnButton = navAccess.querySelector("#home-portfolio");
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
                 involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
                 educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
-                interestsButton.addEventListener("click", function event() { delayedExit("/pages/interests.html") });
+                recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
                 break;
             case involvement:
                 returnButton = navAccess.querySelector("#home-involvement");
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
                 portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
                 educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
-                interestsButton.addEventListener("click", function event() { delayedExit("/pages/interests.html") });
+                recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
                 break;
             case education:
                 returnButton = navAccess.querySelector("#home-education");
@@ -148,11 +148,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
                 portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
                 involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
-                interestsButton.addEventListener("click", function event() { delayedExit("/pages/interests.html") });
+                recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
                 break;
-            case interests:
-                returnButton = navAccess.querySelector("#home-interests");
-                current = interests;
+            case records:
+                returnButton = navAccess.querySelector("#home-records");
+                current = records;
                 homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
                 portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
                 involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });

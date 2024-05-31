@@ -36,7 +36,7 @@
     filter: brightness(150%) contrast(200%);
     left: 0;
     clip-path: inset(0 0 20% 0);
-    opacity: 90%;
+    opacity: 70%;
     z-index: 1;
 }
 

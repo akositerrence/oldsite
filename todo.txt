@@ -5,10 +5,12 @@ make embeds unclickable
 make morse text inclickable
 figure out pictures for projects
 
-word variation after "some" instead of "stuff" 
+need to do subtle header shrinkage for every page
 
 drafts: 
 i was born and raised in the province of bulacan in the philippines
           for thirteen years before immigrating to the united states. i lived in
           bismarck, north dakota for seven years before moving to fargo, north
           dakota for college.
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
