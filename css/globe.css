@@ -35,9 +35,9 @@
     padding-right: 1.5vw;
     filter: brightness(150%) contrast(200%);
     left: 0;
-    clip-path: inset(0 0 20% 0);
     opacity: 70%;
     z-index: 1;
+    transition: filter 2s ease;
 }
 
 #right,

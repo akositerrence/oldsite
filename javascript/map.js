@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (mapFrame) {
         mapFrame.addEventListener("load", function () {
             let mapAccess = mapFrame.contentDocument || mapFrame.contentWindow.document;
-            let map = mapAccess.querySelector(".wrapper")
+            let map = mapAccess.querySelector(".wrapper");
             let leftButton = mapAccess.querySelector("#left");
             let rightButton = mapAccess.querySelector("#right");
             let philippineText = mapAccess.querySelector(".philippines");
@@ -29,14 +29,16 @@ document.addEventListener("DOMContentLoaded", function () {
             let fargoText = mapAccess.querySelector(".fargo");
 
             function all() {
-                map.style.transform = "scale(1)"
+                map.style.transform = "scale(1)";
+                map.style.background = "transparent";
                 philippineText.style.opacity = "0%";
                 generalText.textContent = "placeholder - world map";
             }
 
             function sanMiguel() {
-                map.style.transform = "scale(6) translateY(-2vw) translateX(-32vw)"
-                philippineText.style.opacity = "90%";
+                map.style.transform = "scale(6) translateY(-2vw) translateX(-32vw)";
+                map.style.background = "rgb(25,25,35)";
+                philippineText.style.opacity = "80%";
                 singaporeText.style.opacity = "0%";
                 generalText.textContent = "placeholder - san miguel";
             }
@@ -44,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function singapore() {
                 map.style.transform = "scale(6.5) translateY(-5vw) translateX(-24vw)"
                 philippineText.style.opacity = "0%";
-                singaporeText.style.opacity = "90%";
+                singaporeText.style.opacity = "80%";
                 bismarckText.style.opacity = "0%";
                 generalText.textContent = "placeholder - singapore";
             }
@@ -52,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function bismarck() {
                 map.style.transform = "scale(4) translateY(7vw) translateX(32vw)"
                 singaporeText.style.opacity = "0%";
-                bismarckText.style.opacity = "90%";
+                bismarckText.style.opacity = "80%";
                 fargoText.style.opacity = "0%";
                 generalText.textContent = "placeholder - bismarck";
             }
@@ -60,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function fargo() {
                 map.style.transform = "scale(4.25) translateY(3vw) translateX(20vw)"
                 bismarckText.style.opacity = "0%";
-                fargoText.style.opacity = "90%";
+                fargoText.style.opacity = "80%";
                 generalText.textContent = "placeholder - fargo";
             }
 
