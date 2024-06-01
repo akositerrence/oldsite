@@ -46,12 +46,23 @@
     justify-content: center;
 }
 
+.records-aviation-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto;
+    gap: 1vw;
+    max-width: 100%;
+    width: 100vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    justify-content: center;
+}
+
 .records-button {
     background-color: rgb(18, 16, 16);
     color: rgb(180, 180, 190);
     font-size: 3.5vw;
     font-weight: lighter;
-    padding: 3vw;
+    padding: 4vw;
     border-radius: 2vw;
     text-align: center;
 }
