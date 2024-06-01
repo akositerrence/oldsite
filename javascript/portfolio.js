@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const creoProject = document.querySelector("");
-    const website = document.querySelector("");
+    const creoProject = document.querySelector("#creomotor");
+    const website = document.querySelector("#site");
 
     creoProject.addEventListener("click", function () {
 
