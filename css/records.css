@@ -37,8 +37,8 @@
 
 .records-grid {
     display: inline-grid;
-    grid-template-columns: auto auto auto;
-    gap: 1vw;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.25vw;
     max-width: 100%;
     width: 100vw;
     padding-top: 5vw;
@@ -48,8 +48,8 @@
 
 .records-aviation-grid {
     display: inline-grid;
-    grid-template-columns: auto auto;
-    gap: 1vw;
+    grid-template-columns: auto auto auto;
+    gap: 1.25vw;
     max-width: 100%;
     width: 100vw;
     padding-top: 5vw;
@@ -60,9 +60,21 @@
 .records-button {
     background-color: rgb(18, 16, 16);
     color: rgb(180, 180, 190);
-    font-size: 3.5vw;
+    font-size: 3vw;
     font-weight: lighter;
     padding: 4vw;
     border-radius: 2vw;
     text-align: center;
+}
+
+.log-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100vw;
+}
+
+.chart-container {
+    padding: 5vw;
 }
