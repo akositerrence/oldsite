@@ -65,14 +65,16 @@
     max-width: 100%;
     width: 26vw;
     height: 17vw;
-    background-color: rgb(18, 16, 16);
+    background-color: rgb(17, 16, 16);
     border-radius: 5vw;
     text-align: center;
     padding-bottom: 2vw;
     color: rgb(180, 180, 190);
     padding-left: 2vw;
     padding-right: 2vw;
-    opacity: 70%;
+    filter: opacity(65%);
+    scale: 90%;
+    transition: all 1s ease;
 }
 
 .project-img {
@@ -81,7 +83,6 @@
     border-radius: 4vw;
     opacity: 75%;
     display: flex;
-    filter: grayscale(90%) opacity(90%);
 }
 
 .porticon {
@@ -104,4 +105,10 @@
     padding: 2.5vw 2vw 0vw;
     font-size: 2.55vw;
     color: rgb(180, 180, 190);
+}
+
+#creomotor,
+#site {
+    filter: grayscale(90%) opacity(90%);
+    transition: all 1s ease;
 }

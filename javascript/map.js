@@ -30,14 +30,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             function all() {
                 map.style.transform = "scale(1)";
-                map.style.background = "transparent";
                 philippineText.style.opacity = "0%";
                 generalText.textContent = "placeholder - world map";
             }
 
             function sanMiguel() {
                 map.style.transform = "scale(6) translateY(-2vw) translateX(-32vw)";
-                map.style.background = "rgb(25,25,35)";
                 philippineText.style.opacity = "80%";
                 singaporeText.style.opacity = "0%";
                 generalText.textContent = "placeholder - san miguel";
