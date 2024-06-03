@@ -37,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             scales: {
                 x: {
-                    title: { display: true, text: "time (days)", font: { family: "optima", size: getVW(3) } },
+                    title: { display: true, text: "time (days)     ", font: { family: "optima", size: getVW(3) } },
                     ticks: { font: { family: "optima", size: getVW(2) } },
                     grid: { display: "transparent" }
                 },
@@ -116,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function () {
             },
             scales: {
                 x: {
-                    title: { display: true, text: "time (weeks)", font: { family: "optima", size: getVW(3) } },
+                    title: { display: true, text: "time (weeks)     ", font: { family: "optima", size: getVW(3) } },
                     ticks: { font: { family: "optima", size: getVW(0.5) } },
                     grid: { display: "transparent" }
                 },
