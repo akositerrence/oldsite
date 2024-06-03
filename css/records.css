@@ -28,13 +28,6 @@
     text-shadow: 0vw 0vw 1vw black;
 }
 
-.purpose {
-    text-align: justify;
-    font-size: 3.5vw;
-    padding: 3vw 8.5vw 3vw;
-    color: rgb(180, 180, 190);
-}
-
 .records-grid {
     display: inline-grid;
     grid-template-columns: auto auto auto auto;
@@ -67,6 +60,13 @@
     text-align: center;
 }
 
+.purpose {
+    text-align: justify;
+    font-size: 3.3vw;
+    padding: 6vw 8.5vw 3vw;
+    color: rgb(180, 180, 190);
+}
+
 .log-container {
     display: flex;
     flex-direction: column;
@@ -77,5 +77,11 @@
 }
 
 .chart-container {
-    padding: 5vw;
+    padding: 2vw 5vw 5vw;
+    width: 90vw;
+}
+
+.graph-descriptor {
+    padding: 2vw 0vw 1.5vw;
+    font-size: 3.3vw;
 }
