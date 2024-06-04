@@ -15,31 +15,57 @@
     text-shadow: 0vw 0vw 1vw black;
 }
 
-.project-grid {
-    display: inline-grid;
-    grid-template-columns: auto auto;
-    gap: 2.5vw;
+.school-logo {
     max-width: 100%;
-    width: 100vw;
+    opacity: 75%;
+}
+
+.school-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 5vw;
-    padding-bottom: 5vw;
-    justify-content: center;
+    padding-bottom: 3vw;
 }
 
-.grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    font-size: 5vw;
+.location {
+    font-size: 3vw;
+    font-weight: lighter;
+}
+
+.school-header {
+    font-size: 4.5vw;
+    font-weight: lighter;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+}
+
+.school-description {
     max-width: 100%;
-    width: 45.5vw;
-    height: 51vw;
-    background-color: transparent;
+    font-size: 3.5vw;
+    font-weight: lighter;
+    padding: 1.5vw 8.5vw 1vw;
+    text-align: justify;
+    line-height: 1.75em;
 }
 
-.project-img {
-    padding-top: 1.5vw;
-    width: 45vw;
-    border-radius: 4vw;
-    display: flex;
+#ndsu {
+    width: 38vw;
+}
+
+#chs {
+    width: 28vw;
+}
+
+#spusm {
+    width: 26vw;
+}
+
+#horizon {
+    width: 28vw;
+}
+
+.morse {
+    padding-bottom: 3vw;
 }

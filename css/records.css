@@ -53,16 +53,15 @@
 .records-aviation-grid {
     display: inline-grid;
     grid-template-columns: auto auto auto;
-    gap: 1.25vw;
+    gap: 2vw;
     max-width: 100%;
     width: 100vw;
-    padding-top: 5vw;
     padding-bottom: 5vw;
     justify-content: center;
 }
 
 .records-button {
-    background-color: rgb(18, 16, 16); 
+    background-color: rgb(18, 16, 16);
     color: rgb(180, 180, 190);
     max-width: 100%;
     width: 14vw;
@@ -72,7 +71,7 @@
     align-items: center;
     font-size: 5vw;
     font-weight: lighter;
-    padding: 5vw 4vw 3vw;
+    padding: 3.5vw 4vw 2.5vw;
     border-radius: 2vw;
     text-align: center;
     opacity: 75%;
@@ -84,8 +83,8 @@
 }
 
 .flag {
-    filter: grayscale(1) opacity(75%);
-    border-radius: 25%;
+    filter: grayscale(1) opacity(60%);
+    border-radius: 20%;
     overflow: hidden;
     display: inline-flex;
     align-items: center;
@@ -121,24 +120,27 @@
 
 .aviation-logbook-container {
     padding-top: 4vw;
+    padding-bottom: 2.05vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .flight-hour-grid {
-   display: flex;
-   gap: 5vw;
-   justify-self: center;
-   align-items: center;
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    gap: 2.4vw;
+    justify-self: center;
+    align-items: center;
 }
- 
+
 .plane {
     display: flex;
     flex-direction: column;
     opacity: 75%;
-    font-size: 4vw;
-    background-color: rgb(18, 16, 16); 
-    padding: 3vw;
+    font-size: 3.5vw;
+    background-color: rgb(18, 16, 16);
+    padding: 4.5vw 3.33vw 4.5vw;
     border-radius: 2vw;
     max-width: 100%;
     width: 15vw;
@@ -146,7 +148,7 @@
 }
 
 .hours {
-    font-size: 3.25vw;
+    font-size: 2.5vw;
     text-align: center;
     padding-top: 1vw;
 }
