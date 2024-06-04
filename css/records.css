@@ -75,7 +75,7 @@
     padding: 5vw 4vw 3vw;
     border-radius: 2vw;
     text-align: center;
-    filter: opacity(77%);
+    opacity: 75%;
 }
 
 .record-icon-text {
@@ -117,4 +117,36 @@
     padding: 5vw 0vw 1.5vw;
     font-size: 2.75vw;
     opacity: 70%;
+}
+
+.aviation-logbook-container {
+    padding-top: 4vw;
+    display: flex;
+    justify-content: center;
+}
+
+.flight-hour-grid {
+   display: flex;
+   gap: 5vw;
+   justify-self: center;
+   align-items: center;
+}
+ 
+.plane {
+    display: flex;
+    flex-direction: column;
+    opacity: 75%;
+    font-size: 4vw;
+    background-color: rgb(18, 16, 16); 
+    padding: 3vw;
+    border-radius: 2vw;
+    max-width: 100%;
+    width: 15vw;
+    text-align: center;
+}
+
+.hours {
+    font-size: 3.25vw;
+    text-align: center;
+    padding-top: 1vw;
 }
