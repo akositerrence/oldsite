@@ -17,7 +17,8 @@
 
 .school-logo {
     max-width: 100%;
-    filter: opacity(65%) grayscale(30%);
+    filter: opacity(85%) grayscale(25%);
+    padding-bottom: 2vw;
 }
 
 .school-container {
@@ -46,16 +47,16 @@
 
 .school-description {
     max-width: 100%;
-    font-size: 3.5vw;
+    font-size: 3.3vw;
     font-weight: lighter;
     padding: 0vw 8.5vw 0vw;
     text-align: justify;
-    line-height: 1.75em;
+    line-height: 2.85em;
 }
 
 .description-header {
     font-weight: lighter;
-    font-size: 4;
+    font-size: 4.5vw;
     padding-top: 3vw;
     padding-bottom: 3vw;
 }
@@ -71,4 +72,11 @@
 
 .morse {
     padding-bottom: 3vw;
+}
+
+.has-description {
+    color: rgb(180, 180, 190);
+    background-color: rgb(17, 17, 16);
+    padding: 2vw;
+    border-radius: 0.5vw;
 }
