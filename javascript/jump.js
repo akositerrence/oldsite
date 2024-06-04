@@ -1,6 +1,6 @@
 const home = 1;
 const portfolio = 2;
-const involvement = 3;
+const reserved = 3;
 const education = 4;
 const records = 5;
 let current;
@@ -29,9 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 break;
             case 'portfolio.html':
                 current = portfolio;
-                break;
-            case 'involvement.html':
-                current = involvement;
                 break;
             case 'education.html':
                 current = education;
@@ -112,7 +109,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         homeButton = navAccess.querySelector("#home-button");
         portfolioButton = navAccess.querySelector("#home-portfolio");
-        involvementButton = navAccess.querySelector("#home-involvement");
         educationButton = navAccess.querySelector("#home-education");
         recordsButton = navAccess.querySelector("#home-records");
         contactButton = navAccess.querySelector("#home-contact");
@@ -122,7 +118,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 returnButton = navAccess.querySelector("#home-button");
                 current = home;
                 portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html"); });
-                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
                 educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
                 recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
                 break;
@@ -130,15 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 returnButton = navAccess.querySelector("#home-portfolio");
                 current = portfolio;
                 homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
-                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
-                educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
-                recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
-                break;
-            case involvement:
-                returnButton = navAccess.querySelector("#home-involvement");
-                current = involvement;
-                homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
-                portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
                 educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
                 recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
                 break;
@@ -147,7 +133,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 current = education;
                 homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
                 portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
-                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
                 recordsButton.addEventListener("click", function event() { delayedExit("/pages/records.html") });
                 break;
             case records:
@@ -155,7 +140,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 current = records;
                 homeButton.addEventListener("click", function event() { delayedExit("/index.html") });
                 portfolioButton.addEventListener("click", function event() { delayedExit("/pages/portfolio.html") });
-                involvementButton.addEventListener("click", function event() { delayedExit("/pages/involvement.html") });
                 educationButton.addEventListener("click", function event() { delayedExit("/pages/education.html") });
                 break;
             default:
