@@ -32,6 +32,7 @@
 .location {
     font-size: 3.25vw;
     font-weight: lighter;
+    padding-bottom: 2vw;
 }
 
 .school-header {
@@ -47,9 +48,16 @@
     max-width: 100%;
     font-size: 3.5vw;
     font-weight: lighter;
-    padding: 2.9vw 8.5vw 1vw;
+    padding: 0vw 8.5vw 0vw;
     text-align: justify;
     line-height: 1.75em;
+}
+
+.description-header {
+    font-weight: lighter;
+    font-size: 4;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
 }
 
 #ndsu {
@@ -57,15 +65,7 @@
 }
 
 #chs {
-    width: 29vw;
-}
-
-#spusm {
-    width: 26vw;
-}
-
-#horizon {
-    width: 28vw;
+    width: 35vw;
 }
 
 .morse {
