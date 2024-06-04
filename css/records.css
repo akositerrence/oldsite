@@ -30,7 +30,18 @@
 
 .records-grid {
     display: inline-grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 2vw;
+    max-width: 100%;
+    width: 100vw;
+    padding-top: 5vw;
+    padding-bottom: 5vw;
+    justify-content: center;
+}
+
+.records-programming-grid {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
     gap: 2vw;
     max-width: 100%;
     width: 100vw;
@@ -51,15 +62,17 @@
 }
 
 .records-button {
-    background-color: rgb(18, 16, 16);
+    background-color: rgb(18, 16, 16); 
     color: rgb(180, 180, 190);
+    max-width: 100%;
+    width: 14vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     font-size: 5vw;
     font-weight: lighter;
-    padding: 4vw;
+    padding: 5vw 4vw 3vw;
     border-radius: 2vw;
     text-align: center;
     filter: opacity(77%);
