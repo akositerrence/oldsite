@@ -1,12 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     const creoProject = document.querySelector("#creomotor");
     const website = document.querySelector("#site");
+    const desk = document.querySelector("#desk");
 
     function shrinkAllProjects() {
         creoProject.style.filter = "grayscale(90%) opacity(60%)";
         website.style.filter = "grayscale(90%) opacity(60%)";
+        desk.style.filter = "grayscale(90%) opacity(60%)";
         creoProject.style.transform = "scale(1)";
         website.style.transform = "scale(1)";
+        desk.style.transform = "scale(1)";
     }
 
     creoProject.addEventListener("click", function () {
@@ -18,6 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
         shrinkAllProjects();
         website.style.filter = "grayscale(0) opacity(95%)";
         website.style.transform = "scale(1.1)";
+    });
+    desk.addEventListener("click", function () {
+        shrinkAllProjects();
+        desk.style.filter = "grayscale(0) opacity(95%)";
+        desk.style.transform = "scale(1.1)";
     });
 
     const cadButton = document.querySelector("#cad");

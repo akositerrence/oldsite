@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 "05/31/24",
                 "06/01/24",
                 "06/02/24",
-                "06/03/24"],
+                "06/03/24",
+                "06/04/24"],
             datasets: [{
                 label: "running distance (miles)",
                 backgroundColor: "rgb(210,210,210)",
@@ -24,7 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     0,
                     26.2,
                     0,
-                    0
+                    0,
+                    3.5
                 ]
             }]
         },

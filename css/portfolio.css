@@ -108,7 +108,8 @@
 }
 
 #creomotor,
-#site {
+#site,
+#desk {
     filter: grayscale(90%) opacity(90%);
     transition: all 1s ease;
 }
