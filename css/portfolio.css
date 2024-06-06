@@ -109,7 +109,9 @@
 
 #creomotor,
 #site,
-#desk {
+#desk,
+#pc,
+#age {
     filter: grayscale(90%) opacity(90%);
     transition: all 1s ease;
 }

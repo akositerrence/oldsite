@@ -2,14 +2,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const creoProject = document.querySelector("#creomotor");
     const website = document.querySelector("#site");
     const desk = document.querySelector("#desk");
+    const pc = document.querySelector("#pc");
+    const age = document.querySelector("#age");
 
     function shrinkAllProjects() {
         creoProject.style.filter = "grayscale(90%) opacity(60%)";
         website.style.filter = "grayscale(90%) opacity(60%)";
         desk.style.filter = "grayscale(90%) opacity(60%)";
+        pc.style.filter = "grayscale(90%) opacity(60%)";
+        age.style.filter = "grayscale(90%) opacity(60%)";
         creoProject.style.transform = "scale(1)";
         website.style.transform = "scale(1)";
         desk.style.transform = "scale(1)";
+        pc.style.transform = "scale(1)";
+        age.style.transform = "scale(1)";
     }
 
     creoProject.addEventListener("click", function () {
@@ -26,6 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
         shrinkAllProjects();
         desk.style.filter = "grayscale(0) opacity(95%)";
         desk.style.transform = "scale(1.1)";
+    });
+    pc.addEventListener("click", function () {
+        shrinkAllProjects();
+        pc.style.filter = "grayscale(0) opacity(95%)";
+        pc.style.transform = "scale(1.1)";
+    });
+    age.addEventListener("click", function () {
+        shrinkAllProjects();
+        age.style.filter = "grayscale(0) opacity(95%)";
+        age.style.transform = "scale(1.1)";
     });
 
     const cadButton = document.querySelector("#cad");
