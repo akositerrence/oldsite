@@ -36,8 +36,15 @@ document.addEventListener("DOMContentLoaded", function () {
             const aigenText = "field robot operator · aigen";
             const marvinText = "r&d intern · marvin composites";
 
+            const fiveLimiter = 1;
+            const targetLimiter = 2;
+            const ndsuLimiter = 3;
+            const aigenLimiter = 4;
+            const marvinLimiter = 5;
+            let currentClicked = 0;
+
             five.addEventListener("click", function () {
-                if (currentlyTyping == false) {
+                if (currentlyTyping == false && currentClicked != fiveLimiter) {
                     currentlyTyping = true;
                     stepPrint(fiveText, container, function () {
                         currentlyTyping = false;
@@ -46,10 +53,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     five.style.transform = "scale(1.1)";
                     five.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "9.75vw";
+                    currentClicked = 1;
                 }
             });
             target.addEventListener("click", function () {
-                if (currentlyTyping == false) {
+                if (currentlyTyping == false && currentClicked != targetLimiter) {
                     currentlyTyping = true;
                     stepPrint(targetText, container, function () {
                         currentlyTyping = false;
@@ -58,10 +66,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     target.style.transform = "scale(1.1)";
                     target.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "28.75vw";
+                    currentClicked = 2;
                 }
             });
             ndsu.addEventListener("click", function () {
-                if (currentlyTyping == false) {
+                if (currentlyTyping == false && currentClicked != ndsuLimiter) {
                     currentlyTyping = true;
                     stepPrint(ndsuText, container, function () {
                         currentlyTyping = false;
@@ -70,10 +79,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     ndsu.style.transform = "scale(1.1)";
                     ndsu.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "47.75vw";
+                    currentClicked = 3;
                 }
             });
             aigen.addEventListener("click", function () {
-                if (currentlyTyping == false) {
+                if (currentlyTyping == false && currentClicked != aigenLimiter) {
                     currentlyTyping = true;
                     stepPrint(aigenText, container, function () {
                         currentlyTyping = false;
@@ -82,10 +92,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     aigen.style.transform = "scale(1.1)";
                     aigen.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "66.85vw";
+                    currentClicked = 4;
                 }
             });
             marvin.addEventListener("click", function () {
-                if (currentlyTyping == false) {
+                if (currentlyTyping == false && currentClicked != marvinLimiter) {
                     currentlyTyping = true;
                     stepPrint(marvinText, container, function () {
                         currentlyTyping = false;
@@ -94,6 +105,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     marvin.style.transform = "scale(1.1)";
                     marvin.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "85.85vw";
+                    currentClicked = 5;
                 }
             });
 
