@@ -45,18 +45,21 @@
     position: absolute;
     font-size: 5vw;
     color: white;
-    transform: scaleY(2) scaleX(0.65) translateY(0.5vw);
-    opacity: 70%;
     z-index: 5;
     text-shadow: 0.05vw 0.05vw 1vw black;
+    transition: all 0.5s ease;
 }
 
 #right {
     right: 0.3vw;
+    opacity: 70%;
+    transform: scaleY(2) scaleX(0.65) translateY(0.5vw);
 }
 
 #left {
     left: 0.3vw;
+    opacity: 0%;
+    transform: scaleY(2) scaleX(0.65) translateX(-15vw);
 }
 
 .map-text {

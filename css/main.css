@@ -248,7 +248,7 @@
     z-index: 3;
     max-width: 100%;
     font-size: 3.5vw;
-    padding: 3vw 8.5vw 2vw;
+    padding: 6vw 8.5vw 3.75vw;
     text-align: justify;
     font-weight: lighter;
     line-height: 1.75em;
@@ -304,6 +304,8 @@
     height: 23vw;
     padding-bottom: 10vw;
 }
+
+#specific-globe-description {}
 
 .home-bottom iframe {
     width: 100%;

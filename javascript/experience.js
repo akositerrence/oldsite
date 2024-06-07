@@ -1,6 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
     const experienceEmbed = document.querySelector("#experience-embed");
-    var experienceText = document.querySelector("#specific-experience-description");
+    const container = document.querySelector("#specific-experience-description");
+    let currentlyTyping = false;
+
+    function stepPrint(text, container, callback) {
+        container.innerHTML = "";
+        let i = 0;
+
+        function type() {
+            if (i < text.length) {
+                character = document.createTextNode(text.charAt(i));
+                container.appendChild(character);
+                i++;
+                setTimeout(type, 25);
+            } else {
+                if (callback) { callback(); }
+            }
+        }
+        type();
+    }
+
     if (experienceEmbed) {
         experienceEmbed.addEventListener("load", function () {
             var experienceAccess = experienceEmbed.contentDocument || experienceEmbed.contentWindow.document;
@@ -11,41 +30,71 @@ document.addEventListener("DOMContentLoaded", function () {
             const marvin = experienceAccess.querySelector("#mar");
             const scroller = experienceAccess.querySelector("#experience-bar");
 
+            const fiveText = "crew member · five guys";
+            const targetText = "fulfillment expert · target";
+            const ndsuText = "researcher · north dakota state university";
+            const aigenText = "field robot operator · aigen";
+            const marvinText = "r&d intern · marvin composites";
 
             five.addEventListener("click", function () {
-                contract();
-                five.style.transform = "scale(1.1)";
-                five.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
-                scroller.style.left = "9.75vw";
-                experienceText.textContent = "placeholder - five guys";
+                if (currentlyTyping == false) {
+                    currentlyTyping = true;
+                    stepPrint(fiveText, container, function () {
+                        currentlyTyping = false;
+                    });
+                    contract();
+                    five.style.transform = "scale(1.1)";
+                    five.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
+                    scroller.style.left = "9.75vw";
+                }
             });
             target.addEventListener("click", function () {
-                contract();
-                target.style.transform = "scale(1.1)";
-                target.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
-                scroller.style.left = "28.75vw";
-                experienceText.textContent = "placeholder - target";
+                if (currentlyTyping == false) {
+                    currentlyTyping = true;
+                    stepPrint(targetText, container, function () {
+                        currentlyTyping = false;
+                    });
+                    contract();
+                    target.style.transform = "scale(1.1)";
+                    target.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
+                    scroller.style.left = "28.75vw";
+                }
             });
             ndsu.addEventListener("click", function () {
-                contract();
-                ndsu.style.transform = "scale(1.1)";
-                ndsu.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
-                scroller.style.left = "47.75vw";
-                experienceText.textContent = "placeholder - ndsu";
+                if (currentlyTyping == false) {
+                    currentlyTyping = true;
+                    stepPrint(ndsuText, container, function () {
+                        currentlyTyping = false;
+                    });
+                    contract();
+                    ndsu.style.transform = "scale(1.1)";
+                    ndsu.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
+                    scroller.style.left = "47.75vw";
+                }
             });
             aigen.addEventListener("click", function () {
-                contract();
-                aigen.style.transform = "scale(1.1)";
-                aigen.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
-                scroller.style.left = "66.85vw";
-                experienceText.textContent = "placeholder - aigen";
+                if (currentlyTyping == false) {
+                    currentlyTyping = true;
+                    stepPrint(aigenText, container, function () {
+                        currentlyTyping = false;
+                    });
+                    contract();
+                    aigen.style.transform = "scale(1.1)";
+                    aigen.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
+                    scroller.style.left = "66.85vw";
+                }
             });
             marvin.addEventListener("click", function () {
-                contract();
-                marvin.style.transform = "scale(1.1)";
-                marvin.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
-                scroller.style.left = "85.85vw";
-                experienceText.textContent = "placeholder - marvin composites";
+                if (currentlyTyping == false) {
+                    currentlyTyping = true;
+                    stepPrint(marvinText, container, function () {
+                        currentlyTyping = false;
+                    });
+                    contract();
+                    marvin.style.transform = "scale(1.1)";
+                    marvin.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
+                    scroller.style.left = "85.85vw";
+                }
             });
 
             function contract() {
