@@ -1,13 +1,37 @@
 document.addEventListener("DOMContentLoaded", function () {
     const experienceEmbed = document.querySelector("#experience-embed");
+    const company = document.querySelector("#specific-company");
+    const workLocation = document.querySelector("#specific-work-location");
     const container = document.querySelector("#specific-experience-description");
     let currentlyTyping = false;
 
-    function stepPrint(text, container, callback) {
+    function stepPrint(workplace, location, text, container, callback) {
         container.innerHTML = "";
+        company.innerHTML = "";
+        workLocation.innerHTML = "";
         let i = 0;
+        let j = 0;
+        let m = 0;
 
         function type() {
+            if (m < location.length) {
+                if (location.charAt(i) === "~") {
+                    workLocation.appendChild(document.createElement("br"));
+                } else {
+                    locationChar = document.createTextNode(location.charAt(j));
+                    workLocation.appendChild(locationChar);
+                }
+            }
+
+            if (j < workplace.length) {
+                if (workplace.charAt(i) === "~") {
+                    company.appendChild(document.createElement("br"));
+                } else {
+                    companyChar = document.createTextNode(workplace.charAt(j));
+                    company.appendChild(companyChar);
+                }
+            }
+
             if (i < text.length) {
                 if (text.charAt(i) === "~") {
                     container.appendChild(document.createElement("br"));
@@ -15,8 +39,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     character = document.createTextNode(text.charAt(i));
                     container.appendChild(character);
                 }
+                j++;
                 i++;
-                setTimeout(type, 10);
+                m++;
+                setTimeout(type, 15);
             } else {
                 if (callback) { callback(); }
             }
@@ -33,44 +59,65 @@ document.addEventListener("DOMContentLoaded", function () {
             const aigen = experienceAccess.querySelector("#aig");
             const marvin = experienceAccess.querySelector("#mar");
             const scroller = experienceAccess.querySelector("#experience-bar");
+            const figure = document.querySelector("#worked-figure");
 
+            const fiveLocation = `
+            bismarck, north dakota
+            ~————— jun '20 — jun '22 —————
+            `;
             const fiveText = `
-            five guys
-            ~crew member
-            ~jun 2020 — jun 2022
-            ~· built effective communication skills with customers
+            · built effective communication skills with customers
             ~· operated and was proficient in all workstations
             ~· handled multiple stations in a fast paced environment
             `;
+
+            const targetLocation = `
+            bismarck, north dakota
+            ~————— jun '22 — aug '23 —————
+            `;
             const targetText = `
-            target
-            ~fulfillment expert
-            ~jun 2022 — aug 2022
-            ~· applied interdepartmental knowledge to locate items on the sales floor under timed deadlines
+            · applied interdepartmental knowledge to locate items on the sales floor under timed deadlines
             ~· produced one of the highest productivity metrics in the department
             ~· assisted other departments or team members with tasks beyond the scope of the job description
             `;
+
+            const ndsuLocation = `
+            fargo, north dakota
+            ~————— nov '23 — present —————
+            `;
             const ndsuText = `
-            north dakota state university
-            ~innovation studio student volunteer technician 
-            ~sep 2023 — present
-            ~
-            ~cybersecurity undergraduate researcher 
-            ~nov 2023 — present
-            ~
-            ~mechanical engineering undergraduate researcher 
-            ~jun 2024 — present
+            · test
+            ~· test
+            ~· test
+            ~· test
+            ~· test
+            ~· test
+            `;
+
+            const aigenLocation = `
+            fargo, north dakota
+            ~————— mar '24 — present —————
             `;
             const aigenText = `
-            aigen
-            ~field robot operator
-            ~mar 2024 — present
-            ~· designated field captain and technician
+            · designated zimmerman field captain and technician
+            ~· test
+            ~· test
+            ~· test
+            ~· test
+            ~· test
+            `;
+
+            const marvinLocation = `
+            fargo, north dakota
+            ~————— aug '24 — present —————
             `;
             const marvinText = `
-            marvin composites
-            ~research & development intern
-            ~· incoming august 2024
+            · incoming august 
+            ~· test
+            ~· test
+            ~· test
+            ~· test
+            ~· test
             `;
 
             const fiveLimiter = 1;
@@ -83,7 +130,7 @@ document.addEventListener("DOMContentLoaded", function () {
             five.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != fiveLimiter) {
                     currentlyTyping = true;
-                    stepPrint(fiveText, container, function () {
+                    stepPrint("five guys~/ crew member /", fiveLocation, fiveText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -91,12 +138,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     five.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "9.75vw";
                     currentClicked = 1;
+                    figure.style.opacity = "0";
+                    figure.style.height = "5vw";
+                    company.style.height = "16vw";
+                    workLocation.style.height = "16vw";
+                    container.style.height = "45vw";
                 }
             });
             target.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != targetLimiter) {
                     currentlyTyping = true;
-                    stepPrint(targetText, container, function () {
+                    stepPrint("target~/ fulfillment expert /", targetLocation, targetText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -104,12 +156,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     target.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "28.75vw";
                     currentClicked = 2;
+                    figure.style.opacity = "0";
+                    figure.style.height = "5vw";
+                    company.style.height = "16vw";
+                    workLocation.style.height = "16vw";
+                    container.style.height = "45vw";
                 }
             });
             ndsu.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != ndsuLimiter) {
                     currentlyTyping = true;
-                    stepPrint(ndsuText, container, function () {
+                    stepPrint("north dakota state university~/ undergraduate researcher /", ndsuLocation, ndsuText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -117,12 +174,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     ndsu.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "47.75vw";
                     currentClicked = 3;
+                    figure.style.opacity = "0";
+                    figure.style.height = "5vw";
+                    company.style.height = "16vw";
+                    workLocation.style.height = "16vw";
+                    container.style.height = "45vw";
                 }
             });
             aigen.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != aigenLimiter) {
                     currentlyTyping = true;
-                    stepPrint(aigenText, container, function () {
+                    stepPrint("aigen~/ field robot operator /", aigenLocation, aigenText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -130,12 +192,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     aigen.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "66.85vw";
                     currentClicked = 4;
+                    figure.style.opacity = "0";
+                    figure.style.height = "5vw";
+                    company.style.height = "16vw";
+                    workLocation.style.height = "16vw";
+                    container.style.height = "45vw";
                 }
             });
             marvin.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != marvinLimiter) {
                     currentlyTyping = true;
-                    stepPrint(marvinText, container, function () {
+                    stepPrint("marvin composites~/ research and development intern /", marvinLocation, marvinText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -143,6 +210,11 @@ document.addEventListener("DOMContentLoaded", function () {
                     marvin.style.filter = "grayscale(0) contrast(1) opacity(0.9)";
                     scroller.style.left = "85.85vw";
                     currentClicked = 5;
+                    figure.style.opacity = "0";
+                    figure.style.height = "5vw";
+                    company.style.height = "16vw";
+                    workLocation.style.height = "16vw";
+                    container.style.height = "45vw";
                 }
             });
 

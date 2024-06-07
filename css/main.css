@@ -219,6 +219,10 @@
     padding-top: 0vw;
 }
 
+.top-topic {
+    padding-bottom: 10vw;
+}
+
 .experience {
     padding-bottom: 5vw;
 }
@@ -251,7 +255,7 @@
     padding: 5vw 8.5vw 3.75vw;
     text-align: justify;
     font-weight: lighter;
-    line-height: 1.75em;
+    line-height: 2em;
     transition: all 3s ease;
 }
 
@@ -292,7 +296,7 @@
     height: 20vw;
     display: flex;
     justify-content: center;
-    padding-bottom: 3vw;
+    padding-bottom: 1vw;
     margin-left: auto;
     margin-right: auto;
 }
@@ -305,7 +309,41 @@
     padding-bottom: 10vw;
 }
 
-#specific-globe-description {}
+#specific-company {
+    padding-top: 3.5vw;
+    padding-bottom: 3vw;
+    line-height: 2em;
+    text-align: center;
+    height: 0vw;
+    transition: height 1s ease;
+}
+
+#specific-work-location {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    height: 0vw;
+    line-height: 2.2em;
+    transition: height 1s ease;
+}
+
+#specific-experience-description {
+    padding-top: 0.5vw;
+    text-align: justify;
+    transition: all 1s ease;
+    height: 0vw;
+    transition: height 1s ease;
+}
+
+.work-company {
+    padding-top: 5vw;
+    text-align: center;
+    font-size: 4vw;
+}
+
+#worked-figure {
+    transition: all 0.5s ease;
+}
 
 .home-bottom iframe {
     width: 100%;
