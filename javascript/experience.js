@@ -9,10 +9,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
         function type() {
             if (i < text.length) {
-                character = document.createTextNode(text.charAt(i));
-                container.appendChild(character);
+                if (text.charAt(i) === "~") {
+                    container.appendChild(document.createElement("br"));
+                } else {
+                    character = document.createTextNode(text.charAt(i));
+                    container.appendChild(character);
+                }
                 i++;
-                setTimeout(type, 25);
+                setTimeout(type, 10);
             } else {
                 if (callback) { callback(); }
             }
@@ -30,11 +34,44 @@ document.addEventListener("DOMContentLoaded", function () {
             const marvin = experienceAccess.querySelector("#mar");
             const scroller = experienceAccess.querySelector("#experience-bar");
 
-            const fiveText = "crew member · five guys";
-            const targetText = "fulfillment expert · target";
-            const ndsuText = "researcher · north dakota state university";
-            const aigenText = "field robot operator · aigen";
-            const marvinText = "r&d intern · marvin composites";
+            const fiveText = `
+            five guys
+            ~crew member
+            ~jun 2020 — jun 2022
+            ~· built effective communication skills with customers
+            ~· operated and was proficient in all workstations
+            ~· handled multiple stations in a fast paced environment
+            `;
+            const targetText = `
+            target
+            ~fulfillment expert
+            ~jun 2022 — aug 2022
+            ~· applied interdepartmental knowledge to locate items on the sales floor under timed deadlines
+            ~· produced one of the highest productivity metrics in the department
+            ~· assisted other departments or team members with tasks beyond the scope of the job description
+            `;
+            const ndsuText = `
+            north dakota state university
+            ~innovation studio student volunteer technician 
+            ~sep 2023 — present
+            ~
+            ~cybersecurity undergraduate researcher 
+            ~nov 2023 — present
+            ~
+            ~mechanical engineering undergraduate researcher 
+            ~jun 2024 — present
+            `;
+            const aigenText = `
+            aigen
+            ~field robot operator
+            ~mar 2024 — present
+            ~· designated field captain and technician
+            `;
+            const marvinText = `
+            marvin composites
+            ~research & development intern
+            ~· incoming august 2024
+            `;
 
             const fiveLimiter = 1;
             const targetLimiter = 2;
