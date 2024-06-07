@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 j++;
                 i++;
                 m++;
-                setTimeout(type, 15);
+                setTimeout(type, 10);
             } else {
                 if (callback) { callback(); }
             }
@@ -86,12 +86,10 @@ document.addEventListener("DOMContentLoaded", function () {
             ~————— nov '23 — present —————
             `;
             const ndsuText = `
-            · test
-            ~· test
-            ~· test
-            ~· test
-            ~· test
-            ~· test
+            · performing undergraduate research in cybersecurity 
+            ~· itar/cui/nda working with the electrical team
+            ~· performing undergraduate research in mechanical engineering
+            ~· assisting in projects
             `;
 
             const aigenLocation = `
@@ -100,11 +98,9 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
             const aigenText = `
             · designated zimmerman field captain and technician
-            ~· test
-            ~· test
-            ~· test
-            ~· test
-            ~· test
+            ~· ensure robots are operating at all times
+            ~· manage robots in the field for mechanical, electrical, or functional issues
+            ~· communicate with seattle engineering support staff for high complexity issues and assist with troubleshooting
             `;
 
             const marvinLocation = `
@@ -112,7 +108,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ~————— aug '24 — present —————
             `;
             const marvinText = `
-            · incoming august 
+            · incoming intern, august 2024
             ~· test
             ~· test
             ~· test
