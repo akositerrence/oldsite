@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const figure = document.querySelector("#worked-figure");
 
             const fiveLocation = `
-            bismarck, north dakota
+            bismarck, north dakota, united states
             ~————— jun '20 — jun '22 —————
             `;
             const fiveText = `
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             const targetLocation = `
-            bismarck, north dakota
+            bismarck, north dakota, united states
             ~————— jun '22 — aug '23 —————
             `;
             const targetText = `
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             const ndsuLocation = `
-            fargo, north dakota
+            fargo, north dakota, united states
             ~————— nov '23 — present —————
             `;
             const ndsuText = `
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             const aigenLocation = `
-            fargo, north dakota
+            fargo, north dakota, united states
             ~————— mar '24 — present —————
             `;
             const aigenText = `
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
 
             const marvinLocation = `
-            fargo, north dakota
+            fargo, north dakota, united states
             ~————— aug '24 — present —————
             `;
             const marvinText = `
