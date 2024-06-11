@@ -1,12 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     page = document.querySelector(".subpage");
     deny = document.querySelector(".denier");
-    closePage = document.querySelector("#close-subpage");
 
-    closePage.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(-100vw)";
-        deny.style.opacity = "0";
-        deny.style.pointerEvents = "none";
+    const subPage = document.querySelector("#subpage-embed");
+    subPage.addEventListener("load", function () {
+        subPageAccess = subPage.contentDocument || subPage.contentWindow.document;
+
+        if (subPageAccess) {
+            closePage = subPageAccess.querySelector("#close-subpage");
+            closePage.addEventListener("click", function () {
+                page.style.transform = "translateX(-100vw)";
+                deny.style.opacity = "0";
+                deny.style.pointerEvents = "none";
+            });
+        }
     });
 
     rsrc = document.querySelector("#rsrc");
@@ -21,52 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
     orch = document.querySelector("#orch");
 
     rsrc.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
+        page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
     });
     asme.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
+        page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
     });
     aiaa.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-    });
-    inno.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-    });
-    ewbs.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-    });
-    robo.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-    });
-    gcsp.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-    });
-    clim.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-    });
-    clar.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-    });
-    orch.addEventListener("click", function () {
-        page.style.transform = "translateY(-50%) translateX(0vw)";
+        page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
     });
