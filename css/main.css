@@ -380,7 +380,7 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    transition: opacity 2s ease;
+    transition: opacity 3s ease;
     opacity: 0%;
 }
 
@@ -395,7 +395,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    transition: all 2.5s ease;
+    transition: all 2s ease;
     overflow-y: visible;
 }
 
@@ -404,6 +404,8 @@
     width: 90vw;
     height: 80vh;
     transform: translateX(0vw);
+    border-top-right-radius: 5vw;
+    border-top-left-radius: 5vw;
 }
 
 /* TEMP HOME SCREEN DISPLACEMENT */
