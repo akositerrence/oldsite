@@ -2,10 +2,6 @@ change proficencies icon to black and white
 make music into its own section
 add volunteering to involvement section
 make embeds unclickable
-make morse text inclickable
-figure out pictures for projects
-
-need to do subtle header shrinkage for every page
 
 drafts: 
 i was born and raised in the province of bulacan in the philippines

@@ -492,7 +492,7 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "north dakoat all state music four year award";
+        subName.textContent = "north dakota all state music four year award";
         subDates.textContent = "———— mar '23 ————";
         subDescription.textContent = rsrcText;
         subVersion.textContent = "";

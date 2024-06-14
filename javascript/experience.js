@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
             five.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != fiveLimiter) {
                     currentlyTyping = true;
-                    stepPrint("five guys~/ crew member /", fiveLocation, fiveText, container, function () {
+                    stepPrint("five guys~——— crew member ———", fiveLocation, fiveText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
             target.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != targetLimiter) {
                     currentlyTyping = true;
-                    stepPrint("target~/ fulfillment expert /", targetLocation, targetText, container, function () {
+                    stepPrint("target~——— fulfillment expert ———", targetLocation, targetText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ndsu.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != ndsuLimiter) {
                     currentlyTyping = true;
-                    stepPrint("north dakota state university~/ undergraduate researcher /", ndsuLocation, ndsuText, container, function () {
+                    stepPrint("north dakota state university~——— undergraduate researcher ———", ndsuLocation, ndsuText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -180,7 +180,7 @@ document.addEventListener("DOMContentLoaded", function () {
             aigen.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != aigenLimiter) {
                     currentlyTyping = true;
-                    stepPrint("aigen~/ field robot operator /", aigenLocation, aigenText, container, function () {
+                    stepPrint("aigen~——— field robot operator ———", aigenLocation, aigenText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function () {
             marvin.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != marvinLimiter) {
                     currentlyTyping = true;
-                    stepPrint("marvin composites~/ research and development intern /", marvinLocation, marvinText, container, function () {
+                    stepPrint("marvin composites~—— research and development intern ——", marvinLocation, marvinText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();

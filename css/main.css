@@ -335,8 +335,8 @@
 }
 
 #specific-globe-description {
-    padding-top: 0vw;
-    text-align: left;
+    padding-top: 5vw;
+    text-align: justify;
     transition: all 1s ease;
     height: 0vw;
 }
