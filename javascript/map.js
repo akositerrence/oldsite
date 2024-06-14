@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
     i was born in the philippines, province of nueva ecija and raised in bulacan, 
     living in rosemoor village under the guardianship of my grandfather.
     i spent my elementary years at st paul university at san miguel, where
-    i received 8 years of education, taking kindergarten twice and studying
+    i received eight years of education, taking kindergarten twice and studying
     there until grade six. while under the supervision of my grandfather, my parents 
     worked overseas in singapore, where i lived over almost every summer. after living 
     in the philipppines for thirteen years, we immigrated to the united states, 
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 container.appendChild(character);
                 i++;
                 j++;
-                setTimeout(type, 5);
+                setTimeout(type, 7.5);
             } else {
                 if (callback) { callback(); }
             }
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     leftButton.style.opacity = "70%";
                     leftButton.style.transform = "scaleY(2) scaleX(0.65) translateX(-15vw)";
                     hours.style.height = "6.5vw";
-                    container.style.height = "105vw";
+                    container.style.height = "106vw";
                     figure.style.opacity = "0%";
                     inFlag = true;
                 }

@@ -66,6 +66,14 @@ document.addEventListener("DOMContentLoaded", function () {
             ~————— jun '20 — jun '22 —————
             `;
             const fiveText = `
+            UNDER CONSTRUCTION
+            feeling a little behind my peers, i got my first job the summer before my sophomore year,
+            right in the middle of the pandemic. 
+
+
+            i operated and was proficient in all workstations. 
+            working there for two years and with my level of experience, i was training people well beyond my age.
+
             · built effective communication skills with customers
             ~· operated and was proficient in all workstations
             ~· handled multiple stations in a fast paced environment
@@ -76,6 +84,10 @@ document.addEventListener("DOMContentLoaded", function () {
             ~————— jun '22 — aug '23 —————
             `;
             const targetText = `
+            UNDER CONSTRUCTION
+            after working at five guys for two years, i decided that it was time for a switch.
+            i started working at target the summer before my senior year.
+
             · applied interdepartmental knowledge to locate items on the sales floor under timed deadlines
             ~· produced one of the highest productivity metrics in the department
             ~· assisted other departments or team members with tasks beyond the scope of the job description
