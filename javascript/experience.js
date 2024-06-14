@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const fiveText = `
             UNDER CONSTRUCTION
             feeling a little behind my peers, i got my first job the summer before my sophomore year,
-            right in the middle of the pandemic. 
+            right in the middle of the pandemic. as a socially awkward kid, my time at five guys
 
 
             i operated and was proficient in all workstations. 

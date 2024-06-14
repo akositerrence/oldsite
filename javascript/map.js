@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     ————— 2004 — 2017 —————
     `;
     const philippineDescriptor = `
-    i was born in the philippines, province of nueva ecija and raised in bulacan, 
-    living in rosemoor village under the guardianship of my grandfather.
+    i was born in the philippines in the province of nueva ecija and raised in bulacan. 
+    living in rosemoor village under the guardianship of my grandfather,
     i spent my elementary years at st paul university at san miguel, where
     i received eight years of education, taking kindergarten twice and studying
     there until grade six. while under the supervision of my grandfather, my parents 
     worked overseas in singapore, where i lived over almost every summer. after living 
-    in the philipppines for thirteen years, we immigrated to the united states, 
+    in the philipppines for thirteen years, my parents and i immigrated to the united states, 
     settling in bismarck, north dakota, where i would spend my middle school and 
     high school years, and where i would meet much of my self discovery. 
     i lived in bismarck for seven years before moving to fargo, north dakota for college.
