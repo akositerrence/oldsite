@@ -1,20 +1,36 @@
 document.addEventListener('DOMContentLoaded', function () {
     const creoProject = document.querySelector("#creomotor");
     const website = document.querySelector("#site");
-    const desk = document.querySelector("#desk");
-    const pc = document.querySelector("#pc");
     const age = document.querySelector("#age");
+
+    page = document.querySelector(".subpage");
+    deny = document.querySelector(".denier");
+
+    const subPage = document.querySelector("#subpage-embed");
+    subPage.addEventListener("load", function () {
+        subPageAccess = subPage.contentDocument || subPage.contentWindow.document;
+
+        if (subPageAccess) {
+            closePage = subPageAccess.querySelector("#close-subpage");
+            subImage = subPageAccess.querySelector("#activities-awards-images");
+            subName = subPageAccess.querySelector("#activities-awards-name");
+            subDates = subPageAccess.querySelector("#activities-awards-dates");
+            subDescription = subPageAccess.querySelector("#activities-awards-description");
+            subVersion = subPageAccess.querySelector("#version");
+            closePage.addEventListener("click", function () {
+                page.style.transform = "translateX(-100vw)";
+                deny.style.opacity = "0";
+                deny.style.pointerEvents = "none";
+            });
+        }
+    });
 
     function shrinkAllProjects() {
         creoProject.style.filter = "grayscale(90%) opacity(60%)";
         website.style.filter = "grayscale(90%) opacity(60%)";
-        desk.style.filter = "grayscale(90%) opacity(60%)";
-        pc.style.filter = "grayscale(90%) opacity(60%)";
         age.style.filter = "grayscale(90%) opacity(60%)";
         creoProject.style.transform = "scale(1)";
         website.style.transform = "scale(1)";
-        desk.style.transform = "scale(1)";
-        pc.style.transform = "scale(1)";
         age.style.transform = "scale(1)";
     }
 
@@ -22,26 +38,43 @@ document.addEventListener('DOMContentLoaded', function () {
         shrinkAllProjects();
         creoProject.style.filter = "grayscale(0) opacity(95%)";
         creoProject.style.transform = "scale(1.1)";
+
+        page.style.transform = "translateX(0vw)";
+        deny.style.opacity = "80%";
+        deny.style.pointerEvents = "auto";
+        subImage.src = "/images/creomotor.webp";
+        subName.textContent = "reverse engineered starter motor";
+        subDates.textContent = "———— oct '23 — dec '23 ————";
+        subDescription.textContent = "test";
+        subVersion.textContent = "";
     });
     website.addEventListener("click", function () {
         shrinkAllProjects();
         website.style.filter = "grayscale(0) opacity(95%)";
         website.style.transform = "scale(1.1)";
-    });
-    desk.addEventListener("click", function () {
-        shrinkAllProjects();
-        desk.style.filter = "grayscale(0) opacity(95%)";
-        desk.style.transform = "scale(1.1)";
-    });
-    pc.addEventListener("click", function () {
-        shrinkAllProjects();
-        pc.style.filter = "grayscale(0) opacity(95%)";
-        pc.style.transform = "scale(1.1)";
+
+        page.style.transform = "translateX(0vw)";
+        deny.style.opacity = "80%";
+        deny.style.pointerEvents = "auto";
+        subImage.src = "/images/website.webp";
+        subName.textContent = "documentation website";
+        subDates.textContent = "———— may '24 — jun '24 ————";
+        subDescription.textContent = "test";
+        subVersion.textContent = "";
     });
     age.addEventListener("click", function () {
         shrinkAllProjects();
         age.style.filter = "grayscale(0) opacity(95%)";
         age.style.transform = "scale(1.1)";
+
+        page.style.transform = "translateX(0vw)";
+        deny.style.opacity = "80%";
+        deny.style.pointerEvents = "auto";
+        subImage.src = "/images/aging.webp";
+        subName.textContent = "accelerated aging apparatus";
+        subDates.textContent = "———— jun '24 — present ————";
+        subDescription.textContent = "test";
+        subVersion.textContent = "";
     });
 
     const cadButton = document.querySelector("#cad");

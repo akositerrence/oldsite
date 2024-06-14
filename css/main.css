@@ -380,7 +380,7 @@
     width: 100vw;
     height: 100vh;
     pointer-events: none;
-    transition: opacity 3s ease;
+    transition: opacity 5s ease;
     opacity: 0%;
 }
 
@@ -395,7 +395,7 @@
     justify-content: center;
     width: 100vw;
     height: 100vh;
-    transition: all 2s ease;
+    transition: all 3s ease;
     overflow-y: visible;
 }
 
@@ -403,6 +403,7 @@
     max-width: 100%;
     width: 90vw;
     height: 80vh;
+    border-radius: 5vw;
     transform: translateX(0vw);
 }
 
