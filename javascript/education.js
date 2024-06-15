@@ -178,7 +178,30 @@ document.addEventListener('DOMContentLoaded', function () {
     scibText = `
     test`;
     windText = `
-    test`;
+    in a job interview for an internship, i was asked to pick one item from the scores of things 
+    on my resume that defined me the most. despite being in college, i picked my involvement in high school band. i 
+    started out middle school not truly knowing a direction i wanted to go in life. my parents and i
+    were immigrants, and quite frankly, we were deep into unknown territory. it's my first life, and it was
+    their's too, and i had no idea what i wanted for a job, a career, much less a purpose. 
+    and so i just thought that i'd be involved in as many things as possible and see where it takes me. 
+    one of my grandfather's wishes before i left the philippines was for me to learn an instrument. and so,
+    i started band in seventh grade on the clarinet, a year behind everyone else. music began to slowly pique 
+    my interest, and pretty soon, i was practicing almost everyday. i was even prompted to audition
+    for wind ensemble, the top concert band for century high school. i declined the offer, since i didn't think i
+    was good enough. one day in eigth grade, i showed one of my band teachers a solo i was working on. 
+    the solo was borderline impossible, especially for an eight grader. there were notes on that page that 
+    i would not learn until years later. i don't think i could even play it today. still, they took a chance 
+    and provided me the opportunity of a scholarship, full funding for some music lessons over the summer. those
+    lessons would fully prepare me for what i was about to tackle my freshman year. when high school started,
+    i played for freshman band, and pretty soon, i was ascending the ranks and began playing lead parts. one day, our
+    director mentioned a group that we could audition for, the north dakota all state band. i had no idea what that meant.
+    i had virtually no understanding as to what bands were at my school, much less a state band. i didn't even realize 
+    we had a jazz band until late into my sophomore year. actually, we had two. i signed up for all state not truly knowing 
+    what to expect. as audition date grew closer, the magnitude of what i was trying to achieve slowly loomed over me.
+    i had started a year later than everyone else on my instrument, and i was now shooting for a spot in the top
+    concert band in the state of north dakota, as a freshman. i didn't have very high hopes, especially after learning that
+    there were people in our top concert band that couldn't get in either. 
+    `;
     jazzText = `
     test`;
     marcText = `
@@ -254,7 +277,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/centuryband.webp";
         subName.textContent = "wind ensemble";
         subDates.textContent = "———— aug '19 — may '23 ————";
-        subDescription.textContent = rsrcText;
+        subDescription.textContent = windText;
         subVersion.textContent = "";
     });
     jazz.addEventListener("click", function () {

@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/creomotor.webp";
         subName.textContent = "reverse engineered starter motor";
         subDates.textContent = "———— oct '23 — dec '23 ————";
-        subDescription.textContent = "test";
+        subDescription.textContent = `
+        this was our fall term project for our me212 cad class. `;
         subVersion.textContent = "";
     });
     website.addEventListener("click", function () {
