@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 j++;
                 i++;
                 m++;
-                setTimeout(type, 10);
+                setTimeout(type, 1);
             } else {
                 if (callback) { callback(); }
             }
@@ -66,55 +66,69 @@ document.addEventListener("DOMContentLoaded", function () {
             ~————— Jun '20 — Jun '22 —————
             `;
             const fiveText = `
-            · Built effective communication skills with customers
-            ~· Operated and was proficient in all workstations
-            ~· Handled multiple stations in a fast paced environment
-            `;
+            Feeling a little behind my peers, I got my first job the summer 
+            before my sophomore year of high school, right at the start of the pandemic.
+            As an introverted kid, I was never one to just socialize with random people.
+            Yet, throughout the duration of my work, I built up my communication skills
+            with strangers, coworkers and customers alike, getting more comfortable 
+            with the world each day. 
+            ~
+            ~
+            A fast learner, I was proficient in every workstation in a few months.
+            When corporate visited our store one day, I was even commended for my skills
+            at the fry station. It wasn't uncommon for me to be tasked to train people well 
+            beyond my age, nor was it uncommon for me to operate multiple stations at once, 
+            even during lunch rush.`;
 
             const targetLocation = `
             Bismarck, North Dakota, United States
             ~————— Jun '22 — Aug '23 —————
             `;
             const targetText = `
-            · Applied interdepartmental knowledge to locate items on the sales floor under timed deadlines
-            ~· Produced one of the highest productivity metrics in the department
-            ~· Assisted other departments or team members with tasks beyond the scope of the job description
-            `;
+            After working at Five Guys for two years, I decided that it was
+            time for a switch. By the recommendation of a friend, I started working 
+            at Target the summer before my senior year. My job was to apply my
+            interdepartmental knowledge of the store to find items on the sales floor for
+            order pickup, as well as manage the back of the store, all under timed deadlines.
+            ~
+            ~
+            In a few months, I was producing one the highest productitivty metrics for our
+            department. I was also often curious to see what my friends from other departments 
+            were doing, and would regularly assist them with tasks beyond the scope of my job description.
+            As a frequenter of the night shift, it wasn't uncommon for me to be in charge of our team
+            whenever an official team lead was absent.`;
 
             const ndsuLocation = `
             Fargo, North Dakota, United States
             ~————— Nov '23 — Present —————
             `;
             const ndsuText = `
-            · Performing undergraduate research in cybersecurity 
-            ~· ITAR/CUI/NDA, working with the electrical team
-            ~· Performing undergraduate research in mechanical engineering 
-            ~· Assisting and engaging in various independent projects
-            `;
+            I left Target after moving for college and I am now currently performing undergraduate 
+            research in cybersecurity under the computer science department of NDSU. Though I'm
+            a mechanical engineering student by title, I've always been open to expanding my mental abilities
+            through many different mediums, and I believe in the importance of cross disciplinary 
+            experience.
+            ~
+            ~
+            The publicity of my work is heavily regulated as it is under ITAR/CUI/NDA restrictions, 
+            and I can therefore provide very limited background as to what I do.`;
 
             const aigenLocation = `
             Fargo, North Dakota, United States
             ~————— Mar '24 — Present —————
             `;
             const aigenText = `
-            · Designated Zimmerman field captain and technician
-            ~· Ensuring robots are operating at all times
-            ~· Managing robots in the field for mechanical, electrical, or functional issues
-            ~· Communicating with Washington engineering support staff for high complexity issues and assist with troubleshooting
-            ~· Assisting with data capture for field waypoints
-            `;
+            I am currently working for Aigen, a Seattle based startup, for their first season of field operations.
+            I am to work with a team of operators to ensure that robots are operating at all times, managing 
+            the robots for mechanical, electrical, or functional issues, communicating with Washington engineers 
+            for high complexity issues, and assisting with data capture for field waypoints and robot performance.`;
 
             const marvinLocation = `
             Fargo, North dakota, United states
             ~————— Aug '24 — Present —————
             `;
             const marvinText = `
-            · Incoming intern, August 2024
-            ~· test
-            ~· test
-            ~· test
-            ~· test
-            ~· test
+            Incoming intern for August 2024, fall semester of my sophomore year.
             `;
 
             const fiveLimiter = 1;
@@ -140,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "45vw";
+                    container.style.height = "106vw";
                 }
             });
             target.addEventListener("click", function () {
@@ -159,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     company.style.height = "16vw";
                     figure.style.padding = "1vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "45vw";
+                    container.style.height = "106vw";
                 }
             });
             ndsu.addEventListener("click", function () {
@@ -178,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "45vw";
+                    container.style.height = "78vw";
                 }
             });
             aigen.addEventListener("click", function () {
@@ -197,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "45vw";
+                    container.style.height = "50vw";
                 }
             });
             marvin.addEventListener("click", function () {
@@ -216,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "45vw";
+                    container.style.height = "8vw";
                 }
             });
 

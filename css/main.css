@@ -328,7 +328,7 @@
 
 #specific-experience-description {
     padding-top: 0.5vw;
-    text-align: left;
+    text-align: justify;
     transition: all 1s ease;
     height: 0vw;
     transition: height 1s ease;
