@@ -61,12 +61,12 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "documentation website";
         subDates.textContent = "———— may '24 — jun '24 ————";
         subDescription.textContent = `
-        for my own personal documentation and public visibility, i coded an
-        entire website from scratch. i was also learning from scratch, since my only
+        For my own personal documentation and public visibility, I coded an
+        entire website from scratch. I was also learning from scratch, since my only
         experience with webside code is messing around with element inspect on my school grades and 
-        changing them so i can gaslight my friends. my philosophy was to avoid using frameworks, since my
+        changing them so I can gaslight my friends. My philosophy was to avoid using frameworks, since my
         main focus for the project is to familiarize myself with front end development
-        using raw html, css, and javascript.`;
+        using raw HTML, CSS, and Javascript.`;
         subVersion.textContent = "";
     });
     age.addEventListener("click", function () {

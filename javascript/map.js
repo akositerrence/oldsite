@@ -26,16 +26,16 @@ document.addEventListener("DOMContentLoaded", function () {
     ————— 2004 — 2017 —————
     `;
     const philippineDescriptor = `
-    i was born in the philippines in the province of nueva ecija and raised in bulacan. 
-    living in rosemoor village under the guardianship of my grandfather,
-    i spent my elementary years at st paul university at san miguel, where
-    i received eight years of education, taking kindergarten twice and studying
-    there until grade six. while under the supervision of my grandfather, my parents 
-    worked overseas in singapore, where i lived over almost every summer. after living 
-    in the philipppines for thirteen years, my parents and i immigrated to the united states, 
-    settling in bismarck, north dakota, where i would spend my middle school and 
-    high school years, and where i would meet much of my self discovery. 
-    i lived in bismarck for seven years before moving to fargo, north dakota for college.
+    I was born in the Philippines in the province of Nueva Ecija and raised in Bulacan. 
+    living in Rosemoor Village under the guardianship of my grandfather,
+    I spent my elementary years at St Paul University at San Miguel, where
+    I received eight years of education, taking kindergarten twice and studying
+    there until grade six. While under the supervision of my grandfather, my parents 
+    worked overseas in Singapore, where I lived over almost every summer. After living 
+    in the Philipppines for thirteen years, my parents and I immigrated to the United States, 
+    settling in Bismarck, North Dakota, where I would spend my middle school and 
+    high school years, and where I would meet much of my self discovery. 
+    I lived in Bismarck for seven years before moving to Fargo, North Dakota for college.
     `;
 
     function stepPrint(time, text, container, callback) {
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
 
             function fargo() {
-                hours.textContent = "————— 2023 — pres —————";
+                hours.textContent = "————— 2023 — Present —————";
                 map.style.transform = "scale(4.25) translateY(3vw) translateX(20vw)"
                 bismarckText.style.opacity = "0%";
                 fargoText.style.opacity = "80%";

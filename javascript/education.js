@@ -178,29 +178,6 @@ document.addEventListener('DOMContentLoaded', function () {
     scibText = `
     test`;
     windText = `
-    in a job interview for an internship, i was asked to pick one item from the scores of things 
-    on my resume that defined me the most. despite being in college, i picked my involvement in high school band. i 
-    started out middle school not truly knowing a direction i wanted to go in life. my parents and i
-    were immigrants, and quite frankly, we were deep into unknown territory. it's my first life, and it was
-    their's too, and i had no idea what i wanted for a job, a career, much less a purpose. 
-    and so i just thought that i'd be involved in as many things as possible and see where it takes me. 
-    one of my grandfather's wishes before i left the philippines was for me to learn an instrument. and so,
-    i started band in seventh grade on the clarinet, a year behind everyone else. music began to slowly pique 
-    my interest, and pretty soon, i was practicing almost everyday. i was even prompted to audition
-    for wind ensemble, the top concert band for century high school. i declined the offer, since i didn't think i
-    was good enough. one day in eigth grade, i showed one of my band teachers a solo i was working on. 
-    the solo was borderline impossible, especially for an eight grader. there were notes on that page that 
-    i would not learn until years later. i don't think i could even play it today. still, they took a chance 
-    and provided me the opportunity of a scholarship, full funding for some music lessons over the summer. those
-    lessons would fully prepare me for what i was about to tackle my freshman year. when high school started,
-    i played for freshman band, and pretty soon, i was ascending the ranks and began playing lead parts. one day, our
-    director mentioned a group that we could audition for, the north dakota all state band. i had no idea what that meant.
-    i had virtually no understanding as to what bands were at my school, much less a state band. i didn't even realize 
-    we had a jazz band until late into my sophomore year. actually, we had two. i signed up for all state not truly knowing 
-    what to expect. as audition date grew closer, the magnitude of what i was trying to achieve slowly loomed over me.
-    i had started a year later than everyone else on my instrument, and i was now shooting for a spot in the top
-    concert band in the state of north dakota, as a freshman. i didn't have very high hopes, especially after learning that
-    there were people in our top concert band that couldn't get in either. 
     `;
     jazzText = `
     test`;
@@ -385,160 +362,221 @@ document.addEventListener('DOMContentLoaded', function () {
     sous = document.querySelector("#sous");
     wood = document.querySelector("#wood");
     valdText = `
-    test`;
+    Ranked 1 out of more than 350 students, percentile ranking, 4.0 on 4.0 scale.
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.bismarckschools.org/CHS">more information</a>`;
     schlText = `
-    test`;
+    "The North Dakota Scholars Program is open to high school students who score 
+    at or above the ninety-fifth percentile among all ND test-takers who took the 
+    ACT or SAT prior to July 1st in the calendar year preceding the individual's 
+    enrollment in college. Students will be awarded in descending rank order, 
+    based on test scores, until available funds are expended or until the pool 
+    of applicants has been exhausted."
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://ndus.edu/paying-for-college/nd-scholars-program/">more information</a>`;
     apscText = `
-    test`;
+    "Granted to students who receive an average score of at least 3.5 on all AP 
+    Exams taken, and scores of 3 or higher on five or more of these exams"
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://apcentral.collegeboard.org/exam-administration-ordering-scores/scores/awards/scholar-awards">more information</a>`;
     presText = `
-    test`;
+    "This award recognizes academic success in the classroom. To be eligible, students 
+    must meet requirements, including grade point average or, school-set criteria and 
+    choice of state tests or teacher recommendations."
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://ndus.edu/paying-for-college/nd-scholars-program/">more information</a>`;
     dolaText = `
-    test`;
+    "Bismarck Dollars for Scholars is a locally operated and supported, non-profit, 
+    tax-exempt scholarship foundation. Operated by an all-volunteer Board of Directors, 
+    the purpose of Dollars for Scholars is to expand access to educational opportunities 
+    by involving and assisting our community in the support of students and in the 
+    encouragement of educational achievement."
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://bismarck.dollarsforscholars.org/">more information</a>`;
     melbText = `
-    test`;
+    "The recipient of this award will receive $300.00 scholarship upon graduation 
+    from Century High School. Voted upon by members of the Concert Band and Wind
+    Ensemble, it is presented to the underclassman that displays the most dedication,
+    spirit, and enthusiasm.It is given by Ron and Carol Melby in memory of their 
+    son Brad."
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
     thomText = `
-    test`;
+    "This scholarship is given in memory of Danie Thomssen (Class of 2016).
+    The recipient of this award will receive a $1,000.00 scholarship upon graduation.
+    It is presented to one senior in the Century High School Band Program that the
+    band directors feel demonstrate a strong sense dedication to the band program,
+    leadership in the classroom, self-discipline in their practice, and a high level
+    of musical excellence."
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
     woldText = `
-    test`;
+    "The scholarship will be awarded annually to 5 BPS senior students who have 
+    excelled in their academic pursuits and will be attending college. 
+    Preference will be given to those majoring in the area of science who 
+    have a strong sense of giving back. Selection will be based on a minimum 
+    3.0 GPA and minimum cumulative ACT of 20."
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://bpsfoundation.com/project/wold-family-scholarship/">more information</a>`;
     vlntText = `
-    test`;
+    I was recognized for my volunteer work, having clocked more than 100 hours
+    of volunteer service across various institutions.
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.bismarckschools.org/CHS">more information</a>`;
     soscText = `
-    test`;
+    I was part of the science olympiad team that won the state 
+    championship for the first time in our school's history. Our team ended up
+    39th overall nationally.
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.ndsu.edu/olympiad/">more information</a>`;
     fourText = `
-    test`;
+    Recognition for being chosen to be a part of the All-State Music Festival
+    for all four years of high school.
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.ndallstate.org/">more information</a>`;
     sousText = `
-    test`;
+    "This award is given to a senior band member for outstanding and unique
+    achievement and service in band through exemplary leadership, musicianship,
+    attitude, and dedication.  Selected by the directors, the recipient of this
+    award will have their name inscribed on a brass plaque, which is proudly
+    displayed in the band room."
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
     woodText = `
-    test`;
+    "This award, selected by the directors, is given to the member of
+    Jazz Ensemble #2 that demonstrates outstanding leadership, improvisation,
+    and dedication to jazz band."
+    <br>
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
     vald.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "valedictorian";
-        subDates.textContent = "———— may '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Valedictorian";
+        subDates.textContent = "———— May '23 ————";
+        subDescription.innerHTML = valdText;
+        subVersion.textContent = "v06.18.2024";
     });
     schl.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "north dakota scholars award";
-        subDates.textContent = "———— jun '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "North Dakota Scholars Award";
+        subDates.textContent = "———— Jun '23 ————";
+        subDescription.innerHTML = schlText;
+        subVersion.textContent = "v06.18.2024";
     });
     apsc.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "ap scholar with distinction";
-        subDates.textContent = "———— jul '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "AP Scholar with Distinction";
+        subDates.textContent = "———— Jul '23 ————";
+        subDescription.innerHTML = apscText;
+        subVersion.textContent = "v06.18.2024";
     });
     pres.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "presidential award for academic excellence";
-        subDates.textContent = "———— apr '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Presidential Award for Academic Excellence";
+        subDates.textContent = "———— Apr '23 ————";
+        subDescription.innerHTML = presText;
+        subVersion.textContent = "v06.18.2024";
     });
     dola.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "bismarck dollars for scholars scholarship";
-        subDates.textContent = "———— may '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Bismarck Dollars for Scholars Scholarship";
+        subDates.textContent = "———— May '23 ————";
+        subDescription.innerHTML = dolaText;
+        subVersion.textContent = "v06.18.2024";
     });
     melb.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "brad melby memorial scholarship";
-        subDates.textContent = "———— may '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Brad Melby Memorial Scholarship";
+        subDates.textContent = "———— May '23 ————";
+        subDescription.innerHTML = melbText;
+        subVersion.textContent = "v06.18.2024";
     });
     thom.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "danie thomssen memorial scholarship";
-        subDates.textContent = "———— may '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Danie Thomssen Memorial Scholarship";
+        subDates.textContent = "———— May '23 ————";
+        subDescription.innerHTML = thomText;
+        subVersion.textContent = "v06.18.2024";
     });
     wold.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "wold family scholarship";
-        subDates.textContent = "———— may '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Wold Family Scholarship";
+        subDates.textContent = "———— May '23 ————";
+        subDescription.innerHTML = woldText;
+        subVersion.textContent = "v06.18.2024";
     });
     vlnt.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "outstanding volunteer award";
-        subDates.textContent = "———— apr '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Outstanding Volunteer Award";
+        subDates.textContent = "———— Apr '23 ————";
+        subDescription.innerHTML = vlntText;
+        subVersion.textContent = "v06.18.2024";
     });
     sosc.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "science olympiad state champions";
-        subDates.textContent = "———— apr '22————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Science Olympiad State Champions";
+        subDates.textContent = "———— Apr '22————";
+        subDescription.innerHTML = soscText;
+        subVersion.textContent = "v06.18.2024";
     });
     four.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "north dakota all state music four year award";
-        subDates.textContent = "———— mar '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "North Dakota All State Music Four Year Award";
+        subDates.textContent = "———— Mar '23 ————";
+        subDescription.innerHTML = fourText;
+        subVersion.textContent = "v06.18.2024";
     });
     sous.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "john philip sousa band award";
-        subDates.textContent = "———— may '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "John Philip Sousa Band Award";
+        subDates.textContent = "———— May '23 ————";
+        subDescription.innerHTML = sousText;
+        subVersion.textContent = "v06.18.2024";
     });
     wood.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "woody herman jazz award";
-        subDates.textContent = "———— may '23 ————";
-        subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subName.textContent = "Woody Herman Jazz Award";
+        subDates.textContent = "———— May '23 ————";
+        subDescription.innerHTML = woodText;
+        subVersion.textContent = "v06.18.2024";
     });
 
     window.addEventListener("scroll", function () {
