@@ -62,65 +62,54 @@ document.addEventListener("DOMContentLoaded", function () {
             const figure = document.querySelector("#worked-figure");
 
             const fiveLocation = `
-            bismarck, north dakota, united states
-            ~————— jun '20 — jun '22 —————
+            Bismarck, North Dakota, United States
+            ~————— Jun '20 — Jun '22 —————
             `;
             const fiveText = `
-            UNDER CONSTRUCTION
-            feeling a little behind my peers, i got my first job the summer before my sophomore year,
-            right in the middle of the pandemic. as a socially awkward kid, my time at five guys
-
-
-            i operated and was proficient in all workstations. 
-            working there for two years and with my level of experience, i was training people well beyond my age.
-
-            · built effective communication skills with customers
-            ~· operated and was proficient in all workstations
-            ~· handled multiple stations in a fast paced environment
+            · Built effective communication skills with customers
+            ~· Operated and was proficient in all workstations
+            ~· Handled multiple stations in a fast paced environment
             `;
 
             const targetLocation = `
-            bismarck, north dakota, united states
-            ~————— jun '22 — aug '23 —————
+            Bismarck, North Dakota, United States
+            ~————— Jun '22 — Aug '23 —————
             `;
             const targetText = `
-            UNDER CONSTRUCTION
-            after working at five guys for two years, i decided that it was time for a switch.
-            i started working at target the summer before my senior year.
-
-            · applied interdepartmental knowledge to locate items on the sales floor under timed deadlines
-            ~· produced one of the highest productivity metrics in the department
-            ~· assisted other departments or team members with tasks beyond the scope of the job description
+            · Applied interdepartmental knowledge to locate items on the sales floor under timed deadlines
+            ~· Produced one of the highest productivity metrics in the department
+            ~· Assisted other departments or team members with tasks beyond the scope of the job description
             `;
 
             const ndsuLocation = `
-            fargo, north dakota, united states
-            ~————— nov '23 — present —————
+            Fargo, North Dakota, United States
+            ~————— Nov '23 — Present —————
             `;
             const ndsuText = `
-            · performing undergraduate research in cybersecurity 
-            ~· itar/cui/nda working with the electrical team
-            ~· performing undergraduate research in mechanical engineering
-            ~· assisting in projects
+            · Performing undergraduate research in cybersecurity 
+            ~· ITAR/CUI/NDA, working with the electrical team
+            ~· Performing undergraduate research in mechanical engineering 
+            ~· Assisting and engaging in various independent projects
             `;
 
             const aigenLocation = `
-            fargo, north dakota, united states
-            ~————— mar '24 — present —————
+            Fargo, North Dakota, United States
+            ~————— Mar '24 — Present —————
             `;
             const aigenText = `
-            · designated zimmerman field captain and technician
-            ~· ensure robots are operating at all times
-            ~· manage robots in the field for mechanical, electrical, or functional issues
-            ~· communicate with seattle engineering support staff for high complexity issues and assist with troubleshooting
+            · Designated Zimmerman field captain and technician
+            ~· Ensuring robots are operating at all times
+            ~· Managing robots in the field for mechanical, electrical, or functional issues
+            ~· Communicating with Washington engineering support staff for high complexity issues and assist with troubleshooting
+            ~· Assisting with data capture for field waypoints
             `;
 
             const marvinLocation = `
-            fargo, north dakota, united states
-            ~————— aug '24 — present —————
+            Fargo, North dakota, United states
+            ~————— Aug '24 — Present —————
             `;
             const marvinText = `
-            · incoming intern, august 2024
+            · Incoming intern, August 2024
             ~· test
             ~· test
             ~· test
@@ -138,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function () {
             five.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != fiveLimiter) {
                     currentlyTyping = true;
-                    stepPrint("five guys~——— crew member ———", fiveLocation, fiveText, container, function () {
+                    stepPrint("Five Guys~——— Crew Member ———", fiveLocation, fiveText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -157,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function () {
             target.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != targetLimiter) {
                     currentlyTyping = true;
-                    stepPrint("target~——— fulfillment expert ———", targetLocation, targetText, container, function () {
+                    stepPrint("Target~——— Fulfillment Expert ———", targetLocation, targetText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -176,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
             ndsu.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != ndsuLimiter) {
                     currentlyTyping = true;
-                    stepPrint("north dakota state university~——— undergraduate researcher ———", ndsuLocation, ndsuText, container, function () {
+                    stepPrint("North Dakota State University~——— Undergraduate Researcher ———", ndsuLocation, ndsuText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -195,7 +184,7 @@ document.addEventListener("DOMContentLoaded", function () {
             aigen.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != aigenLimiter) {
                     currentlyTyping = true;
-                    stepPrint("aigen~——— field robot operator ———", aigenLocation, aigenText, container, function () {
+                    stepPrint("Aigen~——— Field Robot Operator ———", aigenLocation, aigenText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
@@ -214,7 +203,7 @@ document.addEventListener("DOMContentLoaded", function () {
             marvin.addEventListener("click", function () {
                 if (currentlyTyping == false && currentClicked != marvinLimiter) {
                     currentlyTyping = true;
-                    stepPrint("marvin composites~—— research and development intern ——", marvinLocation, marvinText, container, function () {
+                    stepPrint("Marvin Composites~—— Research and Development Intern ——", marvinLocation, marvinText, container, function () {
                         currentlyTyping = false;
                     });
                     contract();
