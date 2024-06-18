@@ -348,6 +348,7 @@
 }
 
 #worked-figure {
+    padding-top: 6vw;
     transition: all 0.5s ease;
 }
 

@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', function () {
     valdText = `
     Ranked 1 out of more than 350 students, percentile ranking, 4.0 on 4.0 scale.
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.bismarckschools.org/CHS">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.bismarckschools.org/CHS">More information</a>`;
     schlText = `
     "The North Dakota Scholars Program is open to high school students who score 
     at or above the ninety-fifth percentile among all ND test-takers who took the 
@@ -373,18 +373,18 @@ document.addEventListener('DOMContentLoaded', function () {
     based on test scores, until available funds are expended or until the pool 
     of applicants has been exhausted."
     <br>
-    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://ndus.edu/paying-for-college/nd-scholars-program/">more information</a>`;
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://ndus.edu/paying-for-college/nd-scholars-program/">More information</a>`;
     apscText = `
     "Granted to students who receive an average score of at least 3.5 on all AP 
     Exams taken, and scores of 3 or higher on five or more of these exams"
     <br>
-    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://apcentral.collegeboard.org/exam-administration-ordering-scores/scores/awards/scholar-awards">more information</a>`;
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://apcentral.collegeboard.org/exam-administration-ordering-scores/scores/awards/scholar-awards">More information</a>`;
     presText = `
     "This award recognizes academic success in the classroom. To be eligible, students 
     must meet requirements, including grade point average or, school-set criteria and 
     choice of state tests or teacher recommendations."
     <br>
-    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://ndus.edu/paying-for-college/nd-scholars-program/">more information</a>`;
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://ndus.edu/paying-for-college/nd-scholars-program/">More information</a>`;
     dolaText = `
     "Bismarck Dollars for Scholars is a locally operated and supported, non-profit, 
     tax-exempt scholarship foundation. Operated by an all-volunteer Board of Directors, 
@@ -392,7 +392,7 @@ document.addEventListener('DOMContentLoaded', function () {
     by involving and assisting our community in the support of students and in the 
     encouragement of educational achievement."
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://bismarck.dollarsforscholars.org/">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://bismarck.dollarsforscholars.org/">More information</a>`;
     melbText = `
     "The recipient of this award will receive $300.00 scholarship upon graduation 
     from Century High School. Voted upon by members of the Concert Band and Wind
@@ -400,7 +400,7 @@ document.addEventListener('DOMContentLoaded', function () {
     spirit, and enthusiasm.It is given by Ron and Carol Melby in memory of their 
     son Brad."
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">More information</a>`;
     thomText = `
     "This scholarship is given in memory of Danie Thomssen (Class of 2016).
     The recipient of this award will receive a $1,000.00 scholarship upon graduation.
@@ -409,7 +409,7 @@ document.addEventListener('DOMContentLoaded', function () {
     leadership in the classroom, self-discipline in their practice, and a high level
     of musical excellence."
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">More information</a>`;
     woldText = `
     "The scholarship will be awarded annually to 5 BPS senior students who have 
     excelled in their academic pursuits and will be attending college. 
@@ -417,23 +417,23 @@ document.addEventListener('DOMContentLoaded', function () {
     have a strong sense of giving back. Selection will be based on a minimum 
     3.0 GPA and minimum cumulative ACT of 20."
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://bpsfoundation.com/project/wold-family-scholarship/">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://bpsfoundation.com/project/wold-family-scholarship/">More information</a>`;
     vlntText = `
     I was recognized for my volunteer work, having clocked more than 100 hours
     of volunteer service across various institutions.
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.bismarckschools.org/CHS">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.bismarckschools.org/CHS">More information</a>`;
     soscText = `
     I was part of the science olympiad team that won the state 
     championship for the first time in our school's history. Our team ended up
     39th overall nationally.
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.ndsu.edu/olympiad/">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.ndsu.edu/olympiad/">More information</a>`;
     fourText = `
     Recognition for being chosen to be a part of the All-State Music Festival
     for all four years of high school.
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.ndallstate.org/">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://www.ndallstate.org/">More information</a>`;
     sousText = `
     "This award is given to a senior band member for outstanding and unique
     achievement and service in band through exemplary leadership, musicianship,
@@ -441,13 +441,13 @@ document.addEventListener('DOMContentLoaded', function () {
     award will have their name inscribed on a brass plaque, which is proudly
     displayed in the band room."
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">More information</a>`;
     woodText = `
     "This award, selected by the directors, is given to the member of
     Jazz Ensemble #2 that demonstrates outstanding leadership, improvisation,
     and dedication to jazz band."
     <br>
-    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">more information</a>`;
+    <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); text-decoration: underline; display: flex; justify-content: center" href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">More information</a>`;
     vald.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";

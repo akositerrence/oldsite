@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/creomotor.webp";
-        subName.textContent = "reverse engineered starter motor";
-        subDates.textContent = "———— oct '23 — dec '23 ————";
+        subName.textContent = "Reverse Engineered Starter Motor";
+        subDates.textContent = "———— Oct '23 — Dec '23 ————";
         subDescription.textContent = `
         this was our fall term project for our me212 cad class. `;
         subVersion.textContent = "";
@@ -58,8 +58,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/website.webp";
-        subName.textContent = "documentation website";
-        subDates.textContent = "———— may '24 — jun '24 ————";
+        subName.textContent = "Documentation Website";
+        subDates.textContent = "———— May '24 — Jun '24 ————";
         subDescription.textContent = `
         For my own personal documentation and public visibility, I coded an
         entire website from scratch. I was also learning from scratch, since my only
@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/aging.webp";
-        subName.textContent = "accelerated aging apparatus";
-        subDates.textContent = "———— jun '24 — present ————";
+        subName.textContent = "Accelerated Aging Apparatus";
+        subDates.textContent = "———— Jun '24 — Present ————";
         subDescription.textContent = "test";
         subVersion.textContent = "";
     });

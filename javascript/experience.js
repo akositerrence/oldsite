@@ -148,6 +148,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     currentClicked = 1;
                     figure.style.opacity = "0";
                     figure.style.height = "5vw";
+                    figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
                     container.style.height = "45vw";
@@ -167,6 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.opacity = "0";
                     figure.style.height = "5vw";
                     company.style.height = "16vw";
+                    figure.style.padding = "1vw";
                     workLocation.style.height = "16vw";
                     container.style.height = "45vw";
                 }
@@ -184,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     currentClicked = 3;
                     figure.style.opacity = "0";
                     figure.style.height = "5vw";
+                    figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
                     container.style.height = "45vw";
@@ -202,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     currentClicked = 4;
                     figure.style.opacity = "0";
                     figure.style.height = "5vw";
+                    figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
                     container.style.height = "45vw";
@@ -220,6 +224,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     currentClicked = 5;
                     figure.style.opacity = "0";
                     figure.style.height = "5vw";
+                    figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
                     container.style.height = "45vw";
