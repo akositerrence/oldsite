@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "undergraduate research";
         subDates.textContent = "———— nov '23 — present ————";
-        subDescription.textContent = rsrcText;
+        subDescription.innerHTML = rsrcText;
         subVersion.textContent = "v06.20.2024";
     });
     asme.addEventListener("click", function () {
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/asme.webp";
         subName.textContent = "american society of mechanical engineers";
         subDates.textContent = "———— sep '23 — present ————";
-        subDescription.textContent = asmeText;
+        subDescription.innerHTML = asmeText;
         subVersion.textContent = "v06.20.2024";
     });
     aiaa.addEventListener("click", function () {
@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/aiaa.webp";
         subName.textContent = "american institute of aeronautics and astronautics";
         subDates.textContent = "———— sep '23 — present ————";
-        subDescription.textContent = aiaaText;
+        subDescription.innerHTML = aiaaText;
         subVersion.textContent = "v06.20.2024";
     });
     inno.addEventListener("click", function () {
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "innovation studio";
         subDates.textContent = "———— sep '23 — present ————";
-        subDescription.textContent = innoText;
+        subDescription.innerHTML = innoText;
         subVersion.textContent = "v06.20.2024";
     });
     ewbs.addEventListener("click", function () {
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "engineers without borders";
         subDates.textContent = "———— feb '24 — present ————";
-        subDescription.textContent = ewbsText;
+        subDescription.innerHTML = ewbsText;
         subVersion.textContent = "v06.20.2024";
     });
     robo.addEventListener("click", function () {
@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/robotics.webp";
         subName.textContent = "bison robotics";
         subDates.textContent = "———— sep '23 — present ————";
-        subDescription.textContent = roboText;
+        subDescription.innerHTML = roboText;
         subVersion.textContent = "v06.20.2024";
     });
     gcsp.addEventListener("click", function () {
@@ -154,7 +154,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "grand challenges scholars program";
         subDates.textContent = "———— jan '24 — present ————";
-        subDescription.textContent = "";
+        subDescription.innerHTML = "";
         subVersion.textContent = "v06.20.2024";
     });
     clim.addEventListener("click", function () {
@@ -164,7 +164,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "climbing club";
         subDates.textContent = "———— jan '24 — present ————";
-        subDescription.textContent = gcspText;
+        subDescription.innerHTML = gcspText;
         subVersion.textContent = "v06.20.2024";
     });
     clar.addEventListener("click", function () {
@@ -174,7 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "clarinet choir ensemble";
         subDates.textContent = "———— aug '23 — dec '23 ————";
-        subDescription.textContent = clarText;
+        subDescription.innerHTML = clarText;
         subVersion.textContent = "v06.20.2024";
     });
     orch.addEventListener("click", function () {
@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "university symphony orchestra";
         subDates.textContent = "———— aug '23 — dec '23 ————";
-        subDescription.textContent = orchText;
+        subDescription.innerHTML = orchText;
         subVersion.textContent = "v06.20.2024";
     });
 
