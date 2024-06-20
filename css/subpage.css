@@ -19,7 +19,7 @@
 #close-subpage {
     position: fixed;
     background: transparent;
-    font-size: 8vw;
+    font-size: 7vw;
     opacity: 90%;
     z-index: 30;
     top: 5vw;
@@ -41,7 +41,7 @@
     color: rgb(75, 75, 75);
     padding-top: 5vw;
     line-height: 1.5em;
-    font-size: 4.5vw;
+    font-size: 4.25vw;
     text-align: center;
     padding-left: 15vw;
     padding-right: 15vw;

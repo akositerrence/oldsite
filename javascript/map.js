@@ -87,8 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     leftButton.style.opacity = "70%";
                     leftButton.style.transform = "scaleY(2) scaleX(0.65) translateX(-15vw)";
                     hours.style.height = "6.5vw";
+                    container.style.paddingTop = "5vw";
                     container.style.height = "106vw";
                     figure.style.opacity = "0%";
+                    figure.style.paddingTop = "0vw";
                     inFlag = true;
                 }
             }

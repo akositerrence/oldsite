@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 j++;
                 i++;
                 m++;
-                setTimeout(type, 1);
+                setTimeout(type, 7.5);
             } else {
                 if (callback) { callback(); }
             }
@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "106vw";
+                    container.style.height = "112vw";
                 }
             });
             target.addEventListener("click", function () {
@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     company.style.height = "16vw";
                     figure.style.padding = "1vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "106vw";
+                    container.style.height = "112vw";
                 }
             });
             ndsu.addEventListener("click", function () {
@@ -192,7 +192,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "78vw";
+                    container.style.height = "84vw";
                 }
             });
             aigen.addEventListener("click", function () {
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "50vw";
+                    container.style.height = "56vw";
                 }
             });
             marvin.addEventListener("click", function () {
@@ -230,7 +230,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     figure.style.padding = "1vw";
                     company.style.height = "16vw";
                     workLocation.style.height = "16vw";
-                    container.style.height = "8vw";
+                    container.style.height = "14vw";
                 }
             });
 

@@ -45,9 +45,25 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/creomotor.webp";
         subName.textContent = "Reverse Engineered Starter Motor";
         subDates.textContent = "———— Oct '23 — Dec '23 ————";
-        subDescription.textContent = `
-        this was our fall term project for our me212 cad class. `;
-        subVersion.textContent = "";
+        subDescription.innerHTML = `
+        For the fall term project for our ME212 CAD class, our team decided to
+        disassemble a tractor starter motor that one of our group members found.
+        What made the task difficult was the lack of information online about 
+        the part. Judging from part numbers, I estimated that the starter was used on a
+        tractor dating from the 40s or 50s. The aim of the project was the summarize
+        all that we've learned modeling with Creo Parametric, as well as to employ proper 
+        tolerancing and dimensioning to ensure the quality of our final product. Though this 
+        project was mainly in digital form, it also introduced me to my first experiences
+        in a shop setting, since I was tasked to disassmble the difficult assemblies of the 
+        starter and was forced to use heavier equipment due to the nature of the things
+        I had to take apart.
+        <br>
+        <br>
+        For now, you can find the final product on my <a target="_blank" style="color: rgb(75, 75, 75); text-decoration: underline;" href="https://www.linkedin.com/in/tsangabriel/">LinkedIn profile</a> 
+        under my projects section.
+        <br>
+        <br>`;
+        subVersion.textContent = "v06.18.2024";
     });
     website.addEventListener("click", function () {
         shrinkAllProjects();
@@ -60,14 +76,19 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/website.webp";
         subName.textContent = "Documentation Website";
         subDates.textContent = "———— May '24 — Jun '24 ————";
-        subDescription.textContent = `
+        subDescription.innerHTML = `
         For my own personal documentation and public visibility, I coded an
         entire website from scratch. I was also learning from scratch, since my only
         experience with webside code is messing around with element inspect on my school grades and 
         changing them so I can gaslight my friends. My philosophy was to avoid using frameworks, since my
         main focus for the project is to familiarize myself with front end development
-        using raw HTML, CSS, and Javascript.`;
-        subVersion.textContent = "";
+        using raw HTML, CSS, and Javascript.
+        <br>
+        <br>
+        You can find the full repository for this project on my <a target="_blank" style="color: rgb(75, 75, 75); text-decoration: underline;" href="https://github.com/akositerrence/akositerrence.github.io">Github</a> account.
+        <br>
+        <br>`;
+        subVersion.textContent = "v06.18.2024";
     });
     age.addEventListener("click", function () {
         shrinkAllProjects();
@@ -80,99 +101,20 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "/images/aging.webp";
         subName.textContent = "Accelerated Aging Apparatus";
         subDates.textContent = "———— Jun '24 — Present ————";
-        subDescription.textContent = "test";
-        subVersion.textContent = "";
-    });
-
-    const cadButton = document.querySelector("#cad");
-    const digButton = document.querySelector("#mod");
-    const simButton = document.querySelector("#sim");
-    const proButton = document.querySelector("#pro");
-    const embButton = document.querySelector("#emb");
-    const manButton = document.querySelector("#man");
-    const cadText = document.querySelector("#cad3");
-    const digText = document.querySelector("#mod3");
-    const simText = document.querySelector("#sim3");
-    const proText = document.querySelector("#pro3");
-    const embText = document.querySelector("#emb3");
-    const manText = document.querySelector("#man3");
-    let cadState = false;
-    let digState = false;
-    let simState = false;
-    let proState = false;
-    let embState = false;
-    let manState = false;
-
-    cadButton.addEventListener("click", function () {
-        if (cadState == false) {
-            cadText.style.filter = "opacity(100%)";
-            cadText.style.scale = "105%";
-            cadState = !cadState;
-        } else {
-            cadText.style.filter = "opacity(65%)";
-            cadText.style.scale = "90%";
-            cadState = !cadState;
-        }
-    });
-
-    digButton.addEventListener("click", function () {
-        if (digState == false) {
-            digText.style.filter = "opacity(100%)";
-            digText.style.scale = "105%";
-            digState = !digState;
-        } else {
-            digText.style.filter = "opacity(65%)";
-            digText.style.scale = "90%";
-            digState = !digState;
-        }
-    });
-
-    simButton.addEventListener("click", function () {
-        if (simState == false) {
-            simText.style.filter = "opacity(100%)";
-            simText.style.scale = "105%";
-            simState = !simState;
-        } else {
-            simText.style.filter = "opacity(65%)";
-            simText.style.scale = "90%";
-            simState = !simState;
-        }
-    });
-
-    proButton.addEventListener("click", function () {
-        if (proState == false) {
-            proText.style.filter = "opacity(100%)";
-            proText.style.scale = "105%";
-            proState = !proState;
-        } else {
-            proText.style.filter = "opacity(65%)";
-            proText.style.scale = "90%";
-            proState = !proState;
-        }
-    });
-
-    embButton.addEventListener("click", function () {
-        if (embState == false) {
-            embText.style.filter = "opacity(100%)";
-            embText.style.scale = "105%";
-            embState = !embState;
-        } else {
-            embText.style.filter = "opacity(65%)";
-            embText.style.scale = "90%";
-            embState = !embState;
-        }
-    });
-
-    manButton.addEventListener("click", function () {
-        if (manState == false) {
-            manText.style.filter = "opacity(100%)";
-            manText.style.scale = "105%";
-            manState = !manState;
-        } else {
-            manText.style.filter = "opacity(65%)";
-            manText.style.scale = "90%";
-            manState = !manState;
-        }
+        subDescription.innerHTML = `
+        This was an inherited project from a senior design built around 3 semesters before I picked it up.
+        The device is supposed to simulate spirit maturation, mimicing seasonal temperature fluctuations
+        and pressure changes. It does so through a set of relays acting as switches to solenoids, opening and
+        closing nitrogen and glycol lines used to pressure and cool the main line. Usually, the full process 
+        takes more than a decade. This device is meant to do it in around 1 year.
+        <br>
+        <br>
+        This project is in progress. I'm currently using an Arduino to send instructions to the relays.
+        The code can be found on my <a target="_blank" style="color: rgb(75, 75, 75); text-decoration: underline;" href="https://github.com/akositerrence/ndsu-accelerated-aging-apparatus">Github</a> account.
+        <br>
+        <br>
+        `;
+        subVersion.textContent = "v06.18.2024";
     });
 
     window.addEventListener("scroll", function () {

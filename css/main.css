@@ -335,7 +335,7 @@
 }
 
 #specific-globe-description {
-    padding-top: 5vw;
+    padding-top: 0vw;
     text-align: justify;
     transition: all 1s ease;
     height: 0vw;
@@ -348,11 +348,12 @@
 }
 
 #worked-figure {
-    padding-top: 6vw;
+    padding-top: 7vw;
     transition: all 0.5s ease;
 }
 
 #world-figure {
+    padding-top: 5vw;
     transition: all 0.5s ease;
 }
 
