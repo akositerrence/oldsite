@@ -32,25 +32,61 @@ document.addEventListener('DOMContentLoaded', function () {
     clar = document.querySelector("#clar");
     orch = document.querySelector("#orch");
     rsrcText = `
-    test`;
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="">More information</a>`;
     asmeText = `
-    test`;
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://myndsu.ndsu.edu/organization/americansocietyofmechanicalengineers">More information</a>`;
     aiaaText = `
-    test`;
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://myndsu.ndsu.edu/organization/americaninstituteofaeronauticsandastronautics">More information</a>`;
     innoText = `
-    test`;
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://www.ndsuinnovationstudio.com/">More information</a>`;
     ewbsText = `
-    test`;
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://www.ndsuewb.org/photo-gallery">More information</a>`;
     roboText = `
-    test`;
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://myndsu.ndsu.edu/organization/bisonrobotics">More information</a>`;
     gcspText = `
-    test`;
+    "The Grand Challenges Scholars program at NDSU is a comprehensive research immersive program for energetic and ambitious undergraduate students who wish to participate in this great national venture of engineering. Graduates of this program are expected to be among the key players in solving the grand challenges to humanity. This program will selectively recruit students who are currently freshmen, as described in the application process. Participation in the program will be concurrent to student preparation towards their degrees in their respective departments in engineering. Upon selection, students will work on a project synergistically with the faculty in charge and graduate students."
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://www.ndsu.edu/coe/research/grand_challenge_scholars/">More information</a>`;
     climText = `
-    test`;
+    Climbing good
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://myndsu.ndsu.edu/organization/rockclimbingclub">More information</a>`;
     clarText = `
-    test`;
+    "Woodwind groups are a vital part of the music curriculum at NDSU. Participation is open to students of any major at NDSU. Instrumentation varies each semester depending on the composition of student participation, but includes both mixed- and like-instrument ensembles. Permanent ensembles include flute choir, clarinet quartets and clarinet choir, saxophone quartets and saxophone choir, and woodwind quintets."
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="">More information</a>`;
     orchText = `
-    test`;
+    "The University Symphony Orchestra rehearses and performs standard classical, traditional, contemporary orchestral and chamber 
+    music repertoire. This ensemble provides members the opportunity to rehearse and perform orchestral literature at a high and 
+    challenging level."
+    <br>
+    <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
+    text-decoration: underline; display: flex; justify-content: center" 
+    href="https://www.ndsu.edu/performingarts/music/ensembles-and-performances/orchestra/">More information</a>`;
     rsrc.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
@@ -59,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "undergraduate research";
         subDates.textContent = "———— nov '23 — present ————";
         subDescription.textContent = rsrcText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     asme.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -69,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "american society of mechanical engineers";
         subDates.textContent = "———— sep '23 — present ————";
         subDescription.textContent = asmeText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     aiaa.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -79,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "american institute of aeronautics and astronautics";
         subDates.textContent = "———— sep '23 — present ————";
         subDescription.textContent = aiaaText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     inno.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -89,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "innovation studio";
         subDates.textContent = "———— sep '23 — present ————";
         subDescription.textContent = innoText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     ewbs.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -99,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "engineers without borders";
         subDates.textContent = "———— feb '24 — present ————";
         subDescription.textContent = ewbsText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     robo.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -109,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "bison robotics";
         subDates.textContent = "———— sep '23 — present ————";
         subDescription.textContent = roboText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     gcsp.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -119,7 +155,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "grand challenges scholars program";
         subDates.textContent = "———— jan '24 — present ————";
         subDescription.textContent = "";
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     clim.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -129,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "climbing club";
         subDates.textContent = "———— jan '24 — present ————";
         subDescription.textContent = gcspText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     clar.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -139,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "clarinet choir ensemble";
         subDates.textContent = "———— aug '23 — dec '23 ————";
         subDescription.textContent = clarText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
     orch.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
@@ -149,7 +185,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "university symphony orchestra";
         subDates.textContent = "———— aug '23 — dec '23 ————";
         subDescription.textContent = orchText;
-        subVersion.textContent = "";
+        subVersion.textContent = "v06.20.2024";
     });
 
     nhso = document.querySelector("#nhso");
