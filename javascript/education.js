@@ -37,11 +37,20 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="">More information</a>`;
     asmeText = `
+    "The NDSU chapter of the American Society of Mechanical Engineers is a once a month meeting for NDSU 
+    engineering students. ASME provides students the opportunity to listen to speakers, compete in small design competitions for prizes, and go on plant tours."
+    <br>
+    I serve as the incumbent president for the club, effective fall of 2024, my sophomore year.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://myndsu.ndsu.edu/organization/americansocietyofmechanicalengineers">More information</a>`;
     aiaaText = `
+    "The NDSU Chapter of AIAA is dedicated to sharing experience with the student interested in aeronautics, aircraft, space and engineering. Students have the opportunity to learn from fellow students, professionals, and personal experiences. AIAA will arrange activities to offer these experiences."
+    <br>
+    Our chapter participated in AIAA's Design, Build, Fly competition in Wichita, Kansas in 2024, spring of my freshman year.
+    It was a rewarding opportunity, with it being my first intercollegiate competition, meeting people from schools such as UCLA,
+    MIT, and UNSW Sydney, and being able to connect with a larger community of RC hobbyists in the Fargo-Moorhead periphery.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
@@ -74,15 +83,15 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://myndsu.ndsu.edu/organization/rockclimbingclub">More information</a>`;
     clarText = `
-    "Woodwind groups are a vital part of the music curriculum at NDSU. Participation is open to students of any major at NDSU. Instrumentation varies each semester depending on the composition of student participation, but includes both mixed- and like-instrument ensembles. Permanent ensembles include flute choir, clarinet quartets and clarinet choir, saxophone quartets and saxophone choir, and woodwind quintets."
+    I played in clarinet choir for my first semester at NDSU. It was interesting to learn about 
+    small details with my main instrument that I had never thought of previously.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="">More information</a>`;
     orchText = `
-    "The University Symphony Orchestra rehearses and performs standard classical, traditional, contemporary orchestral and chamber 
-    music repertoire. This ensemble provides members the opportunity to rehearse and perform orchestral literature at a high and 
-    challenging level."
+    I played clarinet for the University Orchestra my first semester at NDSU. It was the first time I played
+    in an orchestral setting since Youth Symphony my junior year of high school.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
@@ -92,8 +101,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "undergraduate research";
-        subDates.textContent = "———— nov '23 — present ————";
+        subName.textContent = "Undergraduate Research";
+        subDates.textContent = "———— Nov '23 — Present ————";
         subDescription.innerHTML = rsrcText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -102,8 +111,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/asme.webp";
-        subName.textContent = "american society of mechanical engineers";
-        subDates.textContent = "———— sep '23 — present ————";
+        subName.textContent = "American Society of Mechanical Engineers";
+        subDates.textContent = "———— Sep '23 — Present ————";
         subDescription.innerHTML = asmeText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -112,8 +121,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/aiaa.webp";
-        subName.textContent = "american institute of aeronautics and astronautics";
-        subDates.textContent = "———— sep '23 — present ————";
+        subName.textContent = "American Institute of Aeronautics and Astronautics";
+        subDates.textContent = "———— Sep '23 — Present ————";
         subDescription.innerHTML = aiaaText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -122,8 +131,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "innovation studio";
-        subDates.textContent = "———— sep '23 — present ————";
+        subName.textContent = "Innovation Studio";
+        subDates.textContent = "———— Sep '23 — Present ————";
         subDescription.innerHTML = innoText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -132,8 +141,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "engineers without borders";
-        subDates.textContent = "———— feb '24 — present ————";
+        subName.textContent = "Engineers Without Borders";
+        subDates.textContent = "———— Feb '24 — Present ————";
         subDescription.innerHTML = ewbsText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -142,8 +151,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/robotics.webp";
-        subName.textContent = "bison robotics";
-        subDates.textContent = "———— sep '23 — present ————";
+        subName.textContent = "Bison Robotics";
+        subDates.textContent = "———— Sep '23 — Present ————";
         subDescription.innerHTML = roboText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -152,8 +161,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "grand challenges scholars program";
-        subDates.textContent = "———— jan '24 — present ————";
+        subName.textContent = "Grand Challenges Scholars Program";
+        subDates.textContent = "———— Jan '24 — present ————";
         subDescription.innerHTML = "";
         subVersion.textContent = "v06.20.2024";
     });
@@ -162,8 +171,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "climbing club";
-        subDates.textContent = "———— jan '24 — present ————";
+        subName.textContent = "Climbing Club";
+        subDates.textContent = "———— Jan '24 — Present ————";
         subDescription.innerHTML = gcspText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -172,8 +181,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "clarinet choir ensemble";
-        subDates.textContent = "———— aug '23 — dec '23 ————";
+        subName.textContent = "Clarinet Ensemble";
+        subDates.textContent = "———— Aug '23 — Dec '23 ————";
         subDescription.innerHTML = clarText;
         subVersion.textContent = "v06.20.2024";
     });
@@ -182,8 +191,8 @@ document.addEventListener('DOMContentLoaded', function () {
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
-        subName.textContent = "university symphony orchestra";
-        subDates.textContent = "———— aug '23 — dec '23 ————";
+        subName.textContent = "University Symphony Orchestra";
+        subDates.textContent = "———— Aug '23 — Dec '23 ————";
         subDescription.innerHTML = orchText;
         subVersion.textContent = "v06.20.2024";
     });

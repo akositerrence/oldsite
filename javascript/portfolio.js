@@ -46,20 +46,23 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "Reverse Engineered Starter Motor";
         subDates.textContent = "———— Oct '23 — Dec '23 ————";
         subDescription.innerHTML = `
-        For the fall term project for our ME212 CAD class, our team decided to
-        disassemble a tractor starter motor that one of our group members found.
-        What made the task difficult was the lack of information online about 
-        the part. Judging from part numbers, I estimated that the starter was used on a
-        tractor dating from the 40s or 50s. The aim of the project was the summarize
-        all that we've learned modeling with Creo Parametric, as well as to employ proper 
-        tolerancing and dimensioning to ensure the quality of our final product. Though this 
-        project was mainly in digital form, it also introduced me to my first experiences
-        in a shop setting, since I was tasked to disassmble the difficult assemblies of the 
-        starter and was forced to use heavier equipment due to the nature of the things
-        I had to take apart.
+        For our ME212 CAD class's fall term project, our team decided to
+        disassemble a tractor's starter motor sourced from one of our group members' farm.
+        Judging from part numbers, I estimated that the starter was previously implemented on a tractor 
+        dating from the 1940s - 1950s. This added a thick, navigable layer of complexity to our project
+        due to the scarcity of information online about the specifics of our equipment. However, this
+        layer was thinned by the exemplary level of collaboration and commuication my peers and I achieved.
         <br>
         <br>
-        For now, you can find the final product on my <a target="_blank" style="color: rgb(75, 75, 75); text-decoration: underline;" href="https://www.linkedin.com/in/tsangabriel/">LinkedIn profile</a> 
+        The aim of the project was the synthesize all that we've learned modeling with Creo Parametric.
+        This included practicing precise tolerancing and dimensioning efforts to ensure the quality of our 
+        final product. Though the project was prodominantly in digital form, it also marked my
+        inititation to a shop setting. I was tasked with disassembling and modeling the more stubborn assemblies
+        of the starter, which required the use of heavier equipment with the nature of the 
+        components involved.
+        <br>
+        <br>
+        As of now, you can find the final product on my <a target="_blank" style="color: rgb(75, 75, 75); text-decoration: underline;" href="https://www.linkedin.com/in/tsangabriel/">LinkedIn profile</a> 
         under my projects section.
         <br>
         <br>`;
@@ -77,12 +80,17 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "Documentation Website";
         subDates.textContent = "———— May '24 — Jun '24 ————";
         subDescription.innerHTML = `
-        For my own personal documentation and public visibility, I coded an
-        entire website from scratch. I was also learning from scratch, since my only
-        experience with webside code is messing around with element inspect on my school grades and 
-        changing them so I can gaslight my friends. My philosophy was to avoid using frameworks, since my
-        main focus for the project is to familiarize myself with front end development
-        using raw HTML, CSS, and Javascript.
+        For my own personal documentation 
+        and public visibility, I coded an entire website from scratch. I was also learning from 
+        scratch, since my prior experience with webside code was limited to messing around with element inspect 
+        on my school grades and changing them so I can gaslight my friends. 
+        <br>
+        <br>
+        It was a significant learning experience, and driven by the philosophy of fundamentals,
+        I deliberately avoided frameworks, since my primary goal was a thorough understanding of 
+        introductory front-end development through raw HTML, CSS, and Javascript. I also made it
+        a point to implement a few best practices I learned from podcasts and readings, such as using a 
+        mobile first approach, relative units, image optimization, and much more.
         <br>
         <br>
         You can find the full repository for this project on my <a target="_blank" style="color: rgb(75, 75, 75); text-decoration: underline;" href="https://github.com/akositerrence/akositerrence.github.io">Github</a> account.
@@ -102,14 +110,15 @@ document.addEventListener('DOMContentLoaded', function () {
         subName.textContent = "Accelerated Aging Apparatus";
         subDates.textContent = "———— Jun '24 — Present ————";
         subDescription.innerHTML = `
-        This was an inherited project from a senior design built around 3 semesters before I picked it up.
-        The device is supposed to simulate spirit maturation, mimicing seasonal temperature fluctuations
-        and pressure changes. It does so through a set of relays acting as switches to solenoids, opening and
-        closing nitrogen and glycol lines used to pressure and cool the main line. Usually, the full process 
-        takes more than a decade. This device is meant to do it in around 1 year.
+        This was an inherited project from a senior design built initiated about a year before 
+        I assumed responsibility. The device aims to simulate spirit maturation by mimicking seasonal
+        temperature fluctuations and pressure changes. This is achieved through a set of relays, acting as 
+        switches to solenoids, opening and closing nitrogen and glycol lines used to influence the 
+        main line's environment. While traditional maturation methods take over a decade, this design is
+        poised to achieve similar results in about a year.
         <br>
         <br>
-        This project is in progress. I'm currently using an Arduino to send instructions to the relays.
+        This is a dynamic project as it is in progress. I'm currently using an Arduino to send instructions to the relays.
         The code can be found on my <a target="_blank" style="color: rgb(75, 75, 75); text-decoration: underline;" href="https://github.com/akositerrence/ndsu-accelerated-aging-apparatus">Github</a> account.
         <br>
         <br>
