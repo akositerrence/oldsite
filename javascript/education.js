@@ -37,8 +37,10 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="">More information</a>`;
     asmeText = `
-    "The NDSU chapter of the American Society of Mechanical Engineers is a once a month meeting for NDSU 
-    engineering students. ASME provides students the opportunity to listen to speakers, compete in small design competitions for prizes, and go on plant tours."
+    "The NDSU chapter of the American Society of Mechanical Engineers is a 
+    once a month meeting for NDSU engineering students. ASME provides 
+    students the opportunity to listen to speakers, compete in small design 
+    competitions for prizes, and go on plant tours."
     <br>
     I serve as the incumbent president for the club, effective fall of 2024, my sophomore year.
     <br>
@@ -46,7 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://myndsu.ndsu.edu/organization/americansocietyofmechanicalengineers">More information</a>`;
     aiaaText = `
-    "The NDSU Chapter of AIAA is dedicated to sharing experience with the student interested in aeronautics, aircraft, space and engineering. Students have the opportunity to learn from fellow students, professionals, and personal experiences. AIAA will arrange activities to offer these experiences."
+    "The NDSU Chapter of AIAA is dedicated to sharing experience with the student 
+    interested in aeronautics, aircraft, space and engineering. Students have 
+    the opportunity to learn from fellow students, professionals, and 
+    personal experiences. AIAA will arrange activities to offer these experiences."
     <br>
     Our chapter participated in AIAA's Design, Build, Fly competition in Wichita, Kansas in 2024, spring of my freshman year.
     It was a rewarding opportunity, with it being my first intercollegiate competition, meeting people from schools such as UCLA,
@@ -71,31 +76,42 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://myndsu.ndsu.edu/organization/bisonrobotics">More information</a>`;
     gcspText = `
-    "The Grand Challenges Scholars program at NDSU is a comprehensive research immersive program for energetic and ambitious undergraduate students who wish to participate in this great national venture of engineering. Graduates of this program are expected to be among the key players in solving the grand challenges to humanity. This program will selectively recruit students who are currently freshmen, as described in the application process. Participation in the program will be concurrent to student preparation towards their degrees in their respective departments in engineering. Upon selection, students will work on a project synergistically with the faculty in charge and graduate students."
+    "The Grand Challenges Scholars program at NDSU is a comprehensive research 
+    immersive program for energetic and ambitious undergraduate students who wish 
+    to participate in this great national venture of engineering. Graduates of 
+    this program are expected to be among the key players in solving the grand 
+    challenges to humanity. This program will selectively recruit students who 
+    are currently freshmen, as described in the application process. Participation 
+    in the program will be concurrent to student preparation towards their degrees 
+    in their respective departments in engineering. Upon selection, students 
+    will work on a project synergistically with the faculty in charge and graduate students."
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.ndsu.edu/coe/research/grand_challenge_scholars/">More information</a>`;
     climText = `
-    Climbing good
+    climbing good
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://myndsu.ndsu.edu/organization/rockclimbingclub">More information</a>`;
     clarText = `
-    I played in clarinet choir for my first semester at NDSU. It was interesting to learn about 
-    small details with my main instrument that I had never thought of previously.
+    During my first semester at NDSU, I played in the clarinet choir. It was an 
+    intriguing experience that allowed me to explore small details about my main 
+    instrument that I had never considered before.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="">More information</a>`;
     orchText = `
-    I played clarinet for the University Orchestra my first semester at NDSU. It was the first time I played
-    in an orchestral setting since Youth Symphony my junior year of high school.
+    During my first semester at NDSU, I played clarinet for the University Orchestra. 
+    It was my first experience in an orchestral setting since participating in the 
+    Youth Symphony my junior year of high school.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.ndsu.edu/performingarts/music/ensembles-and-performances/orchestra/">More information</a>`;
+    // change above this
     rsrc.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
@@ -110,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
-        subImage.src = "/images/asme.webp";
+        subImage.src = "";
         subName.textContent = "American Society of Mechanical Engineers";
         subDates.textContent = "———— Sep '23 — Present ————";
         subDescription.innerHTML = asmeText;
@@ -213,108 +229,219 @@ document.addEventListener('DOMContentLoaded', function () {
     cros = document.querySelector("#cros");
     trac = document.querySelector("#trac");
     nhsoText = `
-    National Honor Society at my school meant completing a series of different tiers of service hours, being involved in extracurriculars, and demonstrating qualities of good character.
+    At my school, being part of the National Honor Society meant completing 
+    various tiers of service hours, actively participating in extracurricular 
+    activities, and consistently demonstrating qualities of good character.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://sites.google.com/a/bismarckschools.org/bps-nhs/home">More information</a>`;
     nthsText = `
-    Considered as one of the top aviation students in my program, I was nominated by my aviation teacher to be a part of the National Technical Honor Society. It's an organization that recognizes students in technical vocations. During my time in the aviation
-    program, I held the top score on the FAA knowledge test my instructor saw associated with the program. 
+    Considered one of the top aviation students in my program, I was 
+    nominated by my aviation teacher to be part of the National Technical 
+    Honor Society, an organization that recognizes high performing students in technical 
+    vocations. During my time in the aviation program, I held the highest 
+    score on the FAA knowledge test that my instructor had ever seen associated 
+    with the program.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://nths.org/">More information</a>`;
     fligText = `
-    Before my final decision to pursue engineering, I originally wanted to be an
-    airline pilot. Our public school district offered a "career academy," which was basically a shared mini trade school. My sophomore year of high school, I decided to join the aviation program under the instruction of Brad Stangeland. The program offered a free discovery flight, and it was in that first flight that I discovered the thrill of aviation. I was a very technical student, largely focusing on "why" things were. It was a slow process, with me still being in school and all. I ended up getting over a 90% on the official FAA knowledge test for my PPL, which was the highest the program had 
-    ever seen. After taking 2 years of aviation, I resumed my flight training with the Bismarck Aero Center under 3 different instructors. I transitioned from the C150 to the C172. I eventually completed my training in August of 2023.
+    Before deciding to pursue engineering, I originally dreamed to be an 
+    airline pilot. Our public school district offered a "career academy," 
+    a shared mini trade school of sorts. My sophomore year of high 
+    school, I joined the aviation program under the instruction of Brad 
+    Stangeland. The program offered a free discovery flight, and in 
+    that maiden flight, I discovered the thrill of aviation. 
     <br>
+    <br>
+    As a very technical student, I was deeply focused on understanding the "why" 
+    behind things. Progress was slow due to my school commitments, but I 
+    managed to score over 90% on the official FAA knowledge test for my PPL, 
+    the highest score the program had ever seen. After two years of aviation 
+    studies, I continued my flight training with the Bismarck Aero Center 
+    under three different instructors, transitioning from the C150 to the C172. 
+    I eventually completed my training in August of 2023.
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://bismarckaero.com/">More information</a>`;
     scioText = `
-    Science Olympiad was probably the second favorite thing I did in high school, right next to band. It's basically track and field, but for science stuff. Think rocket competitions, plane competitions, cryptology tests, etc. It's one of the biggest factors that made me decide to pursue engineering as a
-    career. I was in it for all 4 years of high school, and our team competed in regional and state competitions. I won multiple gold titles in multiple build events over the years, such as Detector Building, where we 
-    build sensors that display values such as salinity and temperature as accurate as possible, and Flight, where we build a rubber powered aerial vehicle that stays airborne for the most amount of time. My favorite memory
-    is winning State for the first time in our school's history my Junior year and advancing to nationals, ending up 39th of 60 teams nationally, and my favorite victory was winning the Flight event my senior year, when we won a full 30 seconds ahead of the other teams at state. It was a fulfilling experience, providing multiple opportunities that graced many different avenues of engineering, as well as provided the opportunity to be a leader and mentor to underclassmen and middle schoolers on a similar path to STEM.
+    Science Olympiad was probably my second favorite activity in high school, 
+    right after band. It's like track and field, but for science, with events 
+    like rocket competitions, plane competitions, and cryptology tests. It 
+    played a significant role in my decision to pursue engineering as a career. 
+    I participated all four years of high school, competing in regional and state 
+    competitions. Over the years, I won multiple gold titles in build events, 
+    such as Detector Building, where we constructed sensors to display values 
+    like salinity and temperature as accurately as possible, and Flight, where 
+    we built a rubber-powered aerial vehicle to stay airborne the longest.
+    <br>
+    <br>
+    My favorite memory is winning State for the first time in our school's history 
+    during my junior year and advancing to nationals, where we placed 39th overall. 
+    My favorite victory was winning the Flight event my senior year, 
+    where we outperformed every other team at state by a full 30 seconds. It was a 
+    fulfilling experience, offering opportunities that spanned various engineering 
+    disciplines and providing a chance to be a leader and mentor to underclassmen 
+    and middle schoolers on a similar STEM path.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center"
     href="https://www.bismarckschools.org/Page/1652">More information</a>`;
     scibText = `
-    Science Bowl is a competitive academic event, testing students' knowledge in
-    different STEM disciplines such as science and math. I was selected to participate from a pool of applicants from our high school. I competed with the team my junior and senior year, with us finished 4th and 6th at the state level respectively.
+    Science Bowl is a competitive academic event that tests students' knowledge 
+    in various STEM disciplines, such as science and math. I, along with some of my
+    peers, were selected to participate from a pool of applicants at our high school 
+    and competed as a team during my junior and senior years. We finished 4th and 6th 
+    at the state level, respectively.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://science.osti.gov/wdts/nsb/Regional-Competitions/High-School-Regionals/ND_North-Dakota-High-School-Regional-Science-Bowl">More information</a>`;
     windText = `
-    In a job interview for an internship, I was asked to pick one item from the 
-    scores of things on my resume that defined me the most. Despite being in college, I picked my involvement in high school band. Playing for the top ensemble at Century for three years, I served as the Principal Clarinetist for the whole program. I was recognized by the directors with the John Philip Sousa Band Award, the most prestigious recognition for the band, the Brad Melby Memorial Scholarship, the Danie Thomssen Memorial Scholarship, both recognitions selected by peers, as well as the outstanding band member award for 4 years. Being one of the top clarinetists in the state, I and my peers earned countless star ratings and "best of the room" awards for ensembles and solos at state music contests across three instruments (Clarinet, Saxophone, Trumpet). Our band regularly worked with various music professionals, internationally recognized composers and conductors,  as well as fellow ensembles in the peripheral. Our group was named with multiple achievements, earning the Superior Rating at OrlandoFest, earning the Gold Rating at NDSU's Raging Red Band Festival, as well as being named the "Governor's Band," playing for a few government and public functions, such as the State of the State Address. My time with the band is easily the most rewarding experience I could ever have been involved in. I met most of my friends through band and I entirely credit my achievements in academics and other fields to this program. If I hadn't made the decision to join band in middle school, I would still be the isolated, introverted kid that I was. My own achievements and our band's achievements would never have been possible without the work of our directors, Chris Dasovick and Erik Stordalen, as well as those who taught us in our middle school years, Melinda Halverson and Sona Houle.
+    In a job interview for an internship, I was asked to choose one item 
+    from my resume that defined me the most. Despite being in college, I 
+    chose my involvement in high school band. Playing for the top ensemble 
+    at Century for three years, I served as the Principal Clarinetist for 
+    the entire program. I was honored by the directors with the John Philip 
+    Sousa Band Award, the most prestigious recognition for the band, and by 
+    my peers with the Brad Melby Memorial Scholarship, the Danie Thomssen 
+    Memorial Scholarship, and the outstanding band member award for four years.
+    <br>
+    <br>
+    As one of the top clarinetists in the state, my peers and I earned 
+    countless star ratings and "best of the room" awards for ensembles 
+    and solos at state music contests across three instruments (clarinet, saxophone, trumpet).
+    Our band regularly collaborated with various music professionals, 
+    internationally recognized composers and conductors, and area ensembles. 
+    We achieved multiple accolades, including a Superior Rating at OrlandoFest, 
+    a Gold Rating at NDSU's Raging Red Band Festival, and being named the "Governor's Band," 
+    performing at government and public functions such as the State of the State Address.
+    <br>
+    <br>
+    My time with the band is easily the most rewarding experience I could have ever 
+    been involved in. I met most of my friends through band, and I credit my 
+    achievements in academics and other fields to this program. If I hadn't 
+    decided to join band in middle school, I would still be the isolated, 
+    introverted kid I was. My own achievements and our band's successes 
+    would never have been possible without the dedication of our directors, 
+    Chris Dasovick and Erik Stordalen, and our middle school teachers, 
+    Melinda Halverson and Sona Houle.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://centurypatriotbands.weebly.com/">More information</a>`;
     jazzText = `
-    Some time in junior year of high school, my friends all started to randomly purchase Saxophones. I thought it was hilarious, and so I purchased my own off of Facebook Marketplace. Though I never performed with the Saxophone my junior year, my friends and I decided to commit to the instrument and joined summer theatre pit doubling with Clarinet and Saxophone. During my senior year, my friends and I were proficient enough that we played solos and ensembles at the local West State Region festival, and even ended up earning star ratings. In addition, we also decided to join our school's jazz Band. Our school had 2 jazz bands, Jazz 1 being the top ensemble, Jazz 2 being the general ensemble. Though we were in Jazz 2, it offered us the opportunity to be leaders to underclassmen that we usually wouldn't work with since they weren't playing our main instrument. It was a great experience and it opened our eyes to new avenues of music. 
+    In junior year of high school, my friends started randomly purchasing 
+    saxophones, which I found hilarious, so I bought one off Facebook Marketplace.
+    While I didn't perform with the saxophone that year, we committed to it and
+    joined the summer theatre pit, playing both clarinet and saxophone. 
+    By senior year, we had become proficient enough to play solos and 
+    ensembles at the local West State Region festival, earning star ratings.
+    <br>
+    <br>
+    Additionally, we joined our school's jazz band. With two jazz bands — 
+    Jazz 1 as the top ensemble and Jazz 2 as the general ensemble — we were in Jazz 2. 
+    This experience allowed us to lead underclassmen who didn't play our main instrument, 
+    opening our eyes to new avenues of music. It was a rewarding experience overall.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://centurypatriotbands.weebly.com/">More information</a>`;
     marcText = `
-    Part of being in our high school's band program means having the opportunity to particpate in marching band. Our school district was different in that we never had those fancy DCI competitions you saw on youtube, we just had march in a straight
-    line down a road. We participated in 2 big parades every year, both held in Bismarck. Though marching in a straight line sounds real easy, doing so with over a hundred band kids in thick uniform takes much more practice. I was regularly a right 
-    guide for the rows, meaning I was trusted enough to be a reference point for an entire row. My senior year, I was a line leader, coordinating my section to be better members of the marching band.
+    Part of being in our high school's band program meant having the opportunity 
+    to participate in marching band. Unlike the fancy DCI competitions you see on 
+    YouTube, our school district's marching band simply marched in a line
+    down the road. We participated in two big parades every year, both held in 
+    Bismarck. Though marching in a straight line sounds easy, doing so with over
+    a hundred band kids in thick uniforms required much practice and patience.
+    <br>
+    <br>
+    I regularly served as a right guide for the rows, a position of trust where 
+    I was a reference point for an entire row. In my senior year, I became a 
+    line leader, coordinating my section and helping them become better members 
+    of the marching band.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://centurypatriotbands.weebly.com/marching-information.html">More information</a>`;
     colrText = `
-    The Color Guard presents the nation's colors at various local events, such as Bismarck's 50th anniversary,
-    school rallies, etc. members of the Color Guard include the Drum Major, the Spirit of '76, flag bearers, 
+    The Color Guard presents the nation's colors at various local events, such as the city of Bismarck's 50th anniversary,
+    and school rallies. members of the Color Guard include the Drum Major, the Spirit of '76, flag bearers, 
     rifle carriers, and trumpeters.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://centurypatriotbands.weebly.com/marching-information.html">More information</a>`;
     pitoText = `
-    My sophomore year of high school, I thought it would be cool to try playing music for the theatre program with my friends. Though it sounds very mundane work as a musician, it probably made me twice of a better musician than I was.
-    As an instrumentalist, you tend follow the vocalist's key and tempo, not yours. This means super funky key signatures,
-    frequent tempo changes, and much more. This means instead of purposefully practicing scales with 5 sharps all over and over again, you're forced to just do it as a surprise once you turn the page, and you just kind of learn as you go,
-    having fun along the way. My friends and I played for both the school theatre program and the local Sleepy Hollow summer program,
+    My sophomore year of high school, I decided to try playing music for the theater program
+    with my friends. While it sounds like mundane work for a musician, it probably made me twice the 
+    musician I was before. As I learned very quickly, instrumentalists tend to follow the vocalists'
+    key and tempo, not their own. This meant dealing with super funky key signatures, frequent tempo changes,
+    and much more, forcing you to learn to adapt quickly.
+    <br>
+    <br>
+    My friends and I played for both the school theatre program and the local Sleepy Hollow summer program,
     which never failed to be a fun experience. Lots of inside jokes and funny moments were produced. 10/10 would recommend.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.shtap.org/orchestra">More information</a>`;
     allsText = `
-    I credit my selection to the All-State music festival my freshman year to be a defining moment in my character. 
-    Getting into All-State meant that you were one of the top musicians in the State. This meant that I was
-    trying for a spot in the top concert band in the state of North Dakota as a freshman, when I had started a full year later than everyone else on my instrument. When I got in, it was valuable insight as to what I can achieve. It posed
-    to me the question of "What else can I do?" While the result was very satisfying, it was the work behind it that taught
-    me the most. I would spend many days skipping lunch or eating quicker to practice before band started, and spent many hours on the weekends to perfect my technique. Looking back on those 4 years, it taught me the value of frontloading, the idea of distributing the effort at the beginning of the process. Because of the work I put in my freshman year, it
-    opened new opportunities for immense growth that would not have been available earlier.
+    I credit my selection to the All-State Music Festival my freshman year a defining moment in my character.
+    Being chosen for All-State meant I was one of the top musicians in North Dakota, competing for a spot in the 
+    state's top concert band, as a freshman, even though I had started my instrument a full year later than most.
+    Earning that spot gave me valuable insight into what I can achieve, posing me the question of "what else can I do?"
+    <br>
+    <br>
+    While the result was satisfying, the effort behind it taught me the most. I often skipped or 
+    rushed through lunch to practice before band and spent countless hours on weekends perfecting my 
+    technique. Reflecting on those four years, I learned the value of frontloading — distributing 
+    effort at the beginning of a process. The work I put in during my freshman year opened new opportunities for immense growth 
+    that wouldn't have been possible otherwise.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.ndallstate.org/">More information</a>`;
     bmsoText = `
-    At the recommendation of a friend, I was invited to audition for the Bismarck 
-    Mandan Youth Symphony Orchestra, a collection of local advanced instrumentalists from high school through college. It was the first time I played my main instrument, the Clarinet, in an orchestral
-    setting.
+    On a friend's recommendation, I was invited to audition for the Bismarck 
+    Mandan Youth Symphony Orchestra, a group of local advanced instrumentalists 
+    ranging from elementary school to college. This was the first time I played 
+    my main instrument, the clarinet, in an orchestral setting. 
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75);
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://bismarckmandansymphony.org/education/youth-orchestra/">More information</a>`;
     crosText = `
-    I was sitting in my Physics class one day in junior year, and my mind was wandering, thinking how it would feel to play a high school sport. It was a spontaneous decision, partly me wanting to try a sport, partly me wanting to prove something. I joined cross country my senior year of high school, having never played a sport in my life, having never ran more than a mile. I was a bigger kid back then, and my fastest mile thus far was 12 minutes. We started preparing for the season during the summer, and I could barely run half a mile. By the end of the season, my fastest mile was 6 minutes, and my farthest run was 7 miles. It was a rough 3 months, but it was a good introduction to running, a trial by fire, and I'm grateful for the experience.
+    One day during my junior year Physics class, my mind wandered to how
+    it would feel to participate in a high school sport. It was a spontaneous commitment,
+    partly to see what it was like, and party to prove something to myself.
+    I joined the cross country team my senior year, having never done a sport
+    in my life, having never ran more than a mile. At the time, I was a fatter kid
+    with a fastest mile of 12 minutes. We started training over the summer, and in a severe underestimation of my decision,
+    I struggled to run even half a mile in one go.
+    <br>
+    <br>
+    By the end of the season, I had improved significantly, cutting my fastest mile
+    time to 6 minutes, and increasing my farthest distance to 7 miles. It was
+    a challenging 3 months, but it was an excellent introduction to running, a 
+    trial by fire, and an experience I'm forever grateful for.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75);
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://sites.google.com/bismarckschools.org/centuryhsxc/home">More information</a>`;
     tracText = `
-    Having made the commitment to Cross Country, noone warned me about the pressure to join Track. I wasn't a very fast runner, but the sheer question of "what can I achieve?" was too great for me to skip such an opportunity. Though I was no longer new to running, I was still as nervous as when I joined cross, since I had no idea how track worked. As a senior, I was learning how to pass the baton with freshmen. I had very little understanding of how events worked until the first meet. It was a difficult few months, especially on top everything else I was involved in, but it was a very rewarding experience. Nothing will beat the atmosphere of a Track meet.
+    Having committed to Cross Country, I soon felt the pressure to join Track. 
+    Despite not being a particularly fast runner, the question of "what can I achieve?" 
+    weighed too heavy on me. Although I was no longer new to running, I was just as nervous 
+    as when I first joined Cross Country, having no idea how Track worked. As a senior, I 
+    found myself learning to pass the baton alongside freshmen.
+    <br>
+    <br>
+    My understanding of events was minimal until the first meet, making the initial months 
+    challenging, especially with all my other commitments. However, the experience was 
+    incredibly rewarding. Nothing compares to the atmosphere of a Track meet. 
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
@@ -474,7 +601,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sous = document.querySelector("#sous");
     wood = document.querySelector("#wood");
     valdText = `
-    Ranked 1 out of more than 350 students, percentile ranking, 4.0 on 4.0 scale.
+    Ranked 1st out of more than 350 students in the top percentile.
     <br>
     <a target="_blank" style="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
@@ -554,7 +681,7 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://sites.google.com/a/bismarckschools.org/bps-nhs/home">More information</a>`;
     soscText = `
-    I was part of the science olympiad team that won the state 
+    I was critical member of a science olympiad team that won the state 
     championship for the first time in our school's history. Our team ended up
     39th overall nationally.
     <br>
