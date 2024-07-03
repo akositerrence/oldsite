@@ -417,7 +417,8 @@
     right: 100vw;
 }
 
-.showcase {
+.showcase,
+#showcase-embed {
     width: 0vw;
     height: 0vw;
     opacity: 0;
@@ -528,7 +529,6 @@
         background-color: transparent;
         transition: padding 2s ease;
         filter: grayscale(0.1) contrast(0.9) saturate(1.1) sepia(0.1) brightness(0.95);
-        border-radius: 1vw;
     }
 
     .image-container {

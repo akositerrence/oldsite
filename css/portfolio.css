@@ -114,3 +114,70 @@
     filter: grayscale(90%) opacity(90%);
     transition: all 1s ease;
 }
+
+@media (min-width: 768px) {
+    .img-home {
+        filter: grayscale(0.4) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.4);
+        top: 8vw;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header-img-text {
+        font-size: 9vw;
+        padding-left: 21vw;
+        text-justify: center;
+        color: rgb(220, 220, 220);
+        text-shadow: 0vw 0vw 1vw black;
+    }
+
+    .top-topic {
+        width: 60vw;
+    }
+
+    .skills-grid {
+        display: inline-grid;
+        grid-template-columns: auto auto auto;
+        gap: 0.5vw;
+        max-width: 100%;
+        width: 60vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+        justify-content: center;
+    }
+
+    .skill-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1vw;
+        max-width: 100%;
+        width: 16vw;
+        height: 9vw;
+        background-color: rgb(17, 17, 17);
+        border-radius: 5vw;
+        text-align: center;
+        padding-bottom: 2vw;
+        color: rgb(180, 180, 190);
+        padding-left: 0vw;
+        padding-right: 0vw;
+        filter: opacity(95%);
+        scale: 90%;
+        transition: all 1s ease;
+    }
+
+    .porticon {
+        width: 3vw;
+        height: auto;
+        background: transparent;
+        opacity: 68%;
+        padding-top: 2.25vw;
+        padding-bottom: 2.5vw;
+        filter: invert();
+    }
+}

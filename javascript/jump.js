@@ -167,17 +167,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 let portfolioDesktopButton = topAccess.querySelector("#desktopPortfolio");
                 let educationDesktopButton = topAccess.querySelector("#desktopEducation");
 
-                homeDesktopButton.addEventListener("click", function event() {
-                    window.location.href = "/index.html";
-                });
+                if (homeDesktopButton && portfolioDesktopButton && educationDesktopButton) {
+                    homeDesktopButton.addEventListener("click", function event() {
+                        window.location.href = "/index.html";
+                    });
 
-                portfolioDesktopButton.addEventListener("click", function event() {
-                    window.location.href = "/pages/portfolio.html";
-                });
+                    portfolioDesktopButton.addEventListener("click", function event() {
+                        window.location.href = "/pages/portfolio.html";
+                    });
 
-                educationDesktopButton.addEventListener("click", function event() {
-                    window.location.href = "/pages/education.html";
-                });
+                    educationDesktopButton.addEventListener("click", function event() {
+                        window.location.href = "/pages/education.html";
+                    });
+                }
             }
         }
     });
