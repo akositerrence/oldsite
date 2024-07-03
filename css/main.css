@@ -681,6 +681,20 @@
     }
 
     /* TAIL */
+    #tail-embed {
+        transform: translateY(5vw);
+    }
+
+    .desktop-tail {
+        display: flex;
+        justify-content: center;
+        gap: 41vw;
+    }
+
+    .tail-bar {
+        order: 2;
+    }
+
     .tail-wrapper {
         background-color: transparent;
     }
@@ -688,7 +702,7 @@
     .home-bottom {
         position: relative;
         width: 100vw;
-        height: 16vw;
+        height: 10vw;
         overflow-y: hidden;
         z-index: 10;
     }
@@ -712,18 +726,26 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-size: 3.5vw;
+        font-size: 3vw;
         color: var(--home-header-color);
         padding: 0.5vw 0.25vw 0.2vw;
     }
 
     .version-statement {
-        font-size: 1.25vw;
+        font-size: 1.5vw;
         font-weight: lighter;
         text-align: center;
-        padding-top: 2vw;
+        padding-top: 3.25vw;
         padding-bottom: 1vw;
+        padding-left: 1vw;
         background-color: transparent;
         color: var(--home-text-color);
+        order: 1;
+    }
+
+    #tail-morse {
+        height: 0vw;
+        opacity: 0;
+        font-size: 0;
     }
 }

@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const headEmbed = document.querySelector("#head-embed");
         const navmenu = document.querySelector(".nav-page");
         const headTopic = document.querySelector(".top-topic");
+        const bottomBar = document.querySelector("#tail-embed");
         const fadeEnd = 350;
 
         var topFadeBar = headEmbed.contentDocument || headEmbed.contentWindow.document;
@@ -20,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
         var navButtons = navPage.querySelector(".off-screen-buttons");
 
         headTopic.style.borderRadius = `${parallaxOffset * 0.2}vw`;
-        headTopic.style.transform = `translateY(${-parallaxOffset * 0.35}px)`;
         navScroll.style.transform = `translateY(${scrollOffset}px)`;
         navMorse.style.transform = `translateY(${morseOffset}px)`;
         navButtons.style.transform = `translateY(${buttonOffset}px)`;
@@ -28,6 +28,8 @@ document.addEventListener('DOMContentLoaded', function () {
         fadedName.style.transform = `translateY(${headerOffset}px)`;
         imgHome.style.transform = `translateY(${parallaxOffset}px)`;
         if (window.innerWidth >= 768) {
+            headTopic.style.transform = `translateY(${-parallaxOffset * 0.35}px)`;
+            bottomBar.style.transform = `translateY(${-parallaxOffset * 0.15}px)`;
             imgHome.style.transform = `translateY(${parallaxOffset * 0.95}px)`;
         } else {
             imgHome.style.transform = `translateY(${parallaxOffset}px)`;
