@@ -417,6 +417,12 @@
     right: 100vw;
 }
 
+.showcase {
+    width: 0vw;
+    height: 0vw;
+    opacity: 0;
+}
+
 @media (min-width: 768px) {
     .home-screen-container {
         position: relative;
@@ -504,7 +510,7 @@
     }
 
     .nav-buttons a:hover {
-        background-color: rgb(210, 210, 210);
+        background-color: rgba(210, 210, 210, 85%);
         color: rgb(19, 18, 18);
     }
 
@@ -522,6 +528,7 @@
         background-color: transparent;
         transition: padding 2s ease;
         filter: grayscale(0.1) contrast(0.9) saturate(1.1) sepia(0.1) brightness(0.95);
+        border-radius: 1vw;
     }
 
     .image-container {
@@ -539,7 +546,7 @@
         position: relative;
         z-index: 3;
         max-width: 100%;
-        font-size: 1.25vw;
+        font-size: 1vw;
         padding: 1vw 5vw 1vw;
         text-align: justify;
         font-weight: lighter;
@@ -620,7 +627,7 @@
 
     .figure-text {
         max-width: 100%;
-        font-size: 1.25vw;
+        font-size: 1vw;
         font-weight: normal;
         text-align: center;
         user-select: none;
@@ -680,9 +687,25 @@
         transition: all 0.5s ease;
     }
 
+    #desktop-low-container {
+        display: flex;
+    }
+
+    .showcase {
+        opacity: 100%;
+    }
+
+    #showcase-embed {
+        padding-left: 2vw;
+        width: 30vw;
+        height: 31vw;
+        opacity: 0%;
+        transition: padding 2s ease, opacity 2s ease;
+    }
+
     /* TAIL */
     #tail-embed {
-        transform: translateY(5vw);
+        transform: translateY(4.5vw);
     }
 
     .desktop-tail {
@@ -732,7 +755,7 @@
     }
 
     .version-statement {
-        font-size: 1.5vw;
+        font-size: 1.15vw;
         font-weight: lighter;
         text-align: center;
         padding-top: 3.25vw;

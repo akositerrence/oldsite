@@ -19,7 +19,7 @@
     <!-- MAIN PAGE -->
     <div class="home-screen-container">
       <section class="home-top">
-        <iframe id="head-embed" src="embeds/head.html" frameborder="0"></iframe>
+        <iframe class="desktop-top-access" id="head-embed" src="embeds/head.html" frameborder="0"></iframe>
       </section>
       <div id="desktop-top-container">
         <div class="image-container">
@@ -46,27 +46,37 @@
               frameborder="0"
             ></iframe>
           </section>
-          <p id="world-figure" class="figure-text">Figure 1: Where I've lived</p>
+          <p id="world-figure" class="figure-text">Figure 1: Click the arrow to continue...</p>
           <p class="content-text" id="location-hours"></p>
           <p class="content-text" id="specific-globe-description"></p>
         </article>
       </div>
-      <article class="experience">
-        <h2 class="content-header">Some stuff about work</h2>
-        <span class="morse">-- -.-- . -..- .--. . .-. .. . -. -.-. .</span>
-        <p class="work-company" id="specific-company"></p>
-        <section class="experience-scroller-container">
+      <div id="desktop-low-container">
+        <article class="experience">
+          <h2 class="content-header">Some stuff about work</h2>
+          <span class="morse">-- -.-- . -..- .--. . .-. .. . -. -.-. .</span>
+          <p class="work-company" id="specific-company"></p>
+          <section class="experience-scroller-container">
+            <iframe
+              id="experience-embed"
+              src="embeds/experience.html"
+              loading="lazy"
+              frameborder="0"
+            ></iframe>
+          </section>
+          <p id="worked-figure" class="figure-text">Figure 2: Click an icon to continue...</p>
+          <p class="content-text" id="specific-work-location"></p>
+          <p class="content-text" id="specific-experience-description"></p>
+        </article>
+        <div class="showcase">
           <iframe
-            id="experience-embed"
-            src="embeds/experience.html"
-            loading="lazy"
-            frameborder="0"
-          ></iframe>
-        </section>
-        <p id="worked-figure" class="figure-text">Figure 2: Click an icon to continue...</p>
-        <p class="content-text" id="specific-work-location"></p>
-        <p class="content-text" id="specific-experience-description"></p>
-      </article>
+              id="showcase-embed"
+              src="embeds/showcase.html"
+              loading="lazy"
+              frameborder="0"
+            ></iframe>
+        </div>
+      </div>
       <section class="home-bottom">
         <iframe id="tail-embed" src="embeds/tail.html" loading="lazy" frameborder="0"></iframe>
       </section>

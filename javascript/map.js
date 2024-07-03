@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (window.innerWidth >= 768) {
                         container.style.paddingTop = "0vw";
                         container.style.paddingBottom = "0vw";
-                        container.style.height = "25vw";
+                        container.style.height = "15vw";
                         hours.style.paddingTop = "1vw";
                         hours.style.height = "1vw";
                         headImage.style.paddingTop = "9vw";

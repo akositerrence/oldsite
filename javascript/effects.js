@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const navmenu = document.querySelector(".nav-page");
         const headTopic = document.querySelector(".top-topic");
         const bottomBar = document.querySelector("#tail-embed");
+        const showcase = document.querySelector("#showcase-embed");
         const fadeEnd = 350;
 
         var topFadeBar = headEmbed.contentDocument || headEmbed.contentWindow.document;
@@ -29,8 +30,9 @@ document.addEventListener('DOMContentLoaded', function () {
         imgHome.style.transform = `translateY(${parallaxOffset}px)`;
         if (window.innerWidth >= 768) {
             headTopic.style.transform = `translateY(${-parallaxOffset * 0.35}px)`;
-            bottomBar.style.transform = `translateY(${-parallaxOffset * 0.15}px)`;
+            bottomBar.style.transform = `translateY(${-parallaxOffset * 0.1}px)`;
             imgHome.style.transform = `translateY(${parallaxOffset * 0.95}px)`;
+            showcase.style.transform = `translateY(${-parallaxOffset * 0.55}px)`;
         } else {
             imgHome.style.transform = `translateY(${parallaxOffset}px)`;
             imgHome.style.borderTopRightRadius = `${parallaxOffset * 0.6}vw`;

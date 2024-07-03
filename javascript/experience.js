@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const workLocation = document.querySelector("#specific-work-location");
     const container = document.querySelector("#specific-experience-description");
     const embedDesktopModifier = document.querySelector(".experience-scroller-container");
+    const showcase = document.querySelector("#showcase-embed");
     let currentlyTyping = false;
 
     function stepPrint(workplace, location, text, container, callback) {
@@ -43,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 j++;
                 i++;
                 m++;
-                setTimeout(type, 0.1);
+                setTimeout(type, 7.5);
             } else {
                 if (callback) { callback(); }
             }
@@ -159,6 +160,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         workLocation.style.height = "5.75vw";
                         container.style.height = "28vw";
                         embedDesktopModifier.style.paddingBottom = "0.1vw";
+                        showcase.style.paddingTop = "22.5vw";
+                        showcase.style.opacity = "100%";
                     } else {
                         figure.style.height = "5vw";
                         figure.style.padding = "1vw";

@@ -153,5 +153,33 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             console.error("button not found");
         }
+
+    });
+
+    window.addEventListener("load", function (event) {
+        if (window.innerWidth >= 768) {
+            let topFrame = document.querySelector("iframe.desktop-top-access");
+            if (topFrame) {
+                let topAccess = topFrame.contentDocument || topFrame.contentWindow.document;
+                console.log(topAccess);
+
+                let homeDesktopButton = topAccess.querySelector("#desktopHome");
+                let portfolioDesktopButton = topAccess.querySelector("#desktopPortfolio");
+                let educationDesktopButton = topAccess.querySelector("#desktopEducation");
+
+                homeDesktopButton.addEventListener("click", function event() {
+                    window.location.href = "/index.html";
+                });
+
+                portfolioDesktopButton.addEventListener("click", function event() {
+                    window.location.href = "/pages/portfolio.html";
+                });
+
+                educationDesktopButton.addEventListener("click", function event() {
+                    window.location.href = "/pages/education.html";
+                });
+            }
+        }
     });
 });
+
