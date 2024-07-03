@@ -21,33 +21,36 @@
       <section class="home-top">
         <iframe id="head-embed" src="embeds/head.html" frameborder="0"></iframe>
       </section>
-      <div class="image-container">
-        <img
-          class="img-home"
-          src="images/profile.webp"
-          alt="terrence andre san gabriel"
-        />
+      <div id="desktop-top-container">
+        <div class="image-container">
+          <img
+            class="img-home"
+            src="images/profile.webp"
+            alt="terrence andre san gabriel"
+          />
+        </div>
+        <article class="top-topic">
+          <h2 class="content-header">Some stuff about me</h2>
+          <span class="morse">-- -.-- ... - --- .-. -.--</span>
+          <p class="content-text">
+            Hi, my name is <span id="my-name">Terrence Andre San Gabriel</span>, a
+            sophomore studying Mechanical engineering and Physics at North Dakota
+            State University based in Fargo, North Dakota. This website is a work 
+            in progress, coded entirely in HTML, CSS, and Javascript.
+          </p>
+          <section class="globe-container">
+            <iframe
+              class="globe-embed"
+              src="embeds/globe.html"
+              loading="lazy"
+              frameborder="0"
+            ></iframe>
+          </section>
+          <p id="world-figure" class="figure-text">Figure 1: Where I've lived</p>
+          <p class="content-text" id="location-hours"></p>
+          <p class="content-text" id="specific-globe-description"></p>
+        </article>
       </div>
-      <article class="top-topic">
-        <h2 class="content-header">Some stuff about me</h2>
-        <span class="morse">-- -.-- ... - --- .-. -.--</span>
-        <p class="content-text">
-          Hi, my name is <span id="my-name">Terrence Andre San Gabriel</span>, a
-          sophomore studying Mechanical engineering and Physics at North Dakota
-          State University based in Fargo, North Dakota. This website is a work 
-          in progress, coded entirely in HTML, CSS, and Javascript.
-        </p>
-        <section class="globe-container">
-          <iframe
-            class="globe-embed"
-            src="embeds/globe.html"
-            frameborder="0"
-          ></iframe>
-        </section>
-        <p id="world-figure" class="figure-text">Figure 1: Where I've lived</p>
-        <p class="content-text" id="location-hours"></p>
-        <p class="content-text" id="specific-globe-description"></p>
-      </article>
       <article class="experience">
         <h2 class="content-header">Some stuff about work</h2>
         <span class="morse">-- -.-- . -..- .--. . .-. .. . -. -.-. .</span>
@@ -56,6 +59,7 @@
           <iframe
             id="experience-embed"
             src="embeds/experience.html"
+            loading="lazy"
             frameborder="0"
           ></iframe>
         </section>
@@ -64,7 +68,7 @@
         <p class="content-text" id="specific-experience-description"></p>
       </article>
       <section class="home-bottom">
-        <iframe id="tail-embed" src="embeds/tail.html" frameborder="0"></iframe>
+        <iframe id="tail-embed" src="embeds/tail.html" loading="lazy" frameborder="0"></iframe>
       </section>
     </div>
     <script src="/javascript/effects.js"></script>

@@ -15,6 +15,7 @@ function back() {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
+    let headImage = document.querySelector(".img-home");
     let mapFrame = document.querySelector("iframe.globe-embed");
     let container = document.querySelector("#specific-globe-description");
     let hours = document.querySelector("#location-hours");
@@ -86,11 +87,20 @@ document.addEventListener("DOMContentLoaded", function () {
                     singaporeText.style.opacity = "0%";
                     leftButton.style.opacity = "70%";
                     leftButton.style.transform = "scaleY(2) scaleX(0.65) translateX(-15vw)";
-                    hours.style.height = "6.5vw";
-                    container.style.paddingTop = "5vw";
-                    container.style.height = "106vw";
                     figure.style.opacity = "0%";
                     figure.style.paddingTop = "0vw";
+                    if (window.innerWidth >= 768) {
+                        container.style.paddingTop = "0vw";
+                        container.style.paddingBottom = "0vw";
+                        container.style.height = "25vw";
+                        hours.style.paddingTop = "1vw";
+                        hours.style.height = "1vw";
+                        headImage.style.paddingTop = "9vw";
+                    } else {
+                        container.style.paddingTop = "5vw";
+                        container.style.height = "106vw";
+                        hours.style.height = "6.5vw";
+                    }
                     inFlag = true;
                 }
             }

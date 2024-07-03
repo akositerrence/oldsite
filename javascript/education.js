@@ -32,6 +32,10 @@ document.addEventListener('DOMContentLoaded', function () {
     clar = document.querySelector("#clar");
     orch = document.querySelector("#orch");
     rsrcText = `
+    I'm currently performing cybersecurity research with the computer science 
+    department. The publicity of my work is heavily regulated as it is under
+    ITAR / CUI / NDA restrictions, and I can therefore provide very limited background
+    as to what I do.
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
@@ -61,16 +65,33 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://myndsu.ndsu.edu/organization/americaninstituteofaeronauticsandastronautics">More information</a>`;
     innoText = `
+    "At the Innovation Studio, we work hard to create an innovative culture 
+    that fosters ingenuity and experimentation. As inventors and entrepreneurs 
+    seek to create their first prototype, the NDSU Innovation Studio provides 
+    them with access to the equipment and services they need to quickly succeed."
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.ndsuinnovationstudio.com/">More information</a>`;
     ewbsText = `
+    "NDSU Engineers Without Borders is a non-profit service-based organization 
+    that partners with communities, both locally and internationally. Our chapter 
+    is currently working with La Providencia, Guatemala to design and implement 
+    infrastructure projects within their respective community. Students involved 
+    with EWB have the opportunity to develop technical and interpersonal skills 
+    as they work alongside a team of peers and professionals. Our school year 
+    typically involves design work, fundraising, professional networking, and 
+    an opportunity for the most involved students to travel either nationally 
+    or internationally."
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
-    href="https://www.ndsuewb.org/photo-gallery">More information</a>`;
+    href="https://www.ndsuewb.org/">More information</a>`;
     roboText = `
+    "Bison Robotics' goal is to channel the energy and enthusiasm elicited 
+    by robotics through the rigorous process of engineering design. Members 
+    will apply engineering knowledge and principles in a structured approach 
+    to design and build competitive robots."
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
@@ -90,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.ndsu.edu/coe/research/grand_challenge_scholars/">More information</a>`;
     climText = `
-    climbing good
+    climb
     <br>
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
@@ -111,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
     <a target="_blank" style ="padding-top: 2.5vw; color: rgb(75, 75, 75); 
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.ndsu.edu/performingarts/music/ensembles-and-performances/orchestra/">More information</a>`;
-    // change above this
     rsrc.addEventListener("click", function () {
         page.style.transform = "translateX(0vw)";
         deny.style.opacity = "80%";
@@ -179,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "Grand Challenges Scholars Program";
         subDates.textContent = "———— Jan '24 — present ————";
-        subDescription.innerHTML = "";
+        subDescription.innerHTML = gcspText;
         subVersion.textContent = "v06.20.2024";
     });
     clim.addEventListener("click", function () {
@@ -189,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
         subImage.src = "";
         subName.textContent = "Climbing Club";
         subDates.textContent = "———— Jan '24 — Present ————";
-        subDescription.innerHTML = gcspText;
+        subDescription.innerHTML = climText;
         subVersion.textContent = "v06.20.2024";
     });
     clar.addEventListener("click", function () {

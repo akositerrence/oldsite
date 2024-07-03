@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const company = document.querySelector("#specific-company");
     const workLocation = document.querySelector("#specific-work-location");
     const container = document.querySelector("#specific-experience-description");
+    const embedDesktopModifier = document.querySelector(".experience-scroller-container");
     let currentlyTyping = false;
 
     function stepPrint(workplace, location, text, container, callback) {
@@ -42,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 j++;
                 i++;
                 m++;
-                setTimeout(type, 7.5);
+                setTimeout(type, 0.1);
             } else {
                 if (callback) { callback(); }
             }
@@ -150,11 +151,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     scroller.style.left = "9.75vw";
                     currentClicked = 1;
                     figure.style.opacity = "0";
-                    figure.style.height = "5vw";
-                    figure.style.padding = "0vw";
-                    company.style.height = "16vw";
-                    workLocation.style.height = "16vw";
-                    container.style.height = "112vw";
+                    if (window.innerWidth >= 768) {
+                        figure.style.height = "0vw";
+                        figure.style.padding = "0vw";
+                        company.style.height = "4vw";
+                        company.style.padding = "1vw 0 1.5vw";
+                        workLocation.style.height = "5.75vw";
+                        container.style.height = "28vw";
+                        embedDesktopModifier.style.paddingBottom = "0.1vw";
+                    } else {
+                        figure.style.height = "5vw";
+                        figure.style.padding = "1vw";
+                        company.style.height = "16vw";
+                        workLocation.style.height = "16vw";
+                        container.style.height = "112vw";
+                    }
                 }
             });
             target.addEventListener("click", function () {
@@ -169,11 +180,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     scroller.style.left = "28.75vw";
                     currentClicked = 2;
                     figure.style.opacity = "0";
-                    figure.style.height = "5vw";
-                    company.style.height = "16vw";
-                    figure.style.padding = "0vw";
-                    workLocation.style.height = "16vw";
-                    container.style.height = "112vw";
+                    if (window.innerWidth >= 768) {
+                        figure.style.height = "0vw";
+                        figure.style.padding = "0vw";
+                        company.style.height = "4vw";
+                        company.style.padding = "1vw 0 1.5vw";
+                        workLocation.style.height = "5.75vw";
+                        container.style.height = "28vw";
+                        embedDesktopModifier.style.paddingBottom = "0.1vw";
+                    } else {
+                        figure.style.height = "5vw";
+                        figure.style.padding = "1vw";
+                        company.style.height = "16vw";
+                        workLocation.style.height = "16vw";
+                        container.style.height = "112vw";
+                    }
                 }
             });
             ndsu.addEventListener("click", function () {
@@ -188,11 +209,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     scroller.style.left = "47.75vw";
                     currentClicked = 3;
                     figure.style.opacity = "0";
-                    figure.style.height = "5vw";
-                    figure.style.padding = "0vw";
-                    company.style.height = "16vw";
-                    workLocation.style.height = "16vw";
-                    container.style.height = "84vw";
+                    if (window.innerWidth >= 768) {
+                        figure.style.height = "0vw";
+                        figure.style.padding = "0vw";
+                        company.style.height = "4vw";
+                        company.style.padding = "1vw 0 1.5vw";
+                        workLocation.style.height = "5.75vw";
+                        container.style.height = "20vw";
+                        embedDesktopModifier.style.paddingBottom = "0.1vw";
+                    } else {
+                        figure.style.height = "5vw";
+                        figure.style.padding = "1vw";
+                        company.style.height = "16vw";
+                        workLocation.style.height = "16vw";
+                        container.style.height = "84vw";
+                    }
                 }
             });
             aigen.addEventListener("click", function () {
@@ -207,11 +238,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     scroller.style.left = "66.85vw";
                     currentClicked = 4;
                     figure.style.opacity = "0";
-                    figure.style.height = "5vw";
-                    figure.style.padding = "0vw";
-                    company.style.height = "16vw";
-                    workLocation.style.height = "16vw";
-                    container.style.height = "56vw";
+                    if (window.innerWidth >= 768) {
+                        figure.style.height = "0vw";
+                        figure.style.padding = "0vw";
+                        company.style.height = "4vw";
+                        company.style.padding = "1vw 0 1.5vw";
+                        workLocation.style.height = "5.75vw";
+                        container.style.height = "13vw";
+                        embedDesktopModifier.style.paddingBottom = "0.1vw";
+                    } else {
+                        figure.style.height = "5vw";
+                        figure.style.padding = "1vw";
+                        company.style.height = "16vw";
+                        workLocation.style.height = "16vw";
+                        container.style.height = "56vw";
+                    }
                 }
             });
             marvin.addEventListener("click", function () {
@@ -226,11 +267,21 @@ document.addEventListener("DOMContentLoaded", function () {
                     scroller.style.left = "85.85vw";
                     currentClicked = 5;
                     figure.style.opacity = "0";
-                    figure.style.height = "5vw";
-                    figure.style.padding = "0vw";
-                    company.style.height = "16vw";
-                    workLocation.style.height = "16vw";
-                    container.style.height = "14vw";
+                    if (window.innerWidth >= 768) {
+                        figure.style.height = "0vw";
+                        figure.style.padding = "0vw";
+                        company.style.height = "4vw";
+                        company.style.padding = "1vw 0 1.5vw";
+                        workLocation.style.height = "5.75vw";
+                        container.style.height = "3vw";
+                        embedDesktopModifier.style.paddingBottom = "0.1vw";
+                    } else {
+                        figure.style.height = "5vw";
+                        figure.style.padding = "1vw";
+                        company.style.height = "16vw";
+                        workLocation.style.height = "16vw";
+                        container.style.height = "14vw";
+                    }
                 }
             });
 
