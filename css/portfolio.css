@@ -66,8 +66,7 @@
     max-width: 100%;
     width: 26vw;
     height: 17vw;
-    background-color: rgb(17, 17, 17);
-    border-radius: 5vw;
+    background-color: transparent;
     text-align: center;
     padding-bottom: 2vw;
     color: rgb(180, 180, 190);
@@ -136,6 +135,7 @@
     }
 
     .top-topic {
+        padding-top: 2vw;
         width: 60vw;
     }
 
@@ -145,8 +145,8 @@
         gap: 0.5vw;
         max-width: 100%;
         width: 60vw;
-        padding-top: 5vw;
-        padding-bottom: 5vw;
+        padding-top: 0.25vw;
+        padding-bottom: 0vw;
         justify-content: center;
     }
 
@@ -157,10 +157,9 @@
         align-items: center;
         font-size: 1vw;
         max-width: 100%;
-        width: 16vw;
+        width: 12vw;
         height: 9vw;
-        background-color: rgb(17, 17, 17);
-        border-radius: 5vw;
+        background-color: transparent;
         text-align: center;
         padding-bottom: 2vw;
         color: rgb(180, 180, 190);
@@ -177,7 +176,59 @@
         background: transparent;
         opacity: 68%;
         padding-top: 2.25vw;
-        padding-bottom: 2.5vw;
+        padding-bottom: 1vw;
         filter: invert();
     }
+
+    .projects {
+        background-color: var(--home-background-color);
+        padding-top: 0vw;
+        padding-bottom: 5.5vw;
+        width: 60vw;
+    }
+
+    .project-grid {
+        display: inline-grid;
+        grid-template-columns: auto auto;
+        width: 60vw;
+        padding-top: 0vw;
+        padding-bottom: 0vw;
+        justify-content: center;
+    }
+
+    .project-img {
+        padding-top: 0vw;
+        width: 18vw;
+        border-radius: 1.5vw;
+        opacity: 75%;
+        display: flex;
+    }
+
+    .project-divider {
+        padding-top: 1.5vw;
+        font-size: 1.15vw;
+        color: rgb(180, 180, 190);
+    }
+
+    .project-info {
+        padding: 1.25vw 2vw 0vw;
+        font-size: 1.25vw;
+        color: rgb(180, 180, 190);
+    }
+
+    .grid-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        text-align: center;
+        font-size: 3.5vw;
+        max-width: 100%;
+        width: 25vw;
+        height: 18vw;
+        padding-bottom: 8vw;
+        padding-top: 3vw;
+        background-color: transparent;
+    }
+
 }

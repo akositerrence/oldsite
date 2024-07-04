@@ -1,3 +1,4 @@
 make embeds unclickable and unhighlitable
 change work descs
 add workplace image transition
+add duplicates of photos (or different) for extension

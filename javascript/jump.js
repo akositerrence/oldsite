@@ -161,7 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
             let topFrame = document.querySelector("iframe.desktop-top-access");
             if (topFrame) {
                 let topAccess = topFrame.contentDocument || topFrame.contentWindow.document;
-                console.log(topAccess);
 
                 let homeDesktopButton = topAccess.querySelector("#desktopHome");
                 let portfolioDesktopButton = topAccess.querySelector("#desktopPortfolio");

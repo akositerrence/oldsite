@@ -7,6 +7,16 @@ document.addEventListener("DOMContentLoaded", function () {
     const showcase = document.querySelector("#showcase-embed");
     let currentlyTyping = false;
 
+    window.addEventListener("scroll", function () {
+        const scrollPosition = window.scrollY;
+        const parallaxOffset = scrollPosition * 0.15;
+
+        if (showcase) {
+            console.log("test");
+            showcase.style.transform = `translateY(${-parallaxOffset * 0.5}px)`;
+        }
+    });
+
     function stepPrint(workplace, location, text, container, callback) {
         container.innerHTML = "";
         company.innerHTML = "";
@@ -55,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (experienceEmbed) {
         experienceEmbed.addEventListener("load", function () {
             var experienceAccess = experienceEmbed.contentDocument || experienceEmbed.contentWindow.document;
+            var showcaseAccess = showcase.contentDocument || showcase.contentWindow.document;
+            const showcaseImg = showcaseAccess.querySelector("#img-show");
             const five = experienceAccess.querySelector("#fiv");
             const target = experienceAccess.querySelector("#tar");
             const ndsu = experienceAccess.querySelector("#nds");
@@ -162,6 +174,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         embedDesktopModifier.style.paddingBottom = "0.1vw";
                         showcase.style.paddingTop = "22.5vw";
                         showcase.style.opacity = "100%";
+                        showcaseImg.src = "/showcase/fiveguy.webp"
                     } else {
                         figure.style.height = "5vw";
                         figure.style.padding = "1vw";
@@ -191,6 +204,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         workLocation.style.height = "5.75vw";
                         container.style.height = "28vw";
                         embedDesktopModifier.style.paddingBottom = "0.1vw";
+                        showcase.style.paddingTop = "22.5vw";
+                        showcase.style.opacity = "100%";
+                        showcaseImg.src = "/showcase/fiveguy.webp"
                     } else {
                         figure.style.height = "5vw";
                         figure.style.padding = "1vw";
@@ -220,6 +236,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         workLocation.style.height = "5.75vw";
                         container.style.height = "20vw";
                         embedDesktopModifier.style.paddingBottom = "0.1vw";
+                        showcase.style.paddingTop = "22.5vw";
+                        showcase.style.opacity = "100%";
+                        showcaseImg.src = "/showcase/ndsu.webp"
                     } else {
                         figure.style.height = "5vw";
                         figure.style.padding = "1vw";
@@ -249,6 +268,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         workLocation.style.height = "5.75vw";
                         container.style.height = "13vw";
                         embedDesktopModifier.style.paddingBottom = "0.1vw";
+                        showcase.style.paddingTop = "22.5vw";
+                        showcase.style.opacity = "100%";
+                        showcaseImg.src = "/showcase/aigen.webp"
                     } else {
                         figure.style.height = "5vw";
                         figure.style.padding = "1vw";
@@ -278,6 +300,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         workLocation.style.height = "5.75vw";
                         container.style.height = "3vw";
                         embedDesktopModifier.style.paddingBottom = "0.1vw";
+                        showcase.style.paddingTop = "22.5vw";
+                        showcase.style.opacity = "100%";
+                        showcaseImg.src = "/showcase/fiveguy.webp"
                     } else {
                         figure.style.height = "5vw";
                         figure.style.padding = "1vw";
