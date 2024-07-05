@@ -21,9 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
         var navButtons = navPage.querySelector(".off-screen-buttons");
 
         headTopic.style.borderRadius = `${parallaxOffset * 0.2}vw`;
-        navScroll.style.transform = `translateY(${scrollOffset}px)`;
-        navMorse.style.transform = `translateY(${morseOffset}px)`;
-        navButtons.style.transform = `translateY(${buttonOffset}px)`;
+        if (window.innerWidth <= 768) {
+            navScroll.style.transform = `translateY(${scrollOffset}px)`;
+            navMorse.style.transform = `translateY(${morseOffset}px)`;
+            navButtons.style.transform = `translateY(${buttonOffset}px)`;
+        }
         fadedName.style.opacity = Math.max(0, ((fadeEnd - scrollPosition) / fadeEnd));
         fadedName.style.transform = `translateY(${headerOffset}px)`;
         imgHome.style.transform = `translateY(${parallaxOffset}px)`;

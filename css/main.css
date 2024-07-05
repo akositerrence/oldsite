@@ -440,16 +440,19 @@
         height: 7.5vw;
         overflow-y: hidden;
         position: sticky;
-        z-index: 10;
         top: 0;
         transition: transform 2s ease;
         transition: opacity 1s ease;
         will-change: transform;
         user-select: none;
+        z-index: 50;
+    }
+
+    .desktop-top-access {
+        display: flex;
     }
 
     .menu-icon-container {
-        position: sticky;
         z-index: 4;
         background-color: transparent;
         transform: translateY(-6.9vw);
@@ -500,6 +503,7 @@
         display: flex;
         gap: 2vw;
         padding-right: 3vw;
+        z-index: 50;
     }
 
     .nav-buttons a {
@@ -508,6 +512,7 @@
         padding: 0vw 1vw 0vw 0.95vw;
         transition: background-color 0.5s ease, color 0.25s ease;
         border-radius: 0.25vw;
+        z-index: 50;
     }
 
     .nav-buttons a:hover {
@@ -556,6 +561,7 @@
 
     #desktop-top-container {
         display: flex;
+        z-index: 21;
     }
 
     .content-header {
@@ -770,5 +776,40 @@
         height: 0vw;
         opacity: 0;
         font-size: 0;
+    }
+
+    /* SUBPAGE */
+    .denier {
+        background: transparent;
+        width: 0vw;
+        height: 0vh;
+        opacity: 0%;
+    }
+
+    .subpage-limiter {
+        height: 0vh;
+    }
+
+    .subpage {
+        position: relative;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100vw) translateY(80.5vw);
+        justify-content: center;
+        width: 50vw;
+        height: 10vw;
+        transition: all 3s ease;
+        overflow-y: visible;
+        z-index: 3;
+    }
+
+    #subpage-embed {
+        max-width: 100%;
+        width: 80vw;
+        height: 50vw;
+        border-radius: 1.5vw;
+        transform: translateX(0vw);
     }
 }

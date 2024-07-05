@@ -2,6 +2,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const creoProject = document.querySelector("#creomotor");
     const website = document.querySelector("#site");
     const age = document.querySelector("#age");
+    const grid = document.querySelector(".project-grid");
+
 
     page = document.querySelector(".subpage");
     deny = document.querySelector(".denier");
@@ -39,10 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
         creoProject.style.filter = "grayscale(0) opacity(95%)";
         creoProject.style.transform = "scale(1.1)";
 
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "/images/creomotor.webp";
+        if (window.innerWidth <= 768) {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "/images/creomotor.webp";
+        } else {
+            page.style.transform = "translateX(49.5vw) translateY(80.5vw)";
+        }
         subName.textContent = "Reverse Engineered Starter Motor";
         subDates.textContent = "———— Oct '23 — Dec '23 ————";
         subDescription.innerHTML = `
@@ -73,10 +79,14 @@ document.addEventListener('DOMContentLoaded', function () {
         website.style.filter = "grayscale(0) opacity(95%)";
         website.style.transform = "scale(1.1)";
 
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "/images/website.webp";
+        if (window.innerWidth <= 768) {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "/images/website.webp";
+        } else {
+            page.style.transform = "translateX(49.5vw) translateY(80.5vw)";
+        }
         subName.textContent = "Documentation Website";
         subDates.textContent = "———— May '24 — Jun '24 ————";
         subDescription.innerHTML = `
@@ -103,10 +113,14 @@ document.addEventListener('DOMContentLoaded', function () {
         age.style.filter = "grayscale(0) opacity(95%)";
         age.style.transform = "scale(1.1)";
 
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "/images/aging.webp";
+        if (window.innerWidth <= 768) {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "/images/aging.webp";
+        } else {
+            page.style.transform = "translateX(49.5vw) translateY(80.5vw)";
+        }
         subName.textContent = "Accelerated Aging Apparatus";
         subDates.textContent = "———— Jun '24 — Present ————";
         subDescription.innerHTML = `
@@ -130,5 +144,44 @@ document.addEventListener('DOMContentLoaded', function () {
         const textScaler = 1 - (window.scrollY * 0.00018)
         const pageText = document.querySelector(".header-img-text");
         pageText.style.transform = `scale(${textScaler})`;
+
+        if (window.innerWidth >= 768) {
+            const img1 = document.querySelector(".imglong1");
+            const img2 = document.querySelector(".imglong2");
+
+            if (img1 && img2) {
+                pageText.style.transform = `translateY(${window.scrollY * 0.15 * 0.6}px) scale(${textScaler})`;
+                img1.style.transform = `translateY(${window.scrollY * 0.15 * 0.9}px)`;
+                img2.style.transform = `translateY(${window.scrollY * 0.15 * 0.8}px)`;
+            }
+        }
+    });
+
+    window.addEventListener("load", function (event) {
+        if (window.innerWidth >= 768) {
+            let longImage = document.querySelector(".image-container");
+            longImage.innerHTML =
+                `
+            <img
+            class="img-home"
+            src="/images/portfolioph.webp"
+            alt="portfolio image"
+            />
+
+            <img
+            class="imglong1"
+            src="/images/portfolioph.webp"
+            alt="portfolio image"
+            />
+
+            <img
+            class="imglong2"
+            src="/images/portfolioph.webp"
+            alt="portfolio image"
+            />
+
+            <span class="header-img-text">Portfolio</span>
+                `;
+        }
     });
 });

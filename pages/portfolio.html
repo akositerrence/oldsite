@@ -18,39 +18,41 @@
       <iframe class="nav-page" src="/navigation.html" frameborder="0"></iframe>
     </div>
     <!-- SUBPAGE -->
+    <div class="subpage-limiter">
     <div class="denier"></div>
     <div class="subpage">
       <div class="subpage-container">
         <iframe id="subpage-embed" src="/embeds/subpage.html" frameborder="0"></iframe>
       </div>
     </div>
+    </div>
     <!-- MAIN PAGE -->
     <div class="home-screen-container">
-      <section class="home-top">
-        <iframe class="desktop-top-access" id="head-embed" src="/embeds/head.html" frameborder="0"></iframe>
-      </section>
-      <div class="image-container">
-        <div>
+        <section class="home-top">
+          <iframe class="desktop-top-access" id="head-embed" src="/embeds/head.html" frameborder="0"></iframe>
+        </section>
+      <div id="desktop-port-container">
+        <div class="image-container">
+          <img
+            class="img-home"
+            src="/images/portfolioph.webp"
+            alt="portfolio image"
+          />
+          <span class="header-img-text">Portfolio</span>
         </div>
-        <img
-          class="img-home"
-          src="/images/portfolioph.webp"
-          alt="terrence andre san gabriel"
-        />
-        <span class="header-img-text">Portfolio</span>
+        <article class="top-topic">
+          <h2 class="content-header">Some stuff I know</h2>
+          <span class="morse">... -.- .. .-.. .-.. ...</span>
+          <div class="skills-grid">
+              <div id="cad3" class="skill-item"><img id="cad2" class="porticon" src="/porticons/cad.webp" alt="cad">CAD</div>
+              <div id="mod3" class="skill-item"><img id="mod2" class="porticon" src="/porticons/modeling.webp" alt="digital">Digital Modeling</div>
+              <div id="sim3" class="skill-item"><img id="sim2" class="porticon" src="/porticons/simulation.webp" alt="simulation">Simulation</div>
+              <div id="pro3" class="skill-item"><img id="pro2" class="porticon" src="/porticons/program.webp" alt="programming">Programming</div>
+              <div id="emb3" class="skill-item"><img id="emb2" class="porticon" src="/porticons/circuits.webp" alt="circuits">Embedded Systems</div>
+              <div id="man3" class="skill-item"><img id="man2" class="porticon" src="/porticons/drill.webp" alt="manufacturing">Manufacturing</div>
+          </div>
+        </article>
       </div>
-      <article class="top-topic">
-        <h2 class="content-header">Some stuff I know</h2>
-        <span class="morse">... -.- .. .-.. .-.. ...</span>
-        <div class="skills-grid">
-            <div id="cad3" class="skill-item"><img id="cad2" class="porticon" src="/porticons/cad.webp" alt="cad">CAD</div>
-            <div id="mod3" class="skill-item"><img id="mod2" class="porticon" src="/porticons/modeling.webp" alt="digital">Digital Modeling</div>
-            <div id="sim3" class="skill-item"><img id="sim2" class="porticon" src="/porticons/simulation.webp" alt="simulation">Simulation</div>
-            <div id="pro3" class="skill-item"><img id="pro2" class="porticon" src="/porticons/program.webp" alt="programming">Programming</div>
-            <div id="emb3" class="skill-item"><img id="emb2" class="porticon" src="/porticons/circuits.webp" alt="circuits">Embedded Systems</div>
-            <div id="man3" class="skill-item"><img id="man2" class="porticon" src="/porticons/drill.webp" alt="manufacturing">Manufacturing</div>
-        </div>
-      </article>
       <article class="projects">
         <h2 class="content-header">Some stuff I'm working on</h2>
         <span class="morse">. -. --. .. -. . . .-. .. -. --.</span>
@@ -82,5 +84,6 @@
     <script src="/javascript/effects.js"></script>
     <script src="/javascript/jump.js"></script>
     <script src="/javascript/portfolio.js"></script>
+    <script src="/javascript/desktop.js"></script>
   </body>
 </html>

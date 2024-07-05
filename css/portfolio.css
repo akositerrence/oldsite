@@ -115,36 +115,76 @@
 }
 
 @media (min-width: 768px) {
+    #desktop-port-container {
+        display: flex;
+    }
+
     .img-home {
         filter: grayscale(0.4) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.4);
-        top: 8vw;
+        top: 15vw;
+        z-index: 5;
+    }
+
+    .imglong1 {
+        filter: grayscale(0.4) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.3);
+        position: absolute;
+        z-index: 4;
+        max-width: 100%;
+        width: 25vw;
+        margin-top: 0vw;
+        left: 24.5vw;
+        top: 17vw;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        transition: padding 2s ease;
+    }
+
+    .imglong2 {
+        filter: grayscale(0.4) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.2);
+        top: 15vw;
+        position: absolute;
+        z-index: 3;
+        max-width: 100%;
+        width: 20vw;
+        margin-top: 0vw;
+        top: 19vw;
+        left: 38.5vw;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        transition: padding 2s ease;
     }
 
     .image-container {
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 55vw;
+        height: 49.5vw;
     }
 
     .header-img-text {
+        z-index: 6;
+        padding-bottom: 5vw;
         font-size: 9vw;
-        padding-left: 21vw;
+        padding-left: 3.05vw;
         text-justify: center;
         color: rgb(220, 220, 220);
         text-shadow: 0vw 0vw 1vw black;
     }
 
     .top-topic {
-        padding-top: 2vw;
-        width: 60vw;
+        padding-top: 0vw;
+        width: 45vw;
     }
 
     .skills-grid {
         display: inline-grid;
         grid-template-columns: auto auto auto;
-        gap: 0.5vw;
+        gap: 0vw;
         max-width: 100%;
-        width: 60vw;
+        width: 45vw;
         padding-top: 0.25vw;
         padding-bottom: 0vw;
         justify-content: center;
@@ -157,8 +197,8 @@
         align-items: center;
         font-size: 1vw;
         max-width: 100%;
-        width: 12vw;
-        height: 9vw;
+        width: 11vw;
+        height: 5vw;
         background-color: transparent;
         text-align: center;
         padding-bottom: 2vw;
@@ -198,7 +238,7 @@
 
     .project-img {
         padding-top: 0vw;
-        width: 18vw;
+        width: 17vw;
         border-radius: 1.5vw;
         opacity: 75%;
         display: flex;
@@ -224,9 +264,9 @@
         text-align: center;
         font-size: 3.5vw;
         max-width: 100%;
-        width: 25vw;
+        width: 22vw;
         height: 18vw;
-        padding-bottom: 8vw;
+        padding-bottom: 5vw;
         padding-top: 3vw;
         background-color: transparent;
     }
