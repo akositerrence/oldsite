@@ -168,7 +168,7 @@
         z-index: 6;
         padding-bottom: 5vw;
         font-size: 9vw;
-        padding-left: 3.05vw;
+        padding-left: 15.05vw;
         text-justify: center;
         color: rgb(220, 220, 220);
         text-shadow: 0vw 0vw 1vw black;
@@ -176,6 +176,7 @@
 
     .top-topic {
         padding-top: 0vw;
+        padding-left: 8.5vw;
         width: 45vw;
     }
 

@@ -799,7 +799,7 @@
         transform: translateX(100vw) translateY(80.5vw);
         justify-content: center;
         width: 50vw;
-        height: 10vw;
+        height: 0vw;
         transition: all 3s ease;
         overflow-y: visible;
         z-index: 3;
@@ -812,4 +812,5 @@
         border-radius: 1.5vw;
         transform: translateX(0vw);
     }
+
 }

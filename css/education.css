@@ -81,3 +81,132 @@
     padding-bottom: 2vw;
     border-radius: 0.5vw;
 }
+
+
+@media (min-width: 768px) {
+    .top-topic {
+        padding-top: 0vw;
+        width: 100vw;
+    }
+
+    #desktop-port-container {
+        display: flex;
+    }
+
+    .img-home {
+        filter: grayscale(0.4) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.4);
+        top: 15vw;
+        z-index: 5;
+    }
+
+    .imglong1 {
+        filter: grayscale(0.4) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.3);
+        position: absolute;
+        z-index: 4;
+        max-width: 100%;
+        width: 25vw;
+        margin-top: 0vw;
+        left: 24.5vw;
+        top: 17vw;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        transition: padding 2s ease;
+    }
+
+    .imglong2 {
+        filter: grayscale(0.4) blur(0.5px) contrast(0.9) sepia(0.1) brightness(0.2);
+        top: 15vw;
+        position: absolute;
+        z-index: 3;
+        max-width: 100%;
+        width: 20vw;
+        margin-top: 0vw;
+        top: 19vw;
+        left: 38.5vw;
+        display: flex;
+        justify-content: center;
+        background-color: transparent;
+        transition: padding 2s ease;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55vw;
+        height: 49.5vw;
+    }
+
+    .header-img-text {
+        z-index: 6;
+        padding-bottom: 5vw;
+        font-size: 9vw;
+        padding-left: 13.05vw;
+        text-justify: center;
+        color: rgb(220, 220, 220);
+        text-shadow: 0vw 0vw 1vw black;
+    }
+
+    /* CONTENT */
+    .school-container {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 8vw;
+        padding-bottom: 0vw;
+    }
+
+    #ndsu {
+        width: 25vw;
+        padding-top: 0vw;
+    }
+
+    #chs {
+        width: 20vw;
+    }
+
+    .morse {
+        font-size: 1.35vw;
+        padding-bottom: 2vw;
+    }
+
+    .location {
+        font-size: 1.35vw;
+        font-weight: lighter;
+        padding-bottom: 0.75vw;
+    }
+
+    .school-header {
+        font-size: 1.65vw;
+        font-weight: lighter;
+        padding-top: 1.5vw;
+        padding-bottom: 1.75vw;
+        z-index: 5;
+        text-shadow: 0.1vw 0.1vw 1vw black;
+    }
+
+    .school-description {
+        max-width: 100%;
+        font-size: 1.25vw;
+        font-weight: lighter;
+        padding: 0vw 8.5vw 0vw;
+        text-align: justify;
+        line-height: 2.85em;
+    }
+
+    .description-header {
+        font-weight: lighter;
+        font-size: 1.65vw;
+        padding-top: 1.5vw;
+        padding-bottom: 1vw;
+    }
+
+    #chs-desktop {
+        padding-top: 10vw;
+        padding-bottom: 0vw;
+        padding-left: 38.5vw;
+    }
+}

@@ -868,5 +868,44 @@ document.addEventListener('DOMContentLoaded', function () {
         const textScaler = 1 - (window.scrollY * 0.00018)
         const pageText = document.querySelector(".header-img-text");
         pageText.style.transform = `scale(${textScaler})`;
+
+        if (window.innerWidth >= 768) {
+            const img1 = document.querySelector(".imglong1");
+            const img2 = document.querySelector(".imglong2");
+
+            if (img1 && img2) {
+                pageText.style.transform = `translateY(${window.scrollY * 0.15 * 0.6}px) scale(${textScaler})`;
+                img1.style.transform = `translateY(${window.scrollY * 0.15 * 0.9}px)`;
+                img2.style.transform = `translateY(${window.scrollY * 0.15 * 0.8}px)`;
+            }
+        }
+    });
+
+    window.addEventListener("load", function (event) {
+        if (window.innerWidth >= 768) {
+            let longImage = document.querySelector(".image-container");
+            longImage.innerHTML =
+                `
+            <img
+            class="img-home"
+            src="/images/centuryband.webp"
+            alt="portfolio image"
+            />
+
+            <img
+            class="imglong1"
+            src="/images/centuryband.webp"
+            alt="portfolio image"
+            />
+
+            <img
+            class="imglong2"
+            src="/images/centuryband.webp"
+            alt="portfolio image"
+            />
+
+            <span class="header-img-text">Education</span>
+                `;
+        }
     });
 });
