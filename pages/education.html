@@ -22,9 +22,16 @@
       <div class="denier"></div>
       <div class="subpage">
         <div class="subpage-container">
-          <iframe id="subpage-embed" src="/embeds/subpage.html" frameborder="0"></iframe>
+          <iframe id="subpage-embed" src="/embeds/subpage.html" class="hide-scrollbar" frameborder="0"></iframe>
         </div>
       </div>
+    </div>
+    <!-- DESKTOP SUBPAGE -->
+    <div class="desktop-subpage-limiter"></div>
+      <div class="desktop-subpage">
+        <div class="desktop-subpage-container">
+          <iframe id="desktop-subpage-embed" src="/embeds/desktopsubpage.html" class="hide-scrollbar" frameborder="0"></iframe>
+        </div>
     </div>
     <!-- MAIN PAGE -->
     <div class="home-screen-container">
@@ -42,7 +49,7 @@
       <article class="top-topic">
         <h2 class="content-header">Some schools I went to</h2>
         <span class="morse">. -.. ..- -.-. .- - .. --- -.</span>
-        <div class="school-container">
+        <div id="ndsu-desktop" class="school-container">
           <img id="ndsu" class="school-logo" src="/images/ndsuschool.webp" alt="north dakota state university">
           <h2 id="ndsu-header" class="school-header">North Dakota State University</h2>
           <span class="morse">2023 -. --- .-. - .... -.. .- -.- --- - .- ... - .- - . 2027</span>
@@ -108,5 +115,6 @@
     <script src="/javascript/effects.js"></script>
     <script src="/javascript/jump.js"></script>
     <script src="/javascript/education.js"></script>
+    <script src="/javascript/desktop.js"></script>
   </body>
 </html>

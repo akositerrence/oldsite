@@ -796,7 +796,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translateX(100vw) translateY(80.5vw);
+        transform: translateX(-100vw) translateY(150vw);
         justify-content: center;
         width: 50vw;
         height: 0vw;
@@ -813,4 +813,35 @@
         transform: translateX(0vw);
     }
 
+    .desktop-subpage-limiter {
+        height: 0vh;
+    }
+
+    .desktop-subpage {
+        position: relative;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100vw) translateY(95vw);
+        justify-content: center;
+        width: 50vw;
+        height: 0vw;
+        transition: all 3s ease;
+        overflow-y: visible;
+        z-index: 3;
+    }
+
+    #desktop-subpage-embed {
+        max-width: 100%;
+        width: 80vw;
+        height: 50vw;
+        border-radius: 1.5vw;
+        transform: translateX(0vw);
+    }
+}
+
+.hide-scrollbar {
+    scrollbar-color: transparent;
+    scrollbar-width: none;
 }

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     page = document.querySelector(".subpage");
+    pageDesktop = document.querySelector(".desktop-subpage");
     deny = document.querySelector(".denier");
 
     const subPage = document.querySelector("#subpage-embed");
@@ -13,13 +14,30 @@ document.addEventListener('DOMContentLoaded', function () {
             subDates = subPageAccess.querySelector("#activities-awards-dates");
             subDescription = subPageAccess.querySelector("#activities-awards-description");
             subVersion = subPageAccess.querySelector("#version");
-            closePage.addEventListener("click", function () {
-                page.style.transform = "translateX(-100vw)";
-                deny.style.opacity = "0";
-                deny.style.pointerEvents = "none";
-            });
+            if (window.innerWidth <= 768) {
+                closePage.addEventListener("click", function () {
+                    page.style.transform = "translateX(-100vw)";
+                    deny.style.opacity = "0";
+                    deny.style.pointerEvents = "none";
+                });
+            }
         }
     });
+
+    if (window.innerWidth >= 768) {
+        const subPageDesktop = document.querySelector("#desktop-subpage-embed");
+        subPageDesktop.addEventListener("load", function () {
+            subPageAccessDesktop = subPageDesktop.contentDocument || subPageDesktop.contentWindow.document;
+
+            if (subPageAccessDesktop) {
+                subImageDesktop = subPageAccessDesktop.querySelector("#activities-awards-images");
+                subNameDesktop = subPageAccessDesktop.querySelector("#activities-awards-name");
+                subDatesDesktop = subPageAccessDesktop.querySelector("#activities-awards-dates");
+                subDescriptionDesktop = subPageAccessDesktop.querySelector("#activities-awards-description");
+                subVersionDesktop = subPageAccessDesktop.querySelector("#version");
+            }
+        });
+    }
 
     rsrc = document.querySelector("#rsrc");
     asme = document.querySelector("#asme");
@@ -133,104 +151,194 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://www.ndsu.edu/performingarts/music/ensembles-and-performances/orchestra/">More information</a>`;
     rsrc.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "Undergraduate Research";
-        subDates.textContent = "———— Nov '23 — Present ————";
-        subDescription.innerHTML = rsrcText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "Undergraduate Research";
+            subDatesDesktop.textContent = "———— Nov '23 — Present ————";
+            subDescriptionDesktop.innerHTML = rsrcText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "Undergraduate Research";
+            subDates.textContent = "———— Nov '23 — Present ————";
+            subDescription.innerHTML = rsrcText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     asme.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "American Society of Mechanical Engineers";
-        subDates.textContent = "———— Sep '23 — Present ————";
-        subDescription.innerHTML = asmeText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "American Society of Mechanical Engineers";
+            subDatesDesktop.textContent = "———— Sep '23 — Present ————";
+            subDescriptionDesktop.innerHTML = asmeText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "American Society of Mechanical Engineers";
+            subDates.textContent = "———— Sep '23 — Present ————";
+            subDescription.innerHTML = asmeText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     aiaa.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "/images/aiaa.webp";
-        subName.textContent = "American Institute of Aeronautics and Astronautics";
-        subDates.textContent = "———— Sep '23 — Present ————";
-        subDescription.innerHTML = aiaaText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "/images/aiaa.webp";
+            subNameDesktop.textContent = "American Institute of Aeronautics and Astronautics";
+            subDatesDesktop.textContent = "———— Sep '23 — Present ————";
+            subDescriptionDesktop.innerHTML = aiaaText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "/images/aiaa.webp";
+            subName.textContent = "American Institute of Aeronautics and Astronautics";
+            subDates.textContent = "———— Sep '23 — Present ————";
+            subDescription.innerHTML = aiaaText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     inno.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "Innovation Studio";
-        subDates.textContent = "———— Sep '23 — Present ————";
-        subDescription.innerHTML = innoText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "Innovation Studio";
+            subDatesDesktop.textContent = "———— Sep '23 — Present ————";
+            subDescriptionDesktop.innerHTML = innoText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "Innovation Studio";
+            subDates.textContent = "———— Sep '23 — Present ————";
+            subDescription.innerHTML = innoText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     ewbs.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "Engineers Without Borders";
-        subDates.textContent = "———— Feb '24 — Present ————";
-        subDescription.innerHTML = ewbsText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "Engineers Without Borders";
+            subDatesDesktop.textContent = "———— Feb '24 — Present ————";
+            subDescriptionDesktop.innerHTML = ewbsText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "Engineers Without Borders";
+            subDates.textContent = "———— Feb '24 — Present ————";
+            subDescription.innerHTML = ewbsText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     robo.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "/images/robotics.webp";
-        subName.textContent = "Bison Robotics";
-        subDates.textContent = "———— Sep '23 — Present ————";
-        subDescription.innerHTML = roboText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "/images/robotics.webp";
+            subNameDesktop.textContent = "Bison Robotics";
+            subDatesDesktop.textContent = "———— Sep '23 — Present ————";
+            subDescriptionDesktop.innerHTML = roboText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "/images/robotics.webp";
+            subName.textContent = "Bison Robotics";
+            subDates.textContent = "———— Sep '23 — Present ————";
+            subDescription.innerHTML = roboText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     gcsp.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "Grand Challenges Scholars Program";
-        subDates.textContent = "———— Jan '24 — present ————";
-        subDescription.innerHTML = gcspText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "Grand Challenges Scholars Program";
+            subDatesDesktop.textContent = "———— Jan '24 — present ————";
+            subDescriptionDesktop.innerHTML = gcspText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "Grand Challenges Scholars Program";
+            subDates.textContent = "———— Jan '24 — present ————";
+            subDescription.innerHTML = gcspText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     clim.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "Climbing Club";
-        subDates.textContent = "———— Jan '24 — Present ————";
-        subDescription.innerHTML = climText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "Climbing Club";
+            subDatesDesktop.textContent = "———— Jan '24 — Present ————";
+            subDescriptionDesktop.innerHTML = climText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "Climbing Club";
+            subDates.textContent = "———— Jan '24 — Present ————";
+            subDescription.innerHTML = climText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     clar.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "Clarinet Ensemble";
-        subDates.textContent = "———— Aug '23 — Dec '23 ————";
-        subDescription.innerHTML = clarText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "Clarinet Ensemble";
+            subDatesDesktop.textContent = "———— Aug '23 — Dec '23 ————";
+            subDescriptionDesktop.innerHTML = clarText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "Clarinet Ensemble";
+            subDates.textContent = "———— Aug '23 — Dec '23 ————";
+            subDescription.innerHTML = clarText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
     orch.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
-        deny.style.opacity = "80%";
-        deny.style.pointerEvents = "auto";
-        subImage.src = "";
-        subName.textContent = "University Symphony Orchestra";
-        subDates.textContent = "———— Aug '23 — Dec '23 ————";
-        subDescription.innerHTML = orchText;
-        subVersion.textContent = "v06.20.2024";
+        if (window.innerWidth >= 768) {
+            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            subImageDesktop.src = "";
+            subNameDesktop.textContent = "University Symphony Orchestra";
+            subDatesDesktop.textContent = "———— Aug '23 — Dec '23 ————";
+            subDescriptionDesktop.innerHTML = orchText;
+            subVersionDesktop.textContent = "v06.20.2024";
+        } else {
+            page.style.transform = "translateX(0vw)";
+            deny.style.opacity = "80%";
+            deny.style.pointerEvents = "auto";
+            subImage.src = "";
+            subName.textContent = "University Symphony Orchestra";
+            subDates.textContent = "———— Aug '23 — Dec '23 ————";
+            subDescription.innerHTML = orchText;
+            subVersion.textContent = "v06.20.2024";
+        }
     });
 
     nhso = document.querySelector("#nhso");
@@ -467,7 +575,11 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://sites.google.com/bismarckschools.org/century-boys-trackandfield/home">More information</a>`;
     nhso.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -477,7 +589,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     nths.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -487,7 +603,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     flig.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/flight.webp";
@@ -497,7 +617,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     scio.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -507,7 +631,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     scib.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -517,7 +645,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     wind.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/centuryband.webp";
@@ -527,7 +659,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     jazz.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/jazz.webp";
@@ -537,7 +673,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     marc.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -547,7 +687,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     colr.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "/images/colorguard.webp";
@@ -557,7 +701,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     pito.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -567,7 +715,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     alls.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -577,7 +729,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     bmso.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -587,7 +743,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     cros.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -597,7 +757,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.19.2024";
     });
     trac.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -734,7 +898,11 @@ document.addEventListener('DOMContentLoaded', function () {
     text-decoration: underline; display: flex; justify-content: center" 
     href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">More information</a>`;
     vald.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -744,7 +912,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     schl.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -754,7 +926,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     apsc.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -764,7 +940,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     pres.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -774,7 +954,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     dola.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -784,7 +968,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     melb.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -794,7 +982,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     thom.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -804,7 +996,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     wold.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -814,7 +1010,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     vlnt.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -824,7 +1024,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     sosc.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -834,7 +1038,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     four.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -844,7 +1052,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     sous.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -854,7 +1066,11 @@ document.addEventListener('DOMContentLoaded', function () {
         subVersion.textContent = "v06.18.2024";
     });
     wood.addEventListener("click", function () {
-        page.style.transform = "translateX(0vw)";
+        if (window.innerWidth >= 768) {
+            page.style.transform = "translateX(4vw) translateY(150vw)";
+        } else {
+            page.style.transform = "translateX(0vw)";
+        }
         deny.style.opacity = "80%";
         deny.style.pointerEvents = "auto";
         subImage.src = "";
@@ -872,11 +1088,14 @@ document.addEventListener('DOMContentLoaded', function () {
         if (window.innerWidth >= 768) {
             const img1 = document.querySelector(".imglong1");
             const img2 = document.querySelector(".imglong2");
+            const ndsuContainer = document.querySelector("#ndsu-desktop");
 
             if (img1 && img2) {
                 pageText.style.transform = `translateY(${window.scrollY * 0.15 * 0.6}px) scale(${textScaler})`;
                 img1.style.transform = `translateY(${window.scrollY * 0.15 * 0.9}px)`;
                 img2.style.transform = `translateY(${window.scrollY * 0.15 * 0.8}px)`;
+
+                ndsuContainer.style.transform = `translateY(${-window.scrollY * 0.1}px)`;
             }
         }
     });
