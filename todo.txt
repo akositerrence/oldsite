@@ -3,4 +3,3 @@ change work descs
 add workplace image transition
 add "scroll to top" function for navbar current page
 fix desktop subpage z index
-remove scrollbar from subpage html

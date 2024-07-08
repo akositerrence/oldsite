@@ -272,4 +272,77 @@
         background-color: transparent;
     }
 
+    /* SUBPAGE */
+    .denier {
+        background: transparent;
+        width: 0vw;
+        height: 0vh;
+        opacity: 0%;
+    }
+
+    .subpage-limiter {
+        height: 0vh;
+    }
+
+    .subpage {
+        position: relative;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100vw) translateY(80.5vw);
+        justify-content: center;
+        width: 50vw;
+        height: 0vw;
+        transition: all 3s ease;
+        overflow-y: visible;
+        z-index: 3;
+    }
+
+    #subpage-embed {
+        max-width: 100%;
+        width: 80vw;
+        height: 50vw;
+        border-radius: 1.5vw;
+        transform: translateX(0vw);
+    }
+
+    .desktop-subpage-limiter {
+        height: 0vh;
+    }
+
+    .desktop-subpage {
+        position: relative;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(100vw) translateY(0);
+        justify-content: center;
+        width: 50vw;
+        height: 0vw;
+        transition: all 3s ease;
+        overflow-y: visible;
+        z-index: 3;
+    }
+
+    #desktop-subpage-embed {
+        max-width: 100%;
+        width: 80vw;
+        height: 50vw;
+        border-radius: 1.5vw;
+        transform: translateX(0vw);
+    }
+
+    .remove-scrollbar {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .remove-scrollbar iframe {
+        width: 100%;
+        height: 100%;
+        padding-left: 4vw;
+    }
 }

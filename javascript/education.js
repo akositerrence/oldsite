@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
     href="https://www.ndsu.edu/performingarts/music/ensembles-and-performances/orchestra/">More information</a>`;
     rsrc.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "Undergraduate Research";
             subDatesDesktop.textContent = "———— Nov '23 — Present ————";
@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     asme.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "American Society of Mechanical Engineers";
             subDatesDesktop.textContent = "———— Sep '23 — Present ————";
@@ -190,7 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     aiaa.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "/images/aiaa.webp";
             subNameDesktop.textContent = "American Institute of Aeronautics and Astronautics";
             subDatesDesktop.textContent = "———— Sep '23 — Present ————";
@@ -209,7 +209,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     inno.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "Innovation Studio";
             subDatesDesktop.textContent = "———— Sep '23 — Present ————";
@@ -228,7 +228,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     ewbs.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "Engineers Without Borders";
             subDatesDesktop.textContent = "———— Feb '24 — Present ————";
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     robo.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "/images/robotics.webp";
             subNameDesktop.textContent = "Bison Robotics";
             subDatesDesktop.textContent = "———— Sep '23 — Present ————";
@@ -266,7 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     gcsp.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "Grand Challenges Scholars Program";
             subDatesDesktop.textContent = "———— Jan '24 — present ————";
@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     clim.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "Climbing Club";
             subDatesDesktop.textContent = "———— Jan '24 — Present ————";
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     clar.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "Clarinet Ensemble";
             subDatesDesktop.textContent = "———— Aug '23 — Dec '23 ————";
@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     orch.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            pageDesktop.style.transform = "translateX(46vw) translateY(95vw)";
+            pageDesktop.style.transform = "translateX(42vw) translateY(95vw)";
             subImageDesktop.src = "";
             subNameDesktop.textContent = "University Symphony Orchestra";
             subDatesDesktop.textContent = "———— Aug '23 — Dec '23 ————";
@@ -576,7 +576,7 @@ document.addEventListener('DOMContentLoaded', function () {
     href="https://sites.google.com/bismarckschools.org/century-boys-trackandfield/home">More information</a>`;
     nhso.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -590,7 +590,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     nths.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -604,7 +604,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     flig.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -618,7 +618,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     scio.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -632,7 +632,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     scib.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -646,7 +646,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     wind.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -660,7 +660,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     jazz.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -674,7 +674,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     marc.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -688,7 +688,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     colr.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -702,7 +702,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     pito.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -716,7 +716,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     alls.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -730,7 +730,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     bmso.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -744,7 +744,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     cros.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -758,7 +758,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     trac.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -899,7 +899,7 @@ document.addEventListener('DOMContentLoaded', function () {
     href="https://centurypatriotbands.weebly.com/awards-and-lettering.html">More information</a>`;
     vald.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -913,7 +913,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     schl.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -927,7 +927,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     apsc.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -941,7 +941,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     pres.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -955,7 +955,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     dola.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -969,7 +969,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     melb.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -983,7 +983,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     thom.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -997,7 +997,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     wold.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -1011,7 +1011,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     vlnt.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -1025,7 +1025,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     sosc.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -1039,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     four.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -1053,7 +1053,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     sous.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }
@@ -1067,7 +1067,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     wood.addEventListener("click", function () {
         if (window.innerWidth >= 768) {
-            page.style.transform = "translateX(4vw) translateY(150vw)";
+            page.style.transform = "translateX(-1vw) translateY(160vw)";
         } else {
             page.style.transform = "translateX(0vw)";
         }

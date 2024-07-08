@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             deny.style.pointerEvents = "auto";
             subImage.src = "/images/creomotor.webp";
         } else {
-            page.style.transform = "translateX(49.5vw) translateY(80.5vw)";
+            page.style.transform = "translateX(45vw) translateY(80.5vw)";
         }
         subName.textContent = "Reverse Engineered Starter Motor";
         subDates.textContent = "———— Oct '23 — Dec '23 ————";
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function () {
             deny.style.pointerEvents = "auto";
             subImage.src = "/images/website.webp";
         } else {
-            page.style.transform = "translateX(49.5vw) translateY(80.5vw)";
+            page.style.transform = "translateX(45vw) translateY(80.5vw)";
         }
         subName.textContent = "Documentation Website";
         subDates.textContent = "———— May '24 — Jun '24 ————";
@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
             deny.style.pointerEvents = "auto";
             subImage.src = "/images/aging.webp";
         } else {
-            page.style.transform = "translateX(49.5vw) translateY(80.5vw)";
+            page.style.transform = "translateX(45vw) translateY(80.5vw)";
         }
         subName.textContent = "Accelerated Aging Apparatus";
         subDates.textContent = "———— Jun '24 — Present ————";
