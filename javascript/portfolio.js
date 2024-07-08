@@ -2,8 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const creoProject = document.querySelector("#creomotor");
     const website = document.querySelector("#site");
     const age = document.querySelector("#age");
-    const grid = document.querySelector(".project-grid");
-
 
     page = document.querySelector(".subpage");
     deny = document.querySelector(".denier");
@@ -154,6 +152,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 img1.style.transform = `translateY(${window.scrollY * 0.15 * 0.9}px)`;
                 img2.style.transform = `translateY(${window.scrollY * 0.15 * 0.8}px)`;
             }
+
+            subPage.style.transform = `translateY(${window.scrollY * 0.1}px)`;
         }
     });
 

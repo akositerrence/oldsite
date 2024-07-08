@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const parallaxOffset = scrollPosition * 0.15;
 
         if (showcase) {
-            console.log("test");
             showcase.style.transform = `translateY(${-parallaxOffset * 0.5}px)`;
         }
     });

@@ -164,17 +164,49 @@ document.addEventListener('DOMContentLoaded', function () {
             let educationDesktopButton = document.querySelector("#desktopEducation");
 
             if (homeDesktopButton && portfolioDesktopButton && educationDesktopButton) {
-                homeDesktopButton.addEventListener("click", function event() {
-                    window.location.href = "/index.html";
-                });
+                switch (current) {
+                    case home:
+                        homeDesktopButton.addEventListener("click", function event() {
+                            window.scrollTo({ top: 0, behavior: "smooth" });
+                        });
 
-                portfolioDesktopButton.addEventListener("click", function event() {
-                    window.location.href = "/pages/portfolio.html";
-                });
+                        portfolioDesktopButton.addEventListener("click", function event() {
+                            window.location.href = "/pages/portfolio.html";
+                        });
 
-                educationDesktopButton.addEventListener("click", function event() {
-                    window.location.href = "/pages/education.html";
-                });
+                        educationDesktopButton.addEventListener("click", function event() {
+                            window.location.href = "/pages/education.html";
+                        });
+                        break;
+                    case portfolio:
+                        homeDesktopButton.addEventListener("click", function event() {
+                            window.location.href = "/index.html";
+                        });
+
+                        portfolioDesktopButton.addEventListener("click", function event() {
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        });
+
+                        educationDesktopButton.addEventListener("click", function event() {
+                            window.location.href = "/pages/education.html";
+                        });
+                        break;
+                    case education:
+                        homeDesktopButton.addEventListener("click", function event() {
+                            window.location.href = "/index.html";
+                        });
+
+                        portfolioDesktopButton.addEventListener("click", function event() {
+                            window.location.href = "/pages/portfolio.html";
+                        });
+
+                        educationDesktopButton.addEventListener("click", function event() {
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        });
+                        break;
+                    default:
+                        null;
+                }
             }
         }
     });
