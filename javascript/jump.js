@@ -158,27 +158,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     window.addEventListener("load", function (event) {
         if (window.innerWidth >= 768) {
-            let topFrame = document.querySelector("iframe.desktop-top-access");
-            if (topFrame) {
-                let topAccess = topFrame.contentDocument || topFrame.contentWindow.document;
 
-                let homeDesktopButton = topAccess.querySelector("#desktopHome");
-                let portfolioDesktopButton = topAccess.querySelector("#desktopPortfolio");
-                let educationDesktopButton = topAccess.querySelector("#desktopEducation");
+            let homeDesktopButton = document.querySelector("#desktopHome");
+            let portfolioDesktopButton = document.querySelector("#desktopPortfolio");
+            let educationDesktopButton = document.querySelector("#desktopEducation");
 
-                if (homeDesktopButton && portfolioDesktopButton && educationDesktopButton) {
-                    homeDesktopButton.addEventListener("click", function event() {
-                        window.location.href = "/index.html";
-                    });
+            if (homeDesktopButton && portfolioDesktopButton && educationDesktopButton) {
+                homeDesktopButton.addEventListener("click", function event() {
+                    window.location.href = "/index.html";
+                });
 
-                    portfolioDesktopButton.addEventListener("click", function event() {
-                        window.location.href = "/pages/portfolio.html";
-                    });
+                portfolioDesktopButton.addEventListener("click", function event() {
+                    window.location.href = "/pages/portfolio.html";
+                });
 
-                    educationDesktopButton.addEventListener("click", function event() {
-                        window.location.href = "/pages/education.html";
-                    });
-                }
+                educationDesktopButton.addEventListener("click", function event() {
+                    window.location.href = "/pages/education.html";
+                });
             }
         }
     });

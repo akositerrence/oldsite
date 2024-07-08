@@ -424,6 +424,16 @@
     opacity: 0;
 }
 
+.desktop-nav {
+    position: fixed;
+    height: 0vw;
+}
+
+.nav-buttons {
+    height: 0vw;
+    font-size: 0;
+}
+
 @media (min-width: 768px) {
     .home-screen-container {
         position: relative;
@@ -439,7 +449,7 @@
         width: 100vw;
         height: 7.5vw;
         overflow-y: hidden;
-        position: sticky;
+        position: fixed;
         top: 0;
         transition: transform 2s ease;
         transition: opacity 1s ease;
@@ -502,12 +512,20 @@
         user-select: none;
     }
 
+    .desktop-nav {
+        position: fixed;
+        z-index: 50;
+        height: 0vw;
+    }
+
     .nav-buttons {
+        padding-top: 3vw;
+        height: 2.5vw;
         font-size: 1.9vw;
         justify-content: end;
         display: flex;
         gap: 2vw;
-        padding-right: 3vw;
+        padding-left: 68vw;
         z-index: 50;
     }
 
@@ -521,7 +539,7 @@
     }
 
     .nav-buttons a:hover {
-        background-color: rgba(210, 210, 210, 85%);
+        background-color: rgba(210, 210, 210, 95%);
         color: rgb(19, 18, 18);
     }
 
@@ -565,6 +583,7 @@
     }
 
     #desktop-top-container {
+        padding-top: 7vw;
         display: flex;
         z-index: 21;
     }

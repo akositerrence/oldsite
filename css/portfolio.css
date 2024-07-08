@@ -117,6 +117,7 @@
 @media (min-width: 768px) {
     #desktop-port-container {
         display: flex;
+        padding-top: 7vw;
     }
 
     .img-home {

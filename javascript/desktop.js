@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", function () {
             names = subpageAccess.querySelector("#activities-awards-name");
             dates = subpageAccess.querySelector("#activities-awards-dates");
             version = subpageAccess.querySelector("#version");
+            image = subpageAccess.querySelector("#activities-awards-images");
 
             closePage.style.opacity = 0;
             closePage.style.fontSize = 0;
@@ -23,6 +24,7 @@ window.addEventListener("DOMContentLoaded", function () {
             version.style.lineHeight = "1.75em";
             version.style.fontSize = "2vw";
             version.style.color = "rgb(80, 80, 80)";
+            image.style.width = "50vw";
         }
     });
 });

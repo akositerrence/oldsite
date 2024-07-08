@@ -82,15 +82,22 @@
     border-radius: 0.5vw;
 }
 
+.desktop-subpage {
+    justify-content: center;
+    width: 0vw;
+    height: 0vw;
+}
+
+#desktop-subpage-embed {
+    max-width: 0;
+    width: 0vw;
+    height: 0vw;
+}
 
 @media (min-width: 768px) {
     .top-topic {
-        padding-top: 0vw;
+        padding-top: 2vw;
         width: 100vw;
-    }
-
-    #desktop-port-container {
-        display: flex;
     }
 
     .img-home {
@@ -136,13 +143,15 @@
         align-items: center;
         width: 55vw;
         height: 49.5vw;
+        padding-top: 5vw;
     }
 
     .header-img-text {
         z-index: 6;
         padding-bottom: 5vw;
         font-size: 9vw;
-        padding-left: 13.05vw;
+        padding-top: 4vw;
+        padding-left: 11.05vw;
         text-justify: center;
         color: rgb(220, 220, 220);
         text-shadow: 0vw 0vw 1vw black;
@@ -155,7 +164,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 8vw;
+        padding-top: 8.5vw;
         padding-bottom: 0vw;
     }
 
